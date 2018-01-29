@@ -1,0 +1,46 @@
+﻿<UserControl
+    x:Class="LexisNexis.Red.WindowsStore.Controls.NewTagDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LexisNexis.Red.WindowsStore.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid>
+        <Grid Width="200">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="48"/>
+                <RowDefinition Height="48"/>
+                <RowDefinition Height="48"/>
+                <RowDefinition Height="144"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="{Binding NewTagTitle,Mode=OneWay}" HorizontalAlignment="Left" Style="{StaticResource EditTagStyle}"/>
+            <TextBox Grid.Row="1"  x:Uid="TagNamePlaceholder" Text="{Binding TagNameText,Mode=TwoWay}" Height="40" BorderThickness="0" VerticalAlignment="Center" Background="White" />
+            <TextBlock Grid.Row="2" x:Uid="TagColourTitle" HorizontalAlignment="Left" Style="{StaticResource EditTagStyle}"/>
+            <VariableSizedWrapGrid Grid.Row="3" Height="144" HorizontalAlignment="Stretch" Orientation="Horizontal">
+                <RadioButton  Background="#FFFF00FF" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=0, Mode=TwoWay}"/>
+                <RadioButton  Background="#FF800080" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=1, Mode=TwoWay}"/>
+                <RadioButton  Background="#FF4B0082" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=2, Mode=TwoWay}"/>
+                <RadioButton  Background="#FF0000FF" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=3, Mode=TwoWay}"/>
+                <RadioButton  Background="#FFFFA500" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=4, Mode=TwoWay}"/>
+                <RadioButton  Background="#FF00FF00" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=5, Mode=TwoWay}"/>
+                <RadioButton  Background="#FF008080" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=6, Mode=TwoWay}"/>
+                <RadioButton  Background="#FF00FFFF" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=7, Mode=TwoWay}"/>
+                <RadioButton  Background="#FFFF0000" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=8, Mode=TwoWay}"/>
+                <RadioButton  Background="#FFBEBEBE" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=9, Mode=TwoWay}"/>
+                <RadioButton  Background="#FFA9A9A9" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=10, Mode=TwoWay}"/>
+                <RadioButton  Background="#FF000000" Style="{StaticResource TagItemButonStyle}" IsChecked="{Binding SelectedTag, Converter={StaticResource IntEqualityToTrueConverter}, ConverterParameter=11, Mode=TwoWay}"/>
+            </VariableSizedWrapGrid>
+            <Grid Grid.Row="4">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Width="70" x:Uid="CancelButton" Style="{StaticResource DefaultDialogCommandButtonStyle}" Command="{Binding CancelAddTagCommand}"/>
+                    <Button Width="70" x:Uid="DoneButton" Margin="12,0,0,0" Command="{Binding NewTagCommand}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

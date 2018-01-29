@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexisNexis.Red.Mac", "LexisNexis.Red.Mac\LexisNexis.Red.Mac.csproj", "{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexisNexis.Red.Common", "LexisNexis.Red.Common\LexisNexis.Red.Common.csproj", "{DB646126-0816-4769-9FFC-CD0D63524613}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		PreView|Any CPU = PreView|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}.PreView|Any CPU.ActiveCfg = PreView|Any CPU
+		{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}.PreView|Any CPU.Build.0 = PreView|Any CPU
+		{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.PreView|Any CPU.ActiveCfg = Preview|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.PreView|Any CPU.Build.0 = Preview|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

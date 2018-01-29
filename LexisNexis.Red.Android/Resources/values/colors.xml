@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <color name="StatusBarBackground">#BE161D</color>
+  <color name="MainAppThemeColorPrimary">#EC1C23</color>
+
+  <color name="DetailInfoButtonSecondary">#ffffff</color>
+  <color name="DetailInfoUpdateButtonPrimary">#079CE5</color>
+  <color name="DetailInfoCancelButtonPrimary">#ED1C24</color>
+  <color name="DetailInfoOpenButtonPrimary">#ED1C24</color>
+
+  <color name="login_textview_cursor">#ffffff</color>
+
+  <color name="bg_item_normal_state">#ffffffff</color>
+  <color name="bg_item_dragging_state">#ffffdddd</color>
+  <color name="bg_item_dragging_active_state">#ffff9999</color>
+</resources>

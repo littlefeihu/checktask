@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleDisplayName = "LexisNexis Red";
+CFBundleName = "LexisNexis Red";
+NSHumanReadableCopyright = "Copyright © 2014-2015 \nLexisNexis Group.\n All rights reserved.\n http://www.lexisnexis.com";

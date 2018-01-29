@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/llItemContainer"
+        android:background="#ffffff">
+        <ImageView
+            android:src="@drawable/edit_icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:id="@+id/ivLeftEdit"
+            android:background="#DCDCDC"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp" />
+        <ImageView
+            android:src="@drawable/tag_round_small_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ivTagIcon"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginLeft="8dp" />
+        <TextView
+            android:text="Tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvTagTitle"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="#dd000000"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="end" />
+        <ImageView
+            android:src="@drawable/move_handler"
+            android:layout_width="@dimen/edittags_movehandler_width"
+            android:layout_height="54dp"
+            android:id="@+id/ivMoveHandler"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="#ffffff" />
+        <ImageView
+            android:src="@drawable/trash_can"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:id="@+id/ivRightDelete"
+            android:background="#DCDCDC"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/linearLayout2"
+        android:background="#1f000000" />
+</LinearLayout>

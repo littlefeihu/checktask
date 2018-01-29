@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout14">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/linearLayout4">
+            <ImageView
+                android:src="@drawable/previous_page_disable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ivPreviousPage"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+            <ImageView
+                android:src="@drawable/next_page_disable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ivNextPage"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout5"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@drawable/expand_content_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ivExpand"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/linearLayout10"
+            android:background="#cccccc" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/flContentContainer"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="1dp" />
+    </LinearLayout>
+</FrameLayout>

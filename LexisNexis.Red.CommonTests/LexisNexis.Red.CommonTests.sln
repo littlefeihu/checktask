@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexisNexis.Red.CommonTests", "LexisNexis.Red.CommonTests.csproj", "{7443F05B-2B8B-4509-A5B7-0821018C14EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexisNexis.Red.Common", "..\LexisNexis.Red.Common\LexisNexis.Red.Common.csproj", "{DB646126-0816-4769-9FFC-CD0D63524613}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug1|Any CPU = Debug1|Any CPU
+		PreViewRelease|Any CPU = PreViewRelease|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testdebug|Any CPU = Testdebug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Debug1|Any CPU.ActiveCfg = Debug1|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Debug1|Any CPU.Build.0 = Debug1|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.PreViewRelease|Any CPU.ActiveCfg = PreViewRelease|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.PreViewRelease|Any CPU.Build.0 = PreViewRelease|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Testdebug|Any CPU.ActiveCfg = Testdebug|Any CPU
+		{7443F05B-2B8B-4509-A5B7-0821018C14EA}.Testdebug|Any CPU.Build.0 = Testdebug|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Debug1|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Debug1|Any CPU.Build.0 = Debug|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.PreViewRelease|Any CPU.ActiveCfg = PreViewRelease|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.PreViewRelease|Any CPU.Build.0 = PreViewRelease|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Testdebug|Any CPU.ActiveCfg = PreViewRelease|Any CPU
+		{DB646126-0816-4769-9FFC-CD0D63524613}.Testdebug|Any CPU.Build.0 = PreViewRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

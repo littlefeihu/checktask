@@ -1,0 +1,183 @@
+﻿<prism:VisualStateAwarePage 
+    x:Name="pageRoot"
+    x:Class="LexisNexis.Red.WindowsStore.Views.AnnotationsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LexisNexis.Red.WindowsStore.Views"
+    xmlns:control="using:LexisNexis.Red.WindowsStore.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="using:Microsoft.Practices.Prism.StoreApps"
+    xmlns:mvvm="using:Microsoft.Practices.Prism.Mvvm"
+    mc:Ignorable="d"
+    mvvm:ViewModelLocator.AutoWireViewModel="True">
+    <Page.Resources>
+        <DataTemplate x:Key="TagMenuItemTemplate">
+            <Grid Background="#66FFFFFF">
+                <CheckBox Margin="12,0,0,0" Style="{StaticResource TagCheckBoxStyle}" IsChecked="{Binding IsCheck,Mode=TwoWay}" Unchecked="TagUnChencked" HorizontalAlignment="Left">
+                    <CheckBox.Content>
+                        <Grid Height="48">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="38"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Ellipse  Height="14" Width="14" Fill="{Binding Tag.Color}" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding Tag.Title}" Grid.Column="1" Style="{StaticResource TagItemStyle}"/>
+                        </Grid>
+                    </CheckBox.Content>
+                </CheckBox>
+                <Line Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="EditTagItemTemplate">
+            <Grid>
+                <Grid Height="48" Margin="0,0,0,0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="38"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse  Height="14" Width="14" Fill="{Binding Tag.Color}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding Tag.Title}" Grid.Column="1" Style="{StaticResource TagItemStyle}"/>
+                    <StackPanel Grid.Column="2" Orientation="Horizontal">
+                        <Button Style="{StaticResource EditorTagButtonStyle}" Tag="{Binding Tag.TagId}" Click="EditTag"/>
+                        <Button Style="{StaticResource DeleteTagButtonStyle}" Tag="{Binding Tag.TagId}" Click="DeleteTag"/>
+                        <Button Style="{StaticResource SortTagButtonStyle}" Tag="{Binding Tag.TagId}"/>
+                    </StackPanel>
+                </Grid>
+                <Line Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"  Background="{StaticResource PageHeaderBackgroundColorBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Style="{StaticResource BackButtonStyle}" 
+                AutomationProperties.Name="Back"
+				AutomationProperties.AutomationId="BackButton"
+				AutomationProperties.ItemType="Navigation Button"
+                Click="GoBack"/>
+            <TextBlock Grid.Column="1" x:Uid="AnnotationsPageTitle" Style="{StaticResource PageHeaderStyle}" />
+            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,0">
+                <Button Style="{StaticResource ShrinkButtonStyle}" Command="{Binding ShrinkCommand}"/>
+                <Button Name="TagButton" Style="{StaticResource TagButtonStyle}" Command="{Binding TagMenuCommand}">
+                    <Button.Flyout>
+                        <Flyout Placement="Bottom"  FlyoutPresenterStyle="{StaticResource FlyoutStyle}">                            
+                            <Grid>
+                                <Grid Width="220" MaxHeight="336" Visibility="{Binding TagBoardVisible}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="48"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="12,0,0,0">
+                                        <TextBlock x:Uid="TagTitle" HorizontalAlignment="Left" Style="{StaticResource EditTagStyle}"/>
+                                        <Button  HorizontalAlignment="Right" Style="{StaticResource AddTagButtonStyle}" Command="{Binding NewTagBoardOpenedCommand}"/>
+                                    </Grid>
+                                    <Line Style="{StaticResource SplitLineStyle}" VerticalAlignment="Bottom"/>
+                                    <ListView Grid.Row="1" ItemTemplate="{StaticResource EditTagItemTemplate}" ItemsSource="{Binding TagCollections}" ItemContainerStyle="{StaticResource TagItemContainerStyle}" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+                                </Grid>
+                                <Grid Name="NewTagGrid" Margin="10,0,10,0"  Visibility="{Binding NewTagBoardVisible}">
+                                    <control:NewTagDialog DataContext="{Binding}"/>
+                                </Grid>                               
+                            </Grid>
+                           
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button Style="{StaticResource HistoryButtonStyle}" Click="RecentHistorySwitch" x:Name="HistorySwitchButton"/>
+                <Button Style="{StaticResource EllipsisButtonStyle}" />
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Background="#FFE6E6E6" Margin="0,2,0,2" >
+                    <TextBox PlaceholderText="Search Annotations" BorderThickness="0" VerticalAlignment="Center" Background="Transparent" Width="250"/>
+                    <Button Style="{StaticResource NormalIconButtonStyle}" Content="&#xE721;" VerticalAlignment="Center" FontSize="20" Margin="5"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="Auto"/>
+                <ColumnDefinition  Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="LeftSidePanelGrid" Grid.Column="0" Width="320" Background="White" Visibility="{Binding LeftSidePanelVisible,Mode=OneWay,Converter={StaticResource BoolToVisibleConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="48" />
+                    <RowDefinition Height="48" />
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <CheckBox Name="AllTag" Margin="12,0,0,0" Style="{StaticResource TagCheckBoxStyle}" Checked="CheckAllTags">
+                        <CheckBox.Content>
+                            <Grid Height="48" VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="*"/>                                   
+                                </Grid.ColumnDefinitions>
+                                <Image Source="ms-appx:///Assets/AllTag.png" Stretch="None"/>
+                                <TextBlock Text="All Tags" Grid.Column="1" Style="{StaticResource TagItemStyle}"/>
+                            </Grid>
+                        </CheckBox.Content>
+                    </CheckBox>
+                    <Line Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <CheckBox Name="NoTag" Margin="12,0,0,0" Style="{StaticResource TagCheckBoxStyle}" Unchecked="NoTagUnChencked">
+                        <CheckBox.Content>
+                            <Grid Height="48">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="38"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse  Height="14" Width="14" Fill="Transparent" VerticalAlignment="Center"  StrokeThickness="1" Stroke="Black"/>
+                                <TextBlock Text="No tag" Grid.Column="1" Style="{StaticResource TagItemStyle}"/>
+                            </Grid>
+                        </CheckBox.Content>
+                    </CheckBox>
+                    <Line Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <ListView x:Name="tabList"  
+                              HorizontalAlignment="Stretch"
+                              ItemsSource="{Binding TagCollections}" 
+                              SelectionMode="Single"
+                              ItemTemplate="{StaticResource TagMenuItemTemplate}"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"   
+                              ItemContainerStyle="{StaticResource TagItemContainerStyle}" 
+                              IsItemClickEnabled="True"
+                              CanDragItems="True" CanReorderItems="True" AllowDrop="True"/>        
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1" >
+                <Grid Margin="{Binding Visibility,ElementName=LeftSidePanelGrid,Mode=OneWay,Converter={StaticResource VisibleToMarginConverter},ConverterParameter=Annotation}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Height="38" VerticalAlignment="Bottom">
+                        <RadioButton x:Uid="AnnotationFilterAll" GroupName="AnnotationFilter" Style="{StaticResource FilterItemButonStyle}" IsChecked="{Binding SelectedFilter, Converter={StaticResource EqualityToTrueConverter}, ConverterParameter=All, Mode=TwoWay}"/>
+                        <RadioButton x:Uid="AnnotationFilterNotes" GroupName="AnnotationFilter" Style="{StaticResource FilterItemButonStyle}" IsChecked="{Binding SelectedFilter, Converter={StaticResource EqualityToTrueConverter}, ConverterParameter=Notes, Mode=TwoWay}"/>
+                        <RadioButton x:Uid="AnnotationFilterHighlights" GroupName="AnnotationFilter" Style="{StaticResource FilterItemButonStyle}" IsChecked="{Binding SelectedFilter, Converter={StaticResource EqualityToTrueConverter}, ConverterParameter=Highlights, Mode=TwoWay}" />
+                        <CheckBox  x:Uid="AnnotationFilterOrphans" Style="{StaticResource CheckedButonStyle}" IsChecked="{Binding IsOrphans,Mode=TwoWay}"/>
+                    </StackPanel>
+                    <Grid Grid.Row="1" Margin="0,18,0,0">
+                            <TextBlock x:Uid="NoAnnotation" Style="{StaticResource NoAnnotationContentStyle}" Visibility="{Binding HasAnnotations, Converter={StaticResource FalseToVisibleConverter}}" VerticalAlignment="Top" HorizontalAlignment="Left"/>                   
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</prism:VisualStateAwarePage>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout14">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/linearLayout4">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="A"
+                android:textSize="14sp"
+                app:fontName="Roboto-Medium.ttf"
+                android:textColor="#deed1c24"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/tvLeftTopIndex"
+                android:gravity="center" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout5"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@drawable/expand_content_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ivExpand"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/linearLayout10"
+            android:background="#cccccc" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fLayout10">
+            <LexisNexis.Red.Droid.Widget.Layout.BoundedFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bflContentContainer"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="1dp"
+                app:bounded_width="@dimen/content_page_contentview_maxwidth"
+                android:background="@drawable/miscinfo_frame_background"
+                android:layout_gravity="center_horizontal">
+                <FrameLayout
+                    android:id="@+id/flContentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                    android:text="@string/IndexPanel_NoIndexAvailable"
+                    app:fontName="Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNoIndexInFrame"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="108dp"
+                    android:layout_marginLeft="52dp" />
+            </LexisNexis.Red.Droid.Widget.Layout.BoundedFrameLayout>
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="@string/IndexPanel_NoIndexAvailable"
+                app:fontName="Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNoIndexOutFrame"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="108dp"
+                android:layout_marginLeft="52dp" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

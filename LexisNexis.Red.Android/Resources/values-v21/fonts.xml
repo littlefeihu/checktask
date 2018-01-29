@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string name="FontFamily_Roboto_Medium">sans-serif-medium</string>
+	<string name="FontFamily_Roboto_Regular">sans-serif</string>
+</resources>

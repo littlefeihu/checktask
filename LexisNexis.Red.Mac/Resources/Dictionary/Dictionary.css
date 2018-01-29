@@ -1,0 +1,44 @@
+﻿body {
+	color: Black;
+	font-size: 13px;
+	font-family: "Helvetica Neue";
+}
+
+h3 {
+	color: Black; 
+	font-size: 13px;
+	font-weight: bold;
+	font-family: "Helvetica Neue";
+}
+
+a {
+	color: #ed1c24; 
+	text-decoration: none;
+}
+
+a:link{
+	color: #ed1c24; 
+	text-decoration: none;
+}
+ 
+a:visited {
+	color: #ed1c24; 
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ed1c24; 
+	text-decoration: underline;
+}
+
+.version { 
+	color: Black; 
+	font-size: 11px; 
+	font-family: "Helvetica Neue";
+	text-align: right; 
+	font-style: italic; 
+}
+
+.Content { 
+	margin-right: 13px;
+}

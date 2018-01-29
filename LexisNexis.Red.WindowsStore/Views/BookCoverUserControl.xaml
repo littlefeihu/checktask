@@ -1,0 +1,42 @@
+﻿<UserControl
+    x:Class="LexisNexis.Red.WindowsStore.Views.BookCoverUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LexisNexis.Red.WindowsStore.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Border  BorderThickness="0" Margin="0" Background="{Binding PrimaryColor}"  Height="270" Width="200">
+        <Grid>        
+            <Grid  Margin="15,30,15,15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" BorderThickness="1" Background="{Binding SecondaryColor}" BorderBrush="{Binding FontColor}" Padding="1">
+                    <Border BorderThickness="3" BorderBrush="{Binding FontColor}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="12">
+                        <TextBlock Foreground="{Binding FontColor}" Text="{Binding Title}" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  Style="{StaticResource PublicationTitleTextBlockStyle}"/>
+                    </Border>
+                </Border>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Vertical" Grid.Row="1" Visibility="{Binding ShowLoanInfo, Converter={StaticResource BoolToVisibleConverter}}">
+                        <TextBlock Foreground="{Binding FontColor}"  x:Uid="Loan" Text="LOAN" HorizontalAlignment="Center"  Style="{StaticResource PublicationTitleTextBlockStyle}"/>
+                        <TextBlock Foreground="{Binding FontColor}"  Text="{Binding LoanInfo}" HorizontalAlignment="Center"  Style="{StaticResource PublicationTitleTextBlockStyle}" Margin="0,0,0,10"/>
+                    </StackPanel>
+                </Grid>
+
+                <Border Grid.Row="2" Height="5"  HorizontalAlignment="Stretch" BorderThickness="0,2,0,2" BorderBrush="{Binding FontColor}"/>
+            </Grid>
+            <Image Margin="10,0,0,0" Width="30" Height="50" Stretch="None"  HorizontalAlignment="Left" VerticalAlignment="Top" Source="ms-appx:///Assets/FTC.png" Visibility="{Binding IsFTC,Mode=OneWay,Converter={StaticResource BoolToVisibleConverter}}"/>
+        </Grid>        
+    </Border>
+
+</UserControl>

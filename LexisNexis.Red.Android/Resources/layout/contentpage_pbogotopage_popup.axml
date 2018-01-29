@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/contentpage_pbogoto_popup_width"
+        android:layout_height="@dimen/contentpage_pbogoto_popup_height">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPageNum"
+                android:textSize="16sp"
+                android:paddingTop="24dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="32dp"
+                android:background="#EFEFF1"
+                android:singleLine="true"
+                android:textColor="#dd000000" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gridLayout1"
+                android:paddingTop="3dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="32dp"
+                android:background="#AFAFB9">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/linearLayout3"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btn1"
+                        android:text="1"
+                        style="@style/NumPad_Button" />
+                    <Button
+                        android:id="@+id/btn2"
+                        android:text="2"
+                        style="@style/NumPad_Button" />
+                    <Button
+                        android:id="@+id/btn3"
+                        android:text="3"
+                        style="@style/NumPad_Button" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/linearLayout4"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btn4"
+                        android:text="4"
+                        style="@style/NumPad_Button" />
+                    <Button
+                        android:id="@+id/btn5"
+                        android:text="5"
+                        style="@style/NumPad_Button" />
+                    <Button
+                        android:id="@+id/btn6"
+                        android:text="6"
+                        style="@style/NumPad_Button" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/linearLayout5"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btn7"
+                        android:text="7"
+                        style="@style/NumPad_Button" />
+                    <Button
+                        android:id="@+id/btn8"
+                        android:text="8"
+                        style="@style/NumPad_Button" />
+                    <Button
+                        android:id="@+id/btn9"
+                        android:text="9"
+                        style="@style/NumPad_Button" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/linearLayout6"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:src="@drawable/input_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivDel"
+                        android:background="@drawable/btn_numberpad_action"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp" />
+                    <Button
+                        android:id="@+id/btn0"
+                        android:text="0"
+                        style="@style/NumPad_Button" />
+                    <Button
+                        android:id="@+id/btnDone"
+                        android:text="@string/Done"
+                        style="@style/NumPad_Button"
+                        android:background="@drawable/btn_numberpad_action" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="@string/ContentPboGoTo_PageResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textSize="20sp"
+                app:fontName="Roboto-Medium.ttf"
+                android:textColor="#dd000000" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frameLayout1"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcSearchResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+                <TextView
+                    android:text="@string/ContentPboGoTo_EmptyInputMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNoResultMessage"
+                    android:textSize="16sp"
+                    android:textColor="#89000000"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

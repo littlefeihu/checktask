@@ -1,0 +1,446 @@
+﻿/*** 
+
+v0.1 - PDW - Oct 2015 - Initial Alpha of CSS rendering --- Still waiting on final HTML with corrected headers, para's and sub para's
+v0.2 - PDW - Oct 2015 - Updated flexible border behaviour --- Still waiting on final HTML with corrected headers, para's and sub para's
+
+***/
+
+
+div.collapsediv {
+    overflow: hidden;
+    height: 2em;
+}
+
+div.expanddiv {
+    overflow: visible;
+    height: 100%;
+}
+
+div.hiddendiv {
+    display: none;
+}
+
+
+/*.page {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	text-align: right;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+	-webkit-user-select: initial;
+    -webkit-touch-callout: initial;
+	display: block;
+}*/
+
+font.page:after {
+    content: "Page " attr(page-number) "\00a0\00a0";
+    -webkit-user-select: none;
+}
+
+div.pageDiv {
+    -webkit-user-select: none;
+}
+
+img.annotation {
+    position: absolute;
+    left: 10px;
+}
+
+img.tag {
+    position: absolute;
+    right: 3px;
+}
+
+.officialname {
+    display: none;
+}
+
+span.highlight {
+    background-color: #fff67b;
+    border-radius: 3px;
+    text-shadow: 0px -1px 1px white;
+}
+
+/*body {
+	font-family: "Helvetica Neue", "Segoe UI", "Roboto";
+	font-size: 11pt;
+	background: #E6E6E6 ;
+}
+
+div.main {
+	border : 1px solid grey;
+	padding-top: 50px; 
+	padding-bottom: 50px; 
+	padding-left: 5%; 
+	padding-right: 5%; 
+	background: white;
+	max-width: 705px;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+/* Remove published currency date  PDW: check that this is required */
+aside.comntry > div.levelinfo {
+    display: none;
+}
+
+
+aside.comntry {
+    position: relative;
+    background: #f2f2f2;
+    padding-top: 0em;
+    padding-bottom: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-left: -5em;
+    margin-right: -5em;
+    margin-top: 3em;
+    border-top: 1px solid #727272;
+    border-bottom: 1px solid #727272;
+    color: #434343;
+}
+
+div.note {
+    display: none;
+}
+
+.bf {
+    font-weight: bold;
+}
+
+font.small {
+    font-size: 0.8em;
+}
+
+font.it {
+    font-style: italic;
+}
+
+font.ib {
+    font-weight: bold;
+    font-style: italic;
+}
+
+font.un {
+    text-decoration: underline;
+}
+
+font.ro {
+    font-weight: normal;
+}
+
+p {
+    display: block;
+}
+
+/* PDW - debate around styling of blockquotes still ongoing
+
+blockquote {
+	font-style: italic;
+	color: grey;	
+}
+
+*/
+
+/*3.0*/
+h1 {
+    color: #0000FF;
+    font-weight: bold;
+    font-size: 14pt;
+    /*margin-bottom: 1em;*/
+    /*background-color: red;*/
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 13pt;
+    line-height: 22.5pt;
+    /*background-color: green;*/
+}
+
+h3 {
+    /*text-shadow: 1px 1px 0px #dddddd;*/
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 19.5pt;
+    /*background-color: blue;*/
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 11pt;
+    line-height: 17pt;
+    /*background-color: yellow;*/
+}
+
+note {
+    font-weight: bold;
+    font-size: 10pt;
+    line-height: 17pt;
+}
+
+span {
+    display: marker;
+    text-align: left;
+}
+
+
+.fnlabel {
+    color: red;
+    width: 40px;
+    position: absolute;
+    text-indent: -33px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+.footnote {
+    /* background-color: rgba(0,0,0,0.68); */
+    font-style: normal;
+    font-size: 10pt;
+    color: rgba(154,154,154,1);
+    line-height: 21pt;
+    padding-left: 40pt;
+    padding-bottom: 5px;
+}
+
+.footnotelist {
+    margin: 20px;
+    padding-top: 15px;
+    padding-right: 50px;
+    font-weight: normal;
+    font-size: 12pt;
+    line-height: 17pt;
+}
+
+
+span.SEARCHRESULT {
+    background-color: #FF9966;
+}
+
+span.sectionNumber {
+    color: #7D7D7D;
+}
+
+span.it {
+    font-style: italic;
+}
+
+table {
+    table-layout: auto;
+}
+
+td {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: 16pt;
+}
+
+th {
+    font-weight: bold;
+    font-size: 11pt;
+    line-height: 18pt;
+}
+
+tr.bf {
+    font-weight: bold;
+}
+
+.pagebreak {
+    display: block;
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: bold;
+    height: 25pt;
+    color: #000000;
+}
+
+.pagenum {
+    position: absolute;
+    right: 3em;
+}
+
+.casename {
+    font-style: italic;
+    font-size: 15pt;
+    line-height: 21pt;
+}
+
+/*  PDW: Spaces added to content.
+.edpnum {
+	padding-right: 0.5;
+
+}
+
+.designum {
+	padding-right: 1em;
+
+}
+*/
+
+.commchaptitle {
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+
+.paratitle {
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-color: #5979de;
+    padding-bottom: 0.3em;
+}
+
+aside .paratitle {
+    border-style: none;
+}
+
+div.subrul {
+    margin-left: 45px;
+    margin-bottom: 2em;
+}
+
+    div.subrul > span.designum {
+        background: rgba(95,241,243,0.3);
+        width: 70px;
+        position: absolute;
+        text-indent: -45px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+
+.lilabel {
+    width: 70px;
+    position: absolute;
+    text-indent: -45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+li {
+    padding-top: 0.75em;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+.histnote {
+    font-size: 10pt;
+    color: #525252;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.empoweringlegislation {
+    text-align: right;
+}
+
+.quoted {
+}
+
+
+/*#container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#div_container{
+   min-width: 390pt;
+   max-width: 704pt;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#div_note_tag{
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+For infinite scrolling
+.content_body{
+    font-weight: normal;
+    font-size: 15pt;
+    line-height: 21pt;
+	background-color: #ffffff;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-top: 25px;
+}
+
+.div_preloading{
+    border: 1px solid #C8C8C8; 
+	border-style: none none solid none;
+	border-color: #efefef;
+	background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	margin-left: -10%;
+	margin-right: -10%;
+	height: 80px; 
+	text-align: center;
+	font-size: 11;
+	vertical-align: center;
+}
+
+.div_nextloading{
+    border: 1px solid #C8C8C8; 
+	border-style: solid none none none;
+	border-color: #efefef;
+	background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	margin-left: -10%;
+	margin-right: -10%;
+	height: 80px; 
+	text-align: center;
+	font-size: 11;
+	vertical-align: center;
+}
+
+.separator_div{
+	height: 16px; 
+	margin-left: -10%;
+	margin-right: -10%;
+	background-color: #fafafa;
+}
+
+#nextPageFrame{
+	border-style: solid solid none solid;
+	border-width: 1 1 0 1;
+	border-color: #efefef;
+	height: 26px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10pt;
+	background-color: #ffffff;
+}
+
+#prePageFrame{
+	border-style: none solid solid solid;
+	border-width: 0 1 1 1;
+	border-color: #efefef;
+	height: 26px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 0pt;
+	margin-top: -20pt;
+	background-color: #ffffff;
+}*/
+
+
+
+

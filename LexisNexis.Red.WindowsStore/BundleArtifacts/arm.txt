@@ -1,0 +1,4 @@
+MainPackage=C:\Leo\Project\Red\LexisNexis.Red.WindowsStore\bin\ARM\Testing\LexisNexis.Red.WindowsStore_4.1.1.1_Bundle\LexisNexis.Red.WindowsStore_4.1.1.1_ARM_Testing.appx
+SymbolPackage=C:\Users\Cailx\Desktop\LexisNexis.Red.WindowsStore_4.1.1.1_Testing_Test\LexisNexis.Red.WindowsStore_4.1.1.1_ARM_Testing.appxsym
+ResourcePack=C:\Leo\Project\Red\LexisNexis.Red.WindowsStore\bin\ARM\Testing\LexisNexis.Red.WindowsStore_4.1.1.1_Bundle\LexisNexis.Red.WindowsStore_4.1.1.1_scale-140.appx
+ResourcePack=C:\Leo\Project\Red\LexisNexis.Red.WindowsStore\bin\ARM\Testing\LexisNexis.Red.WindowsStore_4.1.1.1_Bundle\LexisNexis.Red.WindowsStore_4.1.1.1_scale-180.appx

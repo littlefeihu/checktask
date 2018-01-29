@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llContainer"
+        android:paddingLeft="72dp"
+        android:paddingRight="72dp"
+        android:paddingTop="32dp">
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            app:fontName="Roboto-Regular.ttf"
+            android:text="Publication"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/tvResultType"
+            android:textSize="16sp"
+            android:textColor="#dd000000" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                app:fontName="Roboto-Medium.ttf"
+                android:text="Part 4 Law and Equity [57 -54]"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvTitle"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#dd000000"
+                android:singleLine="true"
+                android:ellipsize="end" />
+            <TextView
+                android:text="8888"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tvPageNumber"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            app:fontName="Roboto-Regular.ttf"
+            android:text="Supreme Court"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSubTitle"
+            android:textSize="20sp"
+            android:textColor="#dd000000"
+            android:layout_marginBottom="31dp"
+            android:ellipsize="end"
+            android:maxLines="2" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/frameLayout1"
+        android:background="#1e000000" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0;'> 
+			<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+				<META HTTP-EQUIV="Expires" CONTENT="-1">
+                    <link rel="stylesheet" type="text/css" href="./HtmlTemplate/CSS/content.css"/>
+                    <link rel="stylesheet" type="text/css" href="./HtmlTemplate/CSS/custom.css" />
+                    <link rel="stylesheet" type="text/css" href="./HtmlTemplate/CSS/LN.css" />
+					<script type="text/javascript" src='./HtmlTemplate/jquery-2.1.4.min.js'></script>
+					<script type="text/javascript" src='./HtmlTemplate/contentDisplay.js'></script>
+					<script type="text/javascript" src='./HtmlTemplate/hilitor.js'></script>
+                    <script type="text/javascript" src='./HtmlTemplate/highlight.js'></script>
+<!--					<script type="text/javascript" src='./HtmlTemplate/waypoints.min.js' ></script>-->
+
+					<script>
+
+				        // SGenev 2013/11  borrowed from //stackoverflow .com/questions/5353278/ uiwebviewdelegate-not-monitoring-xmlhttprequest
+				        // note webdelegate will need #define CocoaJSHandler      @"looseleaf"
+
+				        var s_ajaxListener = new Object();
+				        s_ajaxListener.tempOpen = XMLHttpRequest.prototype.open;
+				        s_ajaxListener.tempSend = XMLHttpRequest.prototype.send;
+				        s_ajaxListener.callback = function () {
+				            //window.location='mpAjaxHandler://' + this.url;
+				            window.location = 'looseleaf://' + this.url;
+				        };
+
+				        XMLHttpRequest.prototype.open = function (a, b) {
+				            if (!a) var a = '';
+				            if (!b) var b = '';
+				            s_ajaxListener.tempOpen.apply(this, arguments);
+				            s_ajaxListener.method = a;
+				            s_ajaxListener.url = b;
+				            if (a.toLowerCase() == 'get') {
+				                s_ajaxListener.data = b.split('?');
+				                s_ajaxListener.data = s_ajaxListener.data[1];
+				            }
+				        }
+
+				        XMLHttpRequest.prototype.send = function (a, b) {
+				            if (!a) var a = '';
+				            if (!b) var b = '';
+				            s_ajaxListener.tempSend.apply(this, arguments);
+				            if (s_ajaxListener.method.toLowerCase() == 'post') s_ajaxListener.data = a;
+				            s_ajaxListener.callback();
+				        }
+
+				        function initialize() {
+				            //	alert("loaded from init");
+				        }
+
+				    </script>
+    </head>
+	<body style="font-size:#FONTSIZE#pt;">
+	    <div id="div_container">
+		    <div id="div_note_tag">
+		        <div id="content_body" onmouseup="customMouseUp();" style="overflow-x:hidden;">
+			    #CONTENT#
+			    </div>
+		    </div>
+		</div>
+	</body>
+</html>

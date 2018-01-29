@@ -1,0 +1,124 @@
+﻿/*For infinite scrolling*/
+body{
+	background-color:#ECECEC;
+	margin:0px;
+	font-family: "Helvetica Neue";
+	word-wrap:break-word;
+
+}
+div.loading{
+	width:100%;
+	text-align:center;
+	display:none;
+	overflow:hidden;
+}
+
+div.loading span{
+	
+}
+img.loading{
+	height:20px;
+}
+
+div.page_container{
+	/*
+	border-color:#efefef;
+	border : 1px solid grey;
+	border-left: 0;
+	border-right:0;
+	*/
+	background-color:#FFFFFF;
+	margin-bottom:30px;
+	margin-top:-1px;
+	min-height:100%;
+
+}
+
+div.next_page{
+	min-height:100px
+}
+
+.hidden{
+	display:none;
+}
+
+
+#nextPageFrame{
+	border-style: solid solid none solid;
+	border-width:1 1 0 1;
+	border-color:#efefef;
+	height:20px;
+	width:90%;
+	margin-left:5%;
+	background-color:#FFFFFF;
+}
+
+#previousPageFrame{
+	border-style: none solid solid solid;
+	border-width:0 1 1 1;
+	border-color:#efefef;
+	height:20px;
+	width:90%;
+	margin-left:5%;
+	background-color:#FFFFFF;
+}
+
+.loadingtitle{
+	font-size:10pt;
+	color:#929292;
+	overflow:hidden;
+}
+
+div.nocontent{
+	height:100%;
+	width:100%;
+	background-color:white;
+}
+div.nocontent span{
+	width: 100%;
+    height: 100px;
+    line-height:30px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color:#AAAAAA;
+}
+
+
+#downpos{
+	width:100%;
+	height:1px;
+
+}
+
+#footer{
+	width:100%;
+	height:1px;
+}
+
+/*override class defined in common_content.css*/
+aside.comntry {
+	padding-left: 70px;
+	padding-right: 70px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+}
+a.hiddenhyperlink { 
+    display: none;
+}
+
+ a.plaintexthyperlink  {
+    color:inherit;
+    text-decoration:none;
+    pointer-events:none;
+ }
+
+ hr.hiddenhyperlink {
+    display: none;
+
+  }

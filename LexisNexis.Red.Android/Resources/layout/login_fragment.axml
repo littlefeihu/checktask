@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout1"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout7">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spCountry"
+                android:textColor="@android:color/white"
+                style="@style/LoginPage_Spinner" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:id="@+id/etEmail"
+                style="@style/LoginPage_EditView"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="账号"
+                android:text="admin"
+                android:imeOptions="actionNext" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:id="@+id/etPassword"
+                style="@style/LoginPage_EditView"
+                android:hint="密码"
+                android:text="1111"
+                android:imeOptions="actionDone" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:layout_marginTop="24dp">
+                <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                    android:text="@string/ForgotYourPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvForgetPassword"
+                    app:fontName="Roboto-Medium.ttf"
+                    android:textColor="#ddffffff"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout6"
+                    android:layout_weight="1" />
+                <Button
+                    android:text="@string/Login"
+                    android:id="@+id/btnLogin"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ed1c24"
+                    android:textSize="14sp"
+                    android:background="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:text="Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="8pt"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvLoginWaringMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/frameLayout1"
+        android:visibility="gone" />
+</RelativeLayout>

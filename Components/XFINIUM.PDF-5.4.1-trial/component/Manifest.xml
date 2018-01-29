@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="XFINIUM.PDF">
+  <name>XFINIUM.PDF Mobile Standard Edition</name>
+  <publisher>XFINIUM Software</publisher>
+  <publisher-url>http://www.xfiniumpdf.com</publisher-url>
+  <version>5.4.1</version>
+  <summary>Cross platform PDF development. Add PDF capabilites to your iOS, Android or Windows Phone applications.</summary>
+  <screenshots>
+    <img src="screenshots/PurchaseOrder.iPad2.jpg" title="PurchaseOrder.iPad2" />
+  </screenshots>
+  <samples>
+    <sample id="Xfinium.Pdf.SamplesExplorer.Wp7">
+      <name>WP7 Sample Standard</name>
+      <summary>WP7 Sample Standard</summary>
+    </sample>
+    <sample id="Xfinium.Pdf.SamplesExplorer.Wp8">
+      <name>WP8 Sample Standard</name>
+      <summary>WP8 Sample Standard</summary>
+    </sample>
+    <sample id="Xfinium.Pdf.SamplesExplorer.Xamarin.Android">
+      <name>Android Sample Standard</name>
+      <summary>Android Sample Standard</summary>
+    </sample>
+    <sample id="Xfinium.Pdf.SamplesExplorer.Xamarin.iOS-Classic">
+      <name>iOS-Classic Sample Standard</name>
+      <summary>iOS-Classic Sample Standard</summary>
+    </sample>
+    <sample id="Xfinium.Pdf.SamplesExplorer.Xamarin.iOS-Unified">
+      <name>iOS-Unified Sample Standard</name>
+      <summary>iOS-Unified Sample Standard</summary>
+    </sample>
+  </samples>
+</component>

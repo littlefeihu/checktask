@@ -1,0 +1,41 @@
+.ui-page { -webkit-backface-visibility: hidden; }
+/*http://demos.jquerymobile.com/1.4.1/transitions/ -- Android crash issue*/
+
+/* Basic settings */
+.ui-li-static.ui-collapsible { padding: 0; }
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading { margin: 0; }
+.ui-li-static.ui-collapsible > .ui-collapsible-content { padding-top: 0; padding-bottom: 0; padding-right: 0; border-bottom-width: 0; }
+/* collapse vertical borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-last-child,
+.ui-li-static.ui-collapsible.ui-collapsible-collapsed > .ui-collapsible-heading > a.ui-btn { border-bottom-width: 0; }
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn { border-top-width: 0; }
+/* Remove right borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > .ui-li-static,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content { border-right-width: 0; }
+/* Remove left borders */
+/* Here, we need class ui-listview-outer to identify the outermost listview */
+.ui-listview-outer > .ui-li-static.ui-collapsible .ui-li-static.ui-collapsible.ui-collapsible,
+.ui-listview-outer > .ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content { border-left-width: 0; }
+
+.lm, .listme { list-style-type: none; display: block; padding-left: 30px; padding-top: 8px; min-height: 30px; background-color: #f7f7f7; border-bottom: 1px solid #ddd; vertical-align: middle; cursor: pointer; text-wrap: normal; color: #3388cc; font-size: 12.5px; white-space: normal; font-weight: bold; }
+.lm a, .listme a { text-decoration: none; font-size: 12.5px; white-space: normal; }
+.lm:hover, .listme:hover { background-color: #eee; }
+.ui-collapsible-heading-toggle { white-space: normal; }
+
+.level0 a { color: red; }
+.level1 a { color: blue; }
+.level2 a { color: green; }
+.level3 a { color: yellow; }
+.level4 a { color: aliceblue; }
+
+[data-role="collapsible"] [data-role="collapsible-set"] { padding:0 !important; margin:0 !important; }
+/*
+[data-role="collapsible-set"] li { list-style-type: none !important; display: block !important; padding-left: 30px !important; padding-top: 8px !important; min-height: 30px !important; background-color: #f7f7f7 !important; border-bottom: 1px solid #ddd !important; vertical-align: middle !important; cursor: pointer !important; text-wrap: normal !important; color: #3388cc !important; font-size: 12.5px; white-space: normal !important; font-weight: bold !important; }
+*/
+[data-role="collapsible-set"] li a, [data-role="collapsible-set"] a li { text-decoration:none;}

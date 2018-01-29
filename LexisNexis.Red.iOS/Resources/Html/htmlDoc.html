@@ -1,0 +1,44 @@
+<html>
+    <head>
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache"/>
+		<META HTTP-EQUIV="Expires" CONTENT="-1"/>
+
+		<link rel="stylesheet" href="./CSS/common_content.css" type="text/css" />
+		<link rel="stylesheet" href="./CSS/ios_content.css" type="text/css" />
+		<style>
+			body {
+				font-size:#PLACEHOLDER_DEFAULT_FONT_SIZE#px;
+			}
+		</style>
+        <script type="text/javascript" src='./JS/jquery-1.8.3.min.js'></script>
+        <script type="text/javascript" src='./JS/jquery.scrollTo.min.js'></script>
+        <script type="text/javascript" src='./JS/hilitor.js'></script>
+        <script type="text/javascript" src='./JS/highlight.js'></script>
+        <script type="text/javascript" src='./JS/jquery.ready.js'></script>
+
+
+        #PLACE_HOLDER_SCROLL_SCRIPT#
+
+	</head>   
+	  
+	<body>
+		<div id="beginloading" class="loading">
+			<div id="previousPageFrame"></div>
+	    	<img class="loading" src="../Images/Content/Loading.gif"/>
+	    	<br/>
+	    	<span id="beginLoadingTitle" data-tocid="#PREVIOUS_PAGE_TOCID#"  class="loadingtitle">#PREVIOUS_PAGE_TITLE#</span>
+	    </div>
+
+		<div id="content">#CONTENT#</div>
+
+	    <div id="endloading" class="loading">
+	    	<img class="loading" src="../Images/Content/Loading.gif"/>
+	    	<br/>
+	    	<span id="endLoadingTitle" data-tocid="#NEXT_PAGE_TOCID#" class="loadingtitle">#NEXT_PAGE_TITLE#</span>
+	    	<div id="nextPageFrame"></div>
+	    </div>
+
+	    <div id="data_container" data-highlightedtocid="#PLACE_HOLDER_HIGHLIGHTED_TOCID#" data-highlightedkeyword="#PLACE_HOLDER_HIGHLIGHTED_KEYWORD#" data-pdffile="#PDF#" data-scrollToId="PLACE_HOLDER_SCROLL_TO_ID" data-PBOPageNum="PLACE_HOLDER_PBO_PAGE_NUM"></div>
+		<div id="document_ready_script_container" class="hidden">#DOCUMENT_READY_SCRIPT#</div>
+	</body>
+</html>

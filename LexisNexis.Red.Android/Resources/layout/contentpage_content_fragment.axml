@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/linearLayout4">
+        <ImageView
+            android:src="@drawable/previous_page_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ivPreviousPage"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+        <ImageView
+            android:src="@drawable/next_page_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ivNextPage"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout5"
+            android:layout_weight="1" />
+        <TextView
+            android:text="@string/PublicationPboPage_GoTo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvGoToPage"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="14sp"
+            android:textColor="#8aed1c24" />
+        <TextView
+            android:text="@string/PublicationPboPage_Page"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvPboPageNumLabel"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#8A000000" />
+        <TextView
+            android:text="14"
+            android:layout_height="match_parent"
+            android:id="@+id/tvPboPageNum"
+            android:gravity="center_vertical|left"
+            android:textSize="14sp"
+            android:textColor="#8A000000"
+            android:layout_width="wrap_content"
+            android:minWidth="30dp" />
+        <ImageView
+            android:src="@drawable/expand_content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ivExpand"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/linearLayout10"
+        android:background="#cccccc" />
+    <LexisNexis.Red.Droid.Widget.Layout.BoundedFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bflContentContainer"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="1dp"
+        app:bounded_width="@dimen/content_page_contentview_maxwidth"
+        android:background="@drawable/miscinfo_frame_background">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/flWebViewContainer" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llTopLoadingIndicator"
+            android:background="#eeeeee">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/frameLayout1"
+                android:background="#ffffff" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/frameLayout2"
+                android:background="#CCCCCC" />
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/progressBar2"
+                android:layout_gravity="center_horizontal" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="TOC Title"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:id="@+id/tvTopLoadingTocTitle"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#89000000"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llBottomLoadingIndicator"
+            android:background="#eeeeee"
+            android:layout_gravity="bottom">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/frameLayout2"
+                android:background="#CCCCCC" />
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/progressBar3"
+                android:layout_gravity="center_horizontal" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="TOC Title"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:id="@+id/tvBottomLoadingTocTitle"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#89000000"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="12sp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/frameLayout1"
+                android:background="#ffffff" />
+        </LinearLayout>
+    </LexisNexis.Red.Droid.Widget.Layout.BoundedFrameLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/flToolbarBottom" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fixedbar_height"
+        android:id="@+id/llTabContainer"
+        android:background="#EC1C23">
+        <RadioGroup
+            android:id="@+id/rgMainTab"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <RadioButton
+                android:checked="true"
+                android:text="@string/MyPub_TitleBarTab_Publications"
+                android:id="@+id/rbPublications"
+                android:button="@null"
+                android:background="@drawable/fixed_tab_background"
+                android:gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/fixed_tab_text_color" />
+            <RadioButton
+                android:text="@string/MyPub_TitleBarTab_Annotations"
+                android:id="@+id/rbAnnotations"
+                android:button="@null"
+                android:background="@drawable/fixed_tab_background"
+                android:gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/fixed_tab_text_color" />
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flMainPanelContainer" />
+</LinearLayout>

@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{D9F5771F-B71C-4F85-8E03-1EB02B2E29FD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LexisNexis.Red.Mac</RootNamespace>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <AssemblyName>LexisNexis Red</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <UseXamMacFullFramework>true</UseXamMacFullFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <UseRefCounting>true</UseRefCounting>
+    <UseSGen>true</UseSGen>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <CodeSigningKey>3rd Party Mac Developer Application: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</CodeSigningKey>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>true</CreatePackage>
+    <PackageSigningKey>3rd Party Mac Developer Installer: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</PackageSigningKey>
+    <XamMacArch>x86_64</XamMacArch>
+    <CodeSignProvision>56d8c6e0-6f85-420e-96e8-27969e0c7e9f</CodeSignProvision>
+    <Profiling>false</Profiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <UseRefCounting>true</UseRefCounting>
+    <UseSGen>true</UseSGen>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <CreatePackage>true</CreatePackage>
+    <CodeSigningKey>3rd Party Mac Developer Application: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</CodeSigningKey>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <EnablePackageSigning>true</EnablePackageSigning>
+    <PackageSigningKey>3rd Party Mac Developer Installer: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</PackageSigningKey>
+    <CodeSignProvision>afbaec72-0081-415b-86f9-788437e034e8</CodeSignProvision>
+    <CodeSignEntitlements>Info.plist</CodeSignEntitlements>
+    <XamMacArch>x86_64</XamMacArch>
+    <Profiling>false</Profiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'PreView|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseSGen>true</UseSGen>
+    <UseRefCounting>true</UseRefCounting>
+    <MacOSXSdkVersion>10.9</MacOSXSdkVersion>
+    <CodeSignEntitlements>Info.plist</CodeSignEntitlements>
+    <XamMacArch>x86_64</XamMacArch>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CodeSigningKey>3rd Party Mac Developer Application: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</CodeSigningKey>
+    <CodeSignProvision>afbaec72-0081-415b-86f9-788437e034e8</CodeSignProvision>
+    <CreatePackage>true</CreatePackage>
+    <ConsolePause>false</ConsolePause>
+    <PackageSigningKey>3rd Party Mac Developer Installer: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</PackageSigningKey>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <Profiling>false</Profiling>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.8.0\lib\net45\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Net" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xfinium.Pdf.Pcl">
+      <HintPath>..\packages\XfiniumPdf541PclProEvaluation\Xfinium.Pdf.Pcl.dll</HintPath>
+    </Reference>
+    <!--    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />-->
+    <Reference Include="Xamarin.Mac" />
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\packages\Xamarin.Insights.1.11.1\lib\net40\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib.Portable">
+      <HintPath>..\packages\SharpZipLib.Portable.0.86.0.0003\lib\portable-net45+netcore45+wp8+win8+wpa81+MonoTouch+MonoAndroid+Xamarin.iOS10\ICSharpCode.SharpZipLib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Common\" />
+    <Folder Include="ViewController\" />
+    <Folder Include="WindowController\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="ViewController\Index\" />
+    <Folder Include="ViewController\History\" />
+    <Folder Include="DataModel\" />
+    <Folder Include="ViewController\Annotation\" />
+    <Folder Include="ViewController\PageContent\" />
+    <Folder Include="Resources\HtmlTemplate\" />
+    <Folder Include="ViewController\LoadingView\" />
+    <Folder Include="ViewController\PublicationContentView\" />
+    <Folder Include="WindowController\Login\" />
+    <Folder Include="Resources\HtmlTemplate\CSS\" />
+    <Folder Include="ViewController\Annotations\" />
+    <Folder Include="ViewController\SearchResults\" />
+    <Folder Include="ViewController\Dictionary\" />
+    <Folder Include="Resources\Dictionary\" />
+    <Folder Include="ViewController\GotoPage\" />
+    <Folder Include="ViewController\Annotations\Tag\" />
+    <Folder Include="ViewController\Annotations\Other\" />
+    <Folder Include="ViewController\Annotations\AnnotationOrganiser\" />
+    <Folder Include="ViewController\Annotations\Note\" />
+    <Folder Include="ViewController\Annotations\Highlight\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="AppDelegate.designer.cs">
+      <DependentUpon>AppDelegate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Alert\AlertSheet.cs" />
+    <Compile Include="Common\Implementation\FileDirectory.cs" />
+    <Compile Include="Common\Implementation\MacDecodeFile.cs" />
+    <Compile Include="Common\Implementation\MacDevices.cs" />
+    <Compile Include="Common\Implementation\MacNetWork.cs" />
+    <Compile Include="Common\Utility\CountryDataSource.cs" />
+    <Compile Include="Common\Utility\ExpandGridTableView.cs" />
+    <Compile Include="Common\Utility\ExpandGridTableView.designer.cs">
+      <DependentUpon>ExpandGridTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utility\ExpandTableView.cs" />
+    <Compile Include="Common\Utility\ExpandTextField.cs" />
+    <Compile Include="Common\Utility\ExpandTextView.cs" />
+    <Compile Include="Common\Utility\LNRGlobals.cs" />
+    <Compile Include="Common\Utility\Utility.cs" />
+    <Compile Include="Common\Utility\WindowButton.designer.cs" />
+    <Compile Include="Common\Utility\WindowDelegate.cs" />
+    <Compile Include="ViewController\Publications\BookCoverView.cs" />
+    <Compile Include="ViewController\Publications\BookCoverView.designer.cs">
+      <DependentUpon>BookCoverView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Publications\CircularProgressView.cs" />
+    <Compile Include="ViewController\Publications\HistoryTableViewDataSources.cs">
+      <DependentUpon>PublicationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Publications\PublicationView.cs" />
+    <Compile Include="ViewController\Publications\PublicationView.designer.cs">
+      <DependentUpon>PublicationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Publications\PublicationsViewController.cs">
+    </Compile>
+    <Compile Include="ViewController\Publications\PublicationsView.cs">
+      <DependentUpon>PublicationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Publications\PublicationsView.designer.cs">
+      <DependentUpon>PublicationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Publications\TriangleView.cs" />
+    <Compile Include="ViewController\Publications\TriangleView.designer.cs">
+      <DependentUpon>TriangleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\TOC\TocTableViewDataSources.cs" />
+    <Compile Include="ViewController\TOC\TocTableViewDelegate.cs" />
+    <Compile Include="ViewController\TOC\TocViewController.cs">
+    </Compile>
+    <Compile Include="ViewController\TOC\TocView.cs">
+      <DependentUpon>TocViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\TOC\TocView.designer.cs">
+      <DependentUpon>TocViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Password\ChangePasswordWindowController.cs">
+    </Compile>
+    <Compile Include="WindowController\Password\ChangePasswordWindow.cs">
+      <DependentUpon>ChangePasswordWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Password\ChangePasswordWindow.designer.cs">
+      <DependentUpon>ChangePasswordWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\OrganizePublicationsPanelController.cs">
+    </Compile>
+    <Compile Include="WindowController\Publications\OrganizePublicationsPanel.cs">
+      <DependentUpon>OrganizePublicationsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\OrganizePublicationsPanel.designer.cs">
+      <DependentUpon>OrganizePublicationsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\PublicationInfoPanelController.cs">
+    </Compile>
+    <Compile Include="WindowController\Publications\PublicationInfoPanel.designer.cs">
+      <DependentUpon>PublicationInfoPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\PublicationInfoPanel.cs">
+      <DependentUpon>PublicationInfoPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\PublicationsWindowController.cs">
+    </Compile>
+    <Compile Include="WindowController\Publications\PublicationsWindow.cs">
+      <DependentUpon>PublicationsWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\PublicationsWindow.designer.cs">
+      <DependentUpon>PublicationsWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\PubsTableViewDataSource.cs">
+      <DependentUpon>OrganizePublicationsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\LNLegalPanelController.cs">
+    </Compile>
+    <Compile Include="WindowController\Setting\LNLegalPanel.cs">
+      <DependentUpon>LNLegalPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\LNLegalPanel.designer.cs">
+      <DependentUpon>LNLegalPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\LNRedAboutPanelController.cs">
+    </Compile>
+    <Compile Include="WindowController\Setting\LNRedAboutPanel.designer.cs">
+      <DependentUpon>LNRedAboutPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\LNRedAboutPanel.cs">
+      <DependentUpon>LNRedAboutPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\PreferenceWindowController.cs">
+    </Compile>
+    <Compile Include="WindowController\Setting\PreferenceWindow.cs">
+      <DependentUpon>PreferenceWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\PreferenceWindow.designer.cs">
+      <DependentUpon>PreferenceWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\TermConditionsPanelController.cs">
+    </Compile>
+    <Compile Include="WindowController\Setting\TermConditionsPanel.cs">
+      <DependentUpon>TermConditionsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\TermConditionsPanel.designer.cs">
+      <DependentUpon>TermConditionsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Window\LNBordlessWindow.cs" />
+    <Compile Include="ViewController\Index\IndexView.cs" />
+    <Compile Include="ViewController\Index\IndexView.designer.cs">
+      <DependentUpon>IndexView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Index\IndexViewController.cs" />
+    <Compile Include="ViewController\Index\IndexViewController.designer.cs">
+      <DependentUpon>IndexViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Index\IndexTableViewDataSources.cs" />
+    <Compile Include="ViewController\Index\IndexTableViewDelegate.cs" />
+    <Compile Include="ViewController\History\HistoryPopover.cs" />
+    <Compile Include="ViewController\History\HistoryPopover.designer.cs">
+      <DependentUpon>HistoryPopover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\History\HistoryPopoverController.cs" />
+    <Compile Include="ViewController\History\HistoryPopoverController.designer.cs">
+      <DependentUpon>HistoryPopoverController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\History\PopHistoryTableDataSource.cs" />
+    <Compile Include="DataModel\PublicationsDataManager.cs" />
+    <Compile Include="DataModel\PublicationTOCDataManager.cs" />
+    <Compile Include="DataModel\IndexDataManager.cs" />
+    <Compile Include="ViewController\PageContent\PageContentView.cs" />
+    <Compile Include="ViewController\PageContent\PageContentView.designer.cs">
+      <DependentUpon>PageContentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\PageContent\PageContentViewController.cs" />
+    <Compile Include="ViewController\PageContent\PageContentViewController.designer.cs">
+      <DependentUpon>PageContentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\LoadingView\LoadingView.cs" />
+    <Compile Include="ViewController\LoadingView\LoadingView.designer.cs">
+      <DependentUpon>LoadingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\LoadingView\LoadingViewController.cs" />
+    <Compile Include="ViewController\LoadingView\LoadingViewController.designer.cs">
+      <DependentUpon>LoadingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\PublicationContentView\PublicationContentView.cs" />
+    <Compile Include="ViewController\PublicationContentView\PublicationContentView.designer.cs">
+      <DependentUpon>PublicationContentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\PublicationContentView\PublicationContentViewController.cs" />
+    <Compile Include="ViewController\PublicationContentView\PublicationContentViewController.designer.cs">
+      <DependentUpon>PublicationContentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Login\LoginWindow.cs" />
+    <Compile Include="WindowController\Login\LoginWindow.designer.cs" />
+    <Compile Include="WindowController\Login\LoginWindowController.cs" />
+    <Compile Include="ViewController\Publications\DownloadManager.cs" />
+    <Compile Include="ViewController\PageContent\ContentWebViewDelegate.cs" />
+    <Compile Include="ViewController\PageContent\PageWebKit.cs" />
+    <Compile Include="ViewController\PageContent\PageWebKit.designer.cs">
+      <DependentUpon>PageWebKit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\ContactUsPanel.cs">
+      <DependentUpon>ContactUsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\ContactUsPanel.designer.cs">
+      <DependentUpon>ContactUsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Setting\ContactUsPanelController.cs" />
+    <Compile Include="WindowController\Setting\ContactUsPanelController.designer.cs">
+      <DependentUpon>ContactUsPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Password\ForgetPasswordWindow.cs">
+      <DependentUpon>ForgetPasswordWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Password\ForgetPasswordWindow.designer.cs">
+      <DependentUpon>ForgetPasswordWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Password\ForgetPasswordWindowController.cs" />
+    <Compile Include="WindowController\Password\ForgetPasswordWindowController.designer.cs">
+      <DependentUpon>ForgetPasswordWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotation\AnnocationsView.cs">
+      <DependentUpon>AnnocationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotation\AnnocationsView.designer.cs">
+      <DependentUpon>AnnocationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotation\AnnocationsViewController.cs" />
+    <Compile Include="ViewController\PageContent\FooterPdfPage.cs" />
+    <Compile Include="Common\Utility\ScrollViewExpand.cs" />
+    <Compile Include="Common\Utility\ExpandScrollView.cs" />
+    <Compile Include="Common\Utility\ExpandScrollView.designer.cs">
+      <DependentUpon>ExpandScrollView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Index\IndexTableRowView.cs" />
+    <Compile Include="ViewController\TOC\NSTableRowViewExtend.cs" />
+    <Compile Include="ViewController\TOC\NSTableRowViewExtend.designer.cs">
+      <DependentUpon>NSTableRowViewExtend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController\Publications\SharingServicePickerDelegate.cs">
+      <DependentUpon>PublicationsWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\SearchResults\SearchResults.cs" />
+    <Compile Include="ViewController\SearchResults\SearchResults.designer.cs">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\SearchResults\SearchResultsController.cs" />
+    <Compile Include="ViewController\SearchResults\SearchResultsController.designer.cs">
+      <DependentUpon>SearchResultsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\SearchResults\SearchTableDataSource.cs" />
+    <Compile Include="ViewController\Dictionary\LegalDefinePopView.cs" />
+    <Compile Include="ViewController\Dictionary\LegalDefinePopView.designer.cs">
+      <DependentUpon>LegalDefinePopView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Dictionary\LegalDefinePopViewController.cs" />
+    <Compile Include="ViewController\Dictionary\LegalDefinePopViewController.designer.cs">
+      <DependentUpon>LegalDefinePopViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Dictionary\DictionaryWebViewDelegate.cs" />
+    <Compile Include="ViewController\GotoPage\GoPagePopView.cs" />
+    <Compile Include="ViewController\GotoPage\GoPagePopView.designer.cs">
+      <DependentUpon>GoPagePopView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\GotoPage\GoPagePopViewController.cs" />
+    <Compile Include="ViewController\GotoPage\GoPagePopViewController.designer.cs">
+      <DependentUpon>GoPagePopViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\GotoPage\GoPageTableDataSource.cs" />
+    <Compile Include="DataModel\SearchNavigationData.cs" />
+    <Compile Include="Common\Implementation\UnZipFiles.cs" />
+    <Compile Include="ViewController\Annotations\Tag\AddTagsViewController.cs" />
+    <Compile Include="ViewController\Annotations\Tag\AddTagsView.designer.cs">
+      <DependentUpon>AddTagsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Tag\AddTagsView.cs">
+      <DependentUpon>AddTagsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Tag\AddTagsViewController.designer.cs">
+      <DependentUpon>AddTagsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Tag\EditTagsViewController.cs" />
+    <Compile Include="ViewController\Annotations\Tag\EditTagTableDataSource.cs">
+      <DependentUpon>EditTagsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Tag\EditTagsView.cs">
+      <DependentUpon>EditTagsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Tag\EditTagsView.designer.cs">
+      <DependentUpon>EditTagsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Tag\EditTagsViewController.designer.cs">
+      <DependentUpon>EditTagsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\EditTagPanelController.cs" />
+    <Compile Include="ViewController\Annotations\Other\EditTagPanel.cs">
+      <DependentUpon>EditTagPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\EditTagPanel.designer.cs">
+      <DependentUpon>EditTagPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\EditTagPanelController.designer.cs">
+      <DependentUpon>EditTagPanelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\TagPopoverControllerController.cs" />
+    <Compile Include="ViewController\Annotations\Other\TagPopoverController.cs">
+      <DependentUpon>TagPopoverControllerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\TagPopoverController.designer.cs">
+      <DependentUpon>TagPopoverControllerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\TagPopoverControllerController.designer.cs">
+      <DependentUpon>TagPopoverControllerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Tag\ColorTagButton.cs" />
+    <Compile Include="ViewController\Annotations\AnnotationOrganiser\AnnotationOrganiserViewController.cs" />
+    <Compile Include="ViewController\Annotations\AnnotationOrganiser\AnnotationOrganiserView.cs">
+      <DependentUpon>AnnotationOrganiserViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\AnnotationOrganiser\AnnotationOrganiserView.designer.cs">
+      <DependentUpon>AnnotationOrganiserViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\AnnotationOrganiser\AnnotationOrganiserViewController.designer.cs">
+      <DependentUpon>AnnotationOrganiserViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\AnnotationOrganiser\TagsTableDataSource.cs">
+      <DependentUpon>AnnotationOrganiserViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Note\AddAnnotationViewController.cs" />
+    <Compile Include="ViewController\Annotations\Note\AddAnnotationViewController.designer.cs">
+      <DependentUpon>AddAnnotationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Note\AddAnnotationView.designer.cs">
+      <DependentUpon>AddAnnotationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Note\AddAnnotationView.cs">
+      <DependentUpon>AddAnnotationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Highlight\AddHighlightViewController.cs" />
+    <Compile Include="ViewController\Annotations\Highlight\AddHighlightViewController.designer.cs">
+      <DependentUpon>AddHighlightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Highlight\AddHighlightView.designer.cs">
+      <DependentUpon>AddHighlightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Highlight\AddHighlightView.cs">
+      <DependentUpon>AddHighlightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Highlight\AHLTagsTableDataSource.cs">
+      <DependentUpon>AddHighlightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotation\AnnotationsTableDataSource.cs" />
+    <Compile Include="ViewController\Annotations\Other\TagsOrgViewController.cs" />
+    <Compile Include="ViewController\Annotations\Other\TagsOrgViewController.designer.cs">
+      <DependentUpon>TagsOrgViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\TagsOrgView.designer.cs">
+      <DependentUpon>TagsOrgViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\Other\TagsOrgView.cs">
+      <DependentUpon>TagsOrgViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainMenu.xib" />
+    <InterfaceDefinition Include="Common\Utility\ExpandGridTableView.xib">
+      <DependentUpon>ExpandGridTableView.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Publications\BookCoverView.xib">
+      <DependentUpon>BookCoverView.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Publications\PublicationView.xib">
+      <DependentUpon>PublicationView.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Publications\PublicationsView.xib">
+      <DependentUpon>PublicationsViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Publications\TriangleView.xib">
+      <DependentUpon>TriangleView.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\TOC\TocView.xib">
+      <DependentUpon>TocViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Password\ChangePasswordWindow.xib">
+      <DependentUpon>ChangePasswordWindowController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Publications\OrganizePublicationsPanel.xib">
+      <DependentUpon>OrganizePublicationsPanelController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Publications\PublicationInfoPanel.xib">
+      <DependentUpon>PublicationInfoPanelController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Publications\PublicationsWindow.xib">
+      <DependentUpon>PublicationsWindowController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Setting\LNLegalPanel.xib">
+      <DependentUpon>LNLegalPanelController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Setting\LNRedAboutPanel.xib">
+      <DependentUpon>LNRedAboutPanelController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Setting\PreferenceWindow.xib">
+      <DependentUpon>PreferenceWindowController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Setting\TermConditionsPanel.xib">
+      <DependentUpon>TermConditionsPanelController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Index\IndexView.xib">
+      <DependentUpon>IndexView.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\History\HistoryPopover.xib" />
+    <InterfaceDefinition Include="ViewController\PageContent\PageContentView.xib" />
+    <InterfaceDefinition Include="ViewController\LoadingView\LoadingView.xib" />
+    <InterfaceDefinition Include="ViewController\PublicationContentView\PublicationContentView.xib" />
+    <InterfaceDefinition Include="WindowController\Login\LoginWindow.xib" />
+    <InterfaceDefinition Include="PageWebKit.xib" />
+    <InterfaceDefinition Include="WindowController\Setting\ContactUsPanel.xib">
+      <DependentUpon>ContactUsPanelController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="WindowController\Password\ForgetPasswordWindow.xib">
+      <DependentUpon>ForgetPasswordWindowController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotation\AnnocationsView.xib">
+      <DependentUpon>AnnocationsViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="Common\Utility\ExpandScrollView.xib">
+      <DependentUpon>ExpandScrollView.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\TOC\NSTableRowViewExtend.xib">
+      <DependentUpon>NSTableRowViewExtend.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\SearchResults\SearchResults.xib" />
+    <InterfaceDefinition Include="ViewController\Dictionary\LegalDefinePopView.xib" />
+    <InterfaceDefinition Include="ViewController\GotoPage\GoPagePopView.xib" />
+    <InterfaceDefinition Include="ViewController\Annotations\Tag\AddTagsView.xib">
+      <DependentUpon>AddTagsViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotations\Tag\EditTagsView.xib">
+      <DependentUpon>EditTagsViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotations\Other\EditTagPanel.xib">
+      <DependentUpon>EditTagPanelController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotations\Other\TagPopoverController.xib">
+      <DependentUpon>TagPopoverControllerController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotations\AnnotationOrganiser\AnnotationOrganiserView.xib">
+      <DependentUpon>AnnotationOrganiserViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotations\Note\AddAnnotationView.xib">
+      <DependentUpon>AddAnnotationViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotations\Highlight\AddHighlightView.xib">
+      <DependentUpon>AddHighlightViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewController\Annotations\Other\TagsOrgView.xib">
+      <DependentUpon>TagsOrgViewController.cs</DependentUpon>
+    </InterfaceDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Insights.1.11.1\build\portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.11.1\build\portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10\Xamarin.Insights.targets')" />
+  <ItemGroup>
+    <ProjectReference Include="..\LexisNexis.Red.Common\LexisNexis.Red.Common.csproj">
+      <Project>{DB646126-0816-4769-9FFC-CD0D63524613}</Project>
+      <Name>LexisNexis.Red.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Book-assets\Download-Failed-Icon.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Download-Icon.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Download-Sash.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Expired-Sash.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Failed-Sash.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Loading-Icon.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Sash-Blue.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Sash-Red.png" />
+    <BundleResource Include="Resources\Images\Book-assets\Update-Sash.png" />
+    <BundleResource Include="Resources\Images\Content\%401x\History-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%401x\Info-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%401x\Search-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%401x\Share-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%401x\Sidebar-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%402x\History-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%402x\Info-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%402x\Search-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%402x\Share-Icon.png" />
+    <BundleResource Include="Resources\Images\Content\%402x\Sidebar-Icon.png" />
+    <BundleResource Include="Resources\Images\Login\ChangePasswordFormBackground.png" />
+    <BundleResource Include="Resources\Images\Login\LexisNexis-Logo.png" />
+    <BundleResource Include="Resources\Images\Login\loading_gif.gif" />
+    <BundleResource Include="Resources\Images\NationalFlag\AU.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\AU%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\HK.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\HK%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\MY.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\MY%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\NZ.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\NZ%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\SG.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\SG%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\CloudInstall.png" />
+    <BundleResource Include="Resources\Images\Publication\Expired-Sash.png" />
+    <BundleResource Include="Resources\Images\Setting\GearWhite.png" />
+    <BundleResource Include="Resources\Images\Setting\GearWhite%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\LexisNexisLegal.doc" />
+    <BundleResource Include="Resources\Images\Setting\LexisNexisRed.doc" />
+    <BundleResource Include="Resources\Images\Setting\Termsandconditions.doc" />
+    <BundleResource Include="Resources\Images\TOC\toc_collapse.png" />
+    <BundleResource Include="Resources\Images\TOC\toc_collapse%402x.png" />
+    <BundleResource Include="Resources\Images\TOC\toc_doc.png" />
+    <BundleResource Include="Resources\Images\TOC\toc_doc%402x.png" />
+    <BundleResource Include="Resources\Images\TOC\toc_expand.png" />
+    <BundleResource Include="Resources\Images\TOC\toc_expand%402x.png" />
+    <BundleResource Include="Resources\InfoPlist.strings" />
+    <BundleResource Include="Resources\Images\Publication\FTC.png" />
+    <BundleResource Include="Resources\HtmlTemplate\htmlDoc.html" />
+    <BundleResource Include="Resources\HtmlTemplate\waypoints.min.js" />
+    <BundleResource Include="Resources\AppleGaramond-Bold.ttf" />
+    <BundleResource Include="Resources\AppleGaramond.ttf" />
+    <BundleResource Include="Resources\Images\TOC\toc-doc-white.png" />
+    <BundleResource Include="Resources\Images\Content\%401x\Sidebar-Icon-White.png" />
+    <BundleResource Include="Resources\Images\Content\%402x\Sidebar-Icon-White%402x.png" />
+    <BundleResource Include="Resources\loading_gif.gif" />
+    <BundleResource Include="Resources\HtmlTemplate\contentDisplay.js" />
+    <BundleResource Include="Resources\HtmlTemplate\jquery-2.1.4.min.js" />
+    <BundleResource Include="Resources\HtmlTemplate\CSS\custom.css" />
+    <BundleResource Include="Resources\HtmlTemplate\CSS\LN.css" />
+    <BundleResource Include="Resources\HtmlTemplate\CSS\content.css" />
+    <BundleResource Include="Resources\cb.png" />
+    <BundleResource Include="Resources\cbcc.gif" />
+    <BundleResource Include="Resources\nzcitator.gif" />
+    <BundleResource Include="Resources\Images\Annotation\All_Icon%401x.png" />
+    <BundleResource Include="Resources\Images\Annotation\Check%401x.png" />
+    <BundleResource Include="Resources\Images\Setting\Email_Icon%401x.png" />
+    <BundleResource Include="Resources\Images\Setting\Location_Icon%401x.png" />
+    <BundleResource Include="Resources\Images\Setting\Phone_Icon%401x.png" />
+    <BundleResource Include="Resources\Red76.icns" />
+    <BundleResource Include="Resources\Dictionary\Dictionary.css" />
+    <BundleResource Include="Resources\Dictionary\Dictionary.js" />
+    <BundleResource Include="Resources\Dictionary\Dictionary.html" />
+    <BundleResource Include="Resources\Images\Setting\LexisNexisLegal.htm" />
+    <BundleResource Include="Resources\HtmlTemplate\highlight.js" />
+    <BundleResource Include="Resources\HtmlTemplate\hilitor.js" />
+    <BundleResource Include="Resources\Images\Annotation\Forward.png" />
+    <BundleResource Include="Resources\Images\Annotation\Delete.png" />
+    <BundleResource Include="Resources\Images\Annotation\Remove.png" />
+    <BundleResource Include="Resources\Images\Annotation\Add.png" />
+    <BundleResource Include="Resources\Images\Annotation\Back.png" />
+    <BundleResource Include="Resources\Images\Annotation\Check_no.png" />
+    <BundleResource Include="Resources\Images\Annotation\Tag_no.png" />
+    <BundleResource Include="Resources\Images\Annotation\arrow_down.png" />
+    <BundleResource Include="Resources\cautionary.gif" />
+    <BundleResource Include="Resources\citation.gif" />
+    <BundleResource Include="Resources\negative.gif" />
+    <BundleResource Include="Resources\neutral.gif" />
+    <BundleResource Include="Resources\positive.gif" />
+    <BundleResource Include="Resources\Images\Annotation\note.png" />
+  </ItemGroup>
+</Project>

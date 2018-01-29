@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <script src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            window.wst.startFunction();
+
+        });
+        function javacalljs() {
+            document.getElementById("content").innerHTML +=
+                "<br\>java调用了js函数";
+        }
+
+        function RenderCheckContent(nfc, taskname, checkcontent) {
+            try {
+                $("#txtnfc").val(nfc);
+                var checkContentObj = $.parseJSON(checkcontent);
+                $("#checkcontentcontainer").empty();
+                $.each(checkContentObj, function (index, val) {
+
+                    var groupname = "<div class=\"form-group\"><p class=\"help-block\" >" + val.CheckName + " </p ></div>";
+                    $("#checkcontentcontainer").append(groupname);
+                    $.each(val.Data, function (index1, val1) {
+                        
+                        var checkitemsHtml = "<div class=\"form-group\"><label for=\"exampleInputPassword1\">" + val1.CheckContent + "</label><div class=\"custom-radio\"> <label><input type=\"radio\" name=\"name1\"> 是 </label> <label><input type=\"radio\" name=\"name1\">否</label> <input type=\"text\" class=\"form-control\" name=\"remark\" placeholder=\"备注\"> </div>  </div>";
+                        $("#checkcontentcontainer").append(checkitemsHtml);
+                    });
+                });
+            } catch (err) {
+
+                $("#taskname").html(err.message);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="panel panel-default">
+            <div class="panel-heading">巡查任务上报（ <label id="taskname">##任务名称##</label> ）</div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="txtnfc">NFC</label>
+                        <input type="text" class="form-control" id="txtnfc" placeholder="NFC">
+                    </div>
+                    <div class="form-group">
+                        <p class="help-block">检查内容</p>
+                    </div>
+                    <div id="checkcontentcontainer">
+                        <!--<div class="form-group">
+                            <p class="help-block"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">消防水压是否正常</label>
+                            <div class="custom-radio">
+                                <label><input type="radio" name="name1"> 是 </label>
+                                <label><input type="radio" name="name1"> 否  </label>
+                                <input type="text" class="form-control" name="remark" placeholder="备注">
+                            </div>
+                        </div>-->
+                    </div>
+                    <button type="button" class="btn btn-primary">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

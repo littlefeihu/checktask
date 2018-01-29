@@ -1,0 +1,2 @@
+MainPackage=C:\Leo\Project\Red\LexisNexis.Red.WindowsStore\bin\x86\Testing\LexisNexis.Red.WindowsStore_4.1.1.1_Bundle\LexisNexis.Red.WindowsStore_4.1.1.1_x86_Testing.appx
+SymbolPackage=C:\Users\Cailx\Desktop\LexisNexis.Red.WindowsStore_4.1.1.1_Testing_Test\LexisNexis.Red.WindowsStore_4.1.1.1_x86_Testing.appxsym

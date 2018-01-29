@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionContentAnnotate"
+        android:showAsAction="always"
+        android:title="@string/WebView_ContextMenu_Annotate">
+    </item>
+    <item
+        android:id="@+id/actionContentLegalDefine"
+        android:showAsAction="always"
+        android:title="@string/WebView_ContextMenu_LegalDefine">
+    </item>
+    <item
+        android:id="@+id/actionContentCopy"
+        android:showAsAction="always"
+        android:title="@string/WebView_ContextMenu_Copy">
+    </item>
+</menu>

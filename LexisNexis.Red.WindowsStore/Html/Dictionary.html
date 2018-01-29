@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <meta http-equiv='Pragma' content='no-cache' />
+    <meta http-equiv='Expires' content='-1' />
+    <script src='ms-appx-web:///Html/Js/jquery.min.js'></script>
+    <script language='javascript' type='text/javascript'>
+
+        function ListenHref() {
+            $('a').click(function (e) {
+                if (this.href == null || this.href == '')
+                    return false;
+                var jsonObj = '{ type:\'href\',  value1:\'' + this.innerText + '\'}';
+                window.external.notify(jsonObj);
+                return false;
+            });
+        };
+    </script>
+    <style type='text/css'>
+        body {
+            color: Black;
+            font-size: 12px;
+            font-family:  "Helvetica Neue", "Segoe UI", "Roboto";
+            -ms-content-zooming: none;
+        }
+
+        h3 {
+            color: Black;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'Segoe UI';
+        }
+
+        .version {
+            color: Black;
+            font-size: 9px;
+            font-family: 'Segoe UI';
+            text-align: right;
+            font-style: italic;
+        }
+
+        .rootContent {
+            margin-right: 10px;
+        }
+
+        a, a:link, a:visited {
+            color: #ed1c24;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #ed1c24;
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body oncontextmenu="return false;" onload="ListenHref();">
+    <div id='content' class='rootContent'>
+
+        #BODY#
+    </div>
+</body>
+</html>

@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AU_ExpiryNotification" xml:space="preserve">
+    <value>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;p&gt; &lt;span  style="font-size:15px;font-weight:bold;color:red;"&gt;&amp;#183;Subscription Expired&lt;/span&gt;&amp;nbsp; &amp;nbsp; 
+&lt;span style="font-size:13px;font-weight:bold;"&gt;Contact 1800 772 or&lt;/span&gt;&amp;nbsp;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.au"&gt;customersupport@lexisnexis.com.au&lt;/a&gt;&lt;/p&gt;
+&lt;span style="color:#9f9f9f;"&gt;
+We would like to thank you for choosing LexisNexis to support the great work you do on daily basis,and we hope to continue
+
+being your legal content provider of choice.			
+To re-subscribe to this content and continue receiving updates please contact your Relationship manager. or Customer service on 1800 772 772 or
+
+&lt;/span&gt;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.au"&gt;customersupport@lexisnexis.com.au&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="HK_ExpiryNotification" xml:space="preserve">
+    <value>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;p&gt; &lt;span  style="font-size:15px;font-weight:bold;color:red;"&gt;&amp;#183;Subscription Expired&lt;/span&gt;&amp;nbsp; &amp;nbsp; 
+&lt;span style="font-size:13px;font-weight:bold;"&gt;Contact 1800 772 or&lt;/span&gt;&amp;nbsp;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.hk"&gt;customersupport@lexisnexis.com.hk&lt;/a&gt;&lt;/p&gt;
+&lt;span style="color:#9f9f9f;"&gt;
+We would like to thank you for choosing LexisNexis to support the great work you do on daily basis,and we hope to continue
+
+being your legal content provider of choice.			
+To re-subscribe to this content and continue receiving updates please contact your Relationship manager. or Customer service on 1800 772 772 or
+
+&lt;/span&gt;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.hk"&gt;customersupport@lexisnexis.com.hk&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="LNInfo" xml:space="preserve">
+    <value>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+ ul {list-style:none;margin:0px;padding:0px;} 
+ .mbold
+ {
+ font-weight:bold;
+ }.mred
+ {
+ color:blue;} h3
+ {
+color:#000000;
+font-size:15px;
+line-height:20px;
+font-weight:normal;
+ }
+body
+{
+color:#000000;
+font-size:12px;
+line-height:16px;
+font-weight:normal;
+}
+&lt;/style&gt;&lt;!--#Style#--&gt;
+ &lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;
+LexisNexis Legal &amp; Professional 
+&lt;/h3&gt;
+&lt;p&gt;
+ &lt;a href="http://www.lexisnexis.com" class="mred"&gt; www.lexisnexis.com&lt;/a&gt;   is a leading global provider of content and technology solutions that enable professionals in legal, corporate, tax, government, academic and non-profit organizations to make informed decisions and achieve better business outcomes.    
+&lt;/p&gt;
+&lt;p&gt;
+As a digital pioneer, the company was the first to bring legal and business information online with its Lexis&amp;reg; and Nexis&amp;reg; services. Today, LexisNexis Legal &amp; Professional harnesses leading-edge technology and world-class content, to help professionals work in faster, easier and more effective ways. Through close collaboration with its customers, the company ensures organizations can leverage its solutions to reduce risk, improve productivity, increase profitability and grow their business. Part of Reed Elsevier, LexisNexis Legal &amp; Professional serves customers in more than 100 countries with 10,000 employees worldwide.              
+&lt;/p&gt;
+&lt;p&gt;
+LexisNexis&amp;reg; is the leading provider of international news, business, tax and legal information, using leading-edge technology, tools and online solutions in New Zealand  &lt;a href="http://www.lexisnexis.co.nz" class="mred"&gt; www.lexisnexis.co.nz&lt;/a&gt; and Australia &lt;a href="http://www.lexisnexis.com.au" class="mred"&gt; www.lexisnexis.com.au&lt;/a&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="LNRedInfo" xml:space="preserve">
+    <value>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+ ul
+ {
+ list-style-type:disc;
+ margin:0px;
+ } 
+ .mbold
+ {
+ font-weight:bold;
+ }
+ .small
+ {
+ font-size:small;color:gray;}
+&lt;/style&gt;&lt;!--#Style#--&gt;
+ &lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;LexisNexis RedInfo &lt;/h3&gt;
+&lt;!--#SyncTime#--&gt;
+&lt;p&gt;
+LexisNexis Red is a mobile referencing solution providing you with access to your digital library via your iPad or laptop. LexisNexis Red was designed based on customer feedback with the needs of the Legal Practitioner in mind. LexisNexis Red provides:
+&lt;/p&gt;
+&lt;ul &gt;
+&lt;li&gt;
+An efficient way to reference the LexisNexis trusted sources of content to ensure you have the best information to hand
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The ability to carry your library with you by providing access to subscribed content in a digital format. The application is available 24/7 both online and offline.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The allowance for you to personalise your content with sticky notes and annotations so you can quickly find the information which is most relevant to you.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="MY_ExpiryNotification" xml:space="preserve">
+    <value>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;p&gt; &lt;span  style="font-size:15px;font-weight:bold;color:red;"&gt;&amp;#183;Subscription Expired&lt;/span&gt;&amp;nbsp; &amp;nbsp; 
+&lt;span style="font-size:13px;font-weight:bold;"&gt;Contact 1800 772 or&lt;/span&gt;&amp;nbsp;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.my"&gt;customersupport@lexisnexis.com.my&lt;/a&gt;&lt;/p&gt;
+&lt;span style="color:#9f9f9f;"&gt;
+We would like to thank you for choosing LexisNexis to support the great work you do on daily basis,and we hope to continue
+
+being your legal content provider of choice.			
+To re-subscribe to this content and continue receiving updates please contact your Relationship manager. or Customer service on 1800 772 772 or
+
+&lt;/span&gt;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.my"&gt;customersupport@lexisnexis.com.my&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="NZ_ExpiryNotification" xml:space="preserve">
+    <value>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;p&gt; &lt;span  style="font-size:15px;font-weight:bold;color:red;"&gt;&amp;#183;Subscription Expired&lt;/span&gt;&amp;nbsp; &amp;nbsp; 
+&lt;span style="font-size:13px;font-weight:bold;"&gt;Contact 1800 772 or&lt;/span&gt;&amp;nbsp;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.nz"&gt;customersupport@lexisnexis.com.nz&lt;/a&gt;&lt;/p&gt;
+&lt;span style="color:#9f9f9f;"&gt;
+We would like to thank you for choosing LexisNexis to support the great work you do on daily basis,and we hope to continue
+
+being your legal content provider of choice.			
+To re-subscribe to this content and continue receiving updates please contact your Relationship manager. or Customer service on 1800 772 772 or
+
+&lt;/span&gt;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.nz"&gt;customersupport@lexisnexis.com.nz&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="SG_ExpiryNotification" xml:space="preserve">
+    <value>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;p&gt; &lt;span  style="font-size:15px;font-weight:bold;color:red;"&gt;&amp;#183;Subscription Expired&lt;/span&gt;&amp;nbsp; &amp;nbsp; 
+&lt;span style="font-size:13px;font-weight:bold;"&gt;Contact 1800 772 or&lt;/span&gt;&amp;nbsp;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.sg"&gt;customersupport@lexisnexis.com.sg&lt;/a&gt;&lt;/p&gt;
+&lt;span style="color:#9f9f9f;"&gt;
+We would like to thank you for choosing LexisNexis to support the great work you do on daily basis,and we hope to continue
+
+being your legal content provider of choice.			
+To re-subscribe to this content and continue receiving updates please contact your Relationship manager. or Customer service on 1800 772 772 or
+
+&lt;/span&gt;
+&lt;a  style="font-size:13px;color:#3a8efa;" href="mailto:customersupport@lexisnexis.com.sg"&gt;customersupport@lexisnexis.com.sg&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="Terms" xml:space="preserve">
+    <value>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+ ul {list-style:none;margin:0px;padding:0px;} 
+ .mbold
+ {
+ font-weight:bold;
+ }h3
+ {
+color:#000000;
+font-size:15px;
+line-height:20px;
+font-weight:normal;
+ }
+body
+{
+color:#000000;
+font-size:12px;
+line-height:16px;
+font-weight:normal;
+}
+&lt;/style&gt;&lt;!--#Style#--&gt;
+ &lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;h3&gt;
+LICENSED APPLICATION END USER LICENSE AGREEMENT (&amp;ldquo;Agreement&amp;rdquo;) 
+&lt;/h3&gt;
+&lt;/center&gt;
+
+&lt;p&gt;
+WHEREAS:
+&lt;/p&gt;
+&lt;p&gt;
+You (&lt;span class="mbold"&gt;the individual or entity accepting this Agreement&lt;/span&gt;) agree to access and use the Licensed Application on the terms of this Agreement between you and LexisNexis, a division of Reed International Books Australia Pty Ltd (&amp;ldquo;&lt;span class="mbold"&gt;LN&lt;/span&gt;&amp;rdquo;).  Access to or use of the Licensed Application signifies your acceptance of the following terms and conditions.  If You are accepting these terms on behalf of a business entity, you hereby represent that you have the authority to do so.  If You do not agree to these terms and conditions, do not access or use the Licensed Application.
+&lt;/p&gt;
+&lt;p &gt;
+IT IS AGREED AND ACCEPTED BY YOU THAT:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+1)	Access to and use of LexisNexis Red (&amp;ldquo;&lt;span class="mbold"&gt;Product&lt;/span&gt;&amp;rdquo;) transacted through the Services, as defined below, is licensed, not sold, to You for use only under the terms of this Agreement, unless the Product is accompanied by a separate sale or subscription agreement, in which case the terms of that separate agreement will govern, subject to Your prior acceptance of that separate agreement. LN reserves all rights not expressly granted to You. The mobile digital device software application for access to and use of the Product is referred to in this Agreement as the &amp;ldquo;&lt;span class="mbold"&gt;Licensed Application&lt;/span&gt;&amp;rdquo;.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+2)	Scope of License: This license granted to You for the Licensed Application by LN is limited to a non-transferable license to use the Licensed Application on the following mobile digital devices - Apple&amp;reg; iPhone&amp;reg; or iPad&amp;trade;, or Microsoft Windows  (hereinafter &amp;ldquo;&lt;span class="mbold"&gt;Device&lt;/span&gt;&amp;rdquo;) that You own or control and where relevant, as permitted by the usage rules set forth by the developer of the Device including where relevant Section 9.b. of the App Store Terms and Conditions in respect of Apple&amp;reg; Devices (the &amp;ldquo;&lt;span class="mbold"&gt;Usage Rules&lt;/span&gt;&amp;rdquo;). This license does not allow You to use the Licensed Application on any Device that You do not own or control, and You may not distribute or make the Licensed Application available over a network where it could be used by multiple devices at the same time. You may not rent, lease, lend, sell, redistribute or sublicense the Licensed Application. You may not copy (except as expressly permitted by this license and the Usage Rules), decompile, reverse engineer, disassemble, attempt to derive the source code of, modify, or create derivative works of the Licensed Application, any updates, or any part thereof (except as and only to the extent any foregoing restriction is prohibited by applicable law or to the extent as may be permitted by the licensing terms governing use of any open sourced components included with the Licensed Application). Any attempt to do so is a violation of the rights of LN and its licensors. The terms of the license will govern any upgrades provided by LN that replace and/or supplement the original Product or Licensed Application, unless such upgrade is accompanied by a separate license in which case the terms of that license will apply.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+3)	Consent to Use of Data: You agree that LN may collect and use technical data and related information, including but not limited to technical information about Your device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to You (if any) related to the Product or Licensed Application. LN may use this information, as long as it is in a form that does not personally identify You, to improve its products or to provide services or technologies to You.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+4)	Termination: The license is effective until terminated by You or LN. Your rights under this Agreement will terminate automatically without notice from LN if You fail to comply with any term(s) of this Agreement or the terms of the corresponding sale or subscription agreement in respect of the Product. Upon termination of the license, You shall cease all use of the Licensed Application, and destroy all copies, full or partial, of the Licensed Application.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+5)	Services; Third Party Materials: The Licensed Application may enable access to LN&amp;rsquo;s and third party products, services and web sites (collectively and individually, &amp;ldquo;&lt;span class="mbold"&gt;Services&lt;/span&gt;&amp;rdquo;). Use of the Services may require Internet access and that You accept additional terms of service including additional charges for data access or downloads as may be required by LN, Your carrier or other third party providers.  You acknowledge and agree that You are solely responsible for all fees and charges applicable to all emailing, messaging, roaming connections and telephonic transactions made or received by You using the Services accessed via the Licensed Application.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+6)	You understand that by using any of the Services, You may encounter content that may be deemed offensive, indecent, or objectionable, which content may or may not be identified as having explicit language, and that the results of any search or entering of a particular URL may automatically and unintentionally generate links or references to objectionable material. Nevertheless, You agree to use the Services at Your sole risk and LN shall not have any liability to You for content that may be found to be offensive, indecent, or objectionable to the extent that LN is not responsible for such materials and to the extent of exclusion of liability permitted by law. LN is not liable to You for the accuracy or completeness of any content available through the Services.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+7)	 Certain Services may display, include or make available content, data, information, applications or materials from third parties (&amp;ldquo;&lt;span class="mbold"&gt;Third Party Materials&lt;/span&gt;&amp;rdquo;) or provide links to certain third party web sites. By using the Services, You acknowledge and agree that LN is not responsible for examining or evaluating the content, accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect of such Third Party Materials or web sites. LN does not warrant or endorse and does not assume and will not have any liability or responsibility to You or any other person for any third-party Services, Third Party Materials or web sites, or for any other materials, products, or services of third parties to the maximum extent permitted by law. Third Party Materials and links to other web sites are provided solely as a convenience to You.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+8)	&lt;span &gt;(a)&lt;/span&gt; You agree that the Product and Services contain proprietary content, information and material that is protected by applicable intellectual property and other laws, including but not limited to copyright, and that You will not use such proprietary content, information or materials in any way whatsoever except for permitted use of the Product and Services. No portion of the Product or Services may be reproduced in any form or by any means. You agree not to modify, rent, lease, loan, sell, distribute, or create derivative works based on the Product or Services, in any manner, and You shall not exploit the Product or Services in any unauthorized way whatsoever, including but not limited to, by trespass or burdening network capacity. You further agree not to use the Product or Services in any manner to harass, abuse, stalk, threaten, defame or otherwise infringe or violate the rights of any other party, and that LN is not in any way responsible for any such use by You, nor for any harassing, threatening, defamatory, offensive or illegal messages or transmissions that You may receive as a result of using any of the Product or Services.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+8)&lt;span &gt;	(b)&lt;/span&gt;  If you upload, post or publish any material to the Services, You agree and acknowledge that (i) You own or have licence to use the material; (ii) You agree that LN may use such material in order to provide You with and make improvements to the Services; (iii) You acknowledge that the material will not infringe a third party’s intellectual property right and in the event of such claim You agree to hold LexisNexis harmless against such claim on a full indemnity basis; and (iv) You will only use the features of the Services and upload any materials at your own risk.  Furthermore, You will not hold LN liable in anyway whatsoever for the maintenance, protection or security of any material that you post to the Services.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+9)	Services and Third Party Materials that may be accessed from, displayed on or linked to from any Device are not available in all languages or in all countries. LN makes no representation that such Services and Third Party Materials are appropriate or available for use in any particular location. To the extent You choose to access such Services or Third Party Materials, You do so at Your own initiative and are responsible for compliance with any applicable laws, including but not limited to applicable local laws. LN, and its licensors, reserve the right to change, suspend, remove, or disable access to any Services at any time without notice. In no event will LN be liable for the removal of or disabling of access to any such Services. LN may also impose limits on the use of or access to certain Services, in any case and without notice or liability. LN is not liable for providing Services consistent with the professional conduct standards in your jurisdiction.  You agree that if you are an attorney, you are solely responsible for compliance with applicable rules of professional responsibility and ethical obligations to your clients and potential clients arising from your use of the Product or Services in connection with their respective matters.
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+10)	If you are a “consumer” for the purposes of the Australian Consumer Law, certain guarantees may be conferred on you and certain rights and remedies may be conferred on you which cannot be excluded, restricted or modified.  If so, then to the maximum extent permitted by law, our liability to you is limited at our option to: (a) in the case of goods, replacement or repair of the goods or payment of the cost of replacing or repairing the goods; and (b) in the case of services, resupply of the services or payment of the cost of re-supplying the services.
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+11)	SUBJECT TO CLAUSE 10 AND TO THE MAXIMUM EXTENT PERMITTED BY LAW, YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT: (a) USE OF THE LICENSED APPLICATION IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU;  (b) THE LICENSED APPLICATION AND ANY SERVICES PERFORMED OR PROVIDED BY THE LICENSED APPLICATION ARE PROVIDED &amp;ldquo;AS IS&amp;ldquo; AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND.  UNLESS EXPRESSLY STATED TO THE CONTRARY IN THIS AGREEMENT, LN HEREBY DISCLAIMS ALL REPRESENTATIONS, WARRANTIES AND CONDITIONS WITH RESPECT TO THE LICENSED APPLICATION AND ANY SERVICES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT. LN DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE LICENSED APPLICATION, THAT THE FUNCTIONS CONTAINED IN, OR SERVICES PERFORMED OR PROVIDED BY, THE LICENSED APPLICATION WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE LICENSED APPLICATION OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE LICENSED APPLICATION OR SERVICES WILL BE CORRECTED. TO THE MAXIMUM EXTENT PERMITTED BY LAW, NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY LN OR ITS AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY.
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+12)	IN NO EVENT SHALL LN BE LIABLE ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE LICENSED APPLICATION, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF LN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTHING IN THIS AGREEMENT IS INTENDED TO LIMIT LIABILITY FOR DEATH, PERSONAL INJURY OR FRAUD. SUBJECT TO CLAUSE 10 AND TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AGGREGATE LIABILITY OF LN WHETHER FOR BREACH OF THIS AGREEMENT OR IN TORT (INCLUDING NEGLIGENCE) OR FOR ANY OTHER COMMON LAW OR STATUTORY CAUSE OF ACTION SHALL NOT EXCEED THE AMOUNT OF FIFTY DOLLARS ($50.00).
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+13)	You may not use or otherwise export or re-export the Licensed Application except as authorised by the laws of the jurisdiction in which the Licensed Application was obtained.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+14)	The laws of New South Wales govern this Agreement and your use of the Licensed Application. The Courts of New South Wales shall have sole jurisdiction.
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+15)	Under no circumstances may you redistribute the Product or Third Party Materials commercially or post any of the Products or Third Party Materials on an intranet, internet, cloud or other platform or site whatsoever. Any transfer of the Materials shall be to an individual person only and will subject the transferee to these terms and conditions. Finally, use of the Products and Third Party Materials are further subject to the terms and conditions of use which were accepted at the time you completed your purchase of the Products and/or Third Party Materials from the App Store.
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;span class="mbold"&gt;BY DOWNLOADING, INSTALLING AND/OR USING THE LICENSED APPLICATION YOU ACCEPT AND AGREE TO THESE TERMS AND CONDITIONS.&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+</root>

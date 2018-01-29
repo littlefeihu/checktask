@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7443F05B-2B8B-4509-A5B7-0821018C14EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LexisNexis.Red.CommonTests</RootNamespace>
+    <AssemblyName>LexisNexis.Red.CommonTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>1dc4ba75</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|AnyCPU' ">
+    <OutputPath>bin\PreViewRelease\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <OutputPath>bin\Testing\</OutputPath>
+    <DefineConstants>TRACE;TESTTING</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>Lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\LexisNexis.Red.CommonTests.WPF\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCL.raw, Version=0.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\LexisNexis.Red.CommonTests.WPF\packages\SQLitePCL.raw_basic.0.7.1\lib\net45\SQLitePCL.raw.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.JustMock">
+      <HintPath>..\packages\JustMock.2015.1.224.3\lib\Net35\Telerik.JustMock.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LexisNexis.Red.Common\LexisNexis.Red.Common.csproj">
+      <Project>{DB646126-0816-4769-9FFC-CD0D63524613}</Project>
+      <Name>LexisNexis.Red.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\AnnCategorytagUtilTests\AnnCategorytagUtilTest.cs" />
+    <Compile Include="Business\AnnCategorytagUtilTests\AnnCategorytagUtil_SetUp.cs" />
+    <Compile Include="Business\AnnotationSyncTests\AnnotationDownloadTest.cs" />
+    <Compile Include="Business\AnnotationSyncTests\AnnotationEditTest.cs" />
+    <Compile Include="Business\Custom_SetUpFixture.cs" />
+    <Compile Include="Business\DateTimeUTCTest.cs" />
+    <Compile Include="Business\DictionaryTests\DictionaryTests_Search.cs" />
+    <Compile Include="Business\NavigationTests\NavigationManageTests.cs" />
+    <Compile Include="Business\PageSearchTests\PageSearch_Test.cs" />
+    <Compile Include="Business\PDFTests\PDFTests.cs" />
+    <Compile Include="Business\PingTest.cs" />
+    <Compile Include="Business\PublicationUtilTests\PublicationUtilTest_GetPublicationOnline.cs" />
+    <Compile Include="Business\SearchTests\SearchTests_Search.cs" />
+    <Compile Include="Business\SegmentTests\SegmentTests_Analyse.cs" />
+    <Compile Include="Business\SqliteTest.cs" />
+    <Compile Include="Business\LoggerTest.cs" />
+    <Compile Include="Business\LoginUtilTests\LoginUtilTests_ChangePassword.cs" />
+    <Compile Include="Business\LoginUtilTests\LoginUtilTests_SetUp.cs" />
+    <Compile Include="Business\LoginUtilTests\LoginUtilTests_ValidateUserInfo.cs" />
+    <Compile Include="Business\LoginUtilTests\LoginUtilTests_ResetPassword.cs" />
+    <Compile Include="Business\LoginUtilTests\LoginUtilTests_ValidateUserLogin.cs" />
+    <Compile Include="Business\PublicationContentUtilTests\PublicationContentUtilTest.cs" />
+    <Compile Include="Business\PublicationContentUtilTests\PublicationContentUtil_SetUp.cs" />
+    <Compile Include="Business\PublicationUtilTests\PublicationUtilTest_SetUp.cs" />
+    <Compile Include="Business\PublicationUtilTests\PublicationUtilTest_DownloadPublicationByBookId.cs" />
+    <Compile Include="Business\PublicationUtilTests\PublicationUtilTest_GetPublicationOffline.cs" />
+    <Compile Include="Business\SettingsUtilTests\SettingsUtilTest.cs" />
+    <Compile Include="Business\TestHelper.cs" />
+    <Compile Include="Business\TestInit.cs" />
+    <Compile Include="Database\PublicationAccessTest.cs" />
+    <Compile Include="Database\DataBaseParallelTest.cs" />
+    <Compile Include="Database\RecentAccessTests.cs" />
+    <Compile Include="HelpClass\DbHelperTests.cs" />
+    <Compile Include="HelpClass\ExtensionMethodsTests.cs" />
+    <Compile Include="HelpClass\GlobalApp.cs" />
+    <Compile Include="HelpClass\ConnectionMonitorTests.cs" />
+    <Compile Include="HelpClass\OrphanItemsServiceTest.cs" />
+    <Compile Include="HelpClass\RedLockTests.cs" />
+    <Compile Include="HelpClass\ServiceAgentTests.cs" />
+    <Compile Include="Impl\Cryptogram.cs" />
+    <Compile Include="Impl\Device.cs" />
+    <Compile Include="Impl\MyDirectory.cs" />
+    <Compile Include="Impl\Network.cs" />
+    <Compile Include="Impl\PackageFile.cs" />
+    <Compile Include="Impl\HtmlHelper.cs" />
+    <Compile Include="Interface\ConnectionMonitor_MOCK.cs" />
+    <Compile Include="Services\SyncServiceTests.cs" />
+    <Compile Include="Sqlite\SqliteTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="XpathTest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="..\LexisNexis.Red.CommonTests.WPF\packages\SQLitePCL.raw_basic.0.7.1\build\net45\SQLitePCL.raw_basic.targets" Condition="Exists('..\LexisNexis.Red.CommonTests.WPF\packages\SQLitePCL.raw_basic.0.7.1\build\net45\SQLitePCL.raw_basic.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\LexisNexis.Red.CommonTests.WPF\packages\SQLitePCL.raw_basic.0.7.1\build\net45\SQLitePCL.raw_basic.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\LexisNexis.Red.CommonTests.WPF\packages\SQLitePCL.raw_basic.0.7.1\build\net45\SQLitePCL.raw_basic.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{DD11269A-E007-40C8-BA19-AD7AC2FCDAB5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LexisNexis.Red.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchExtraArgs>-aot "nrgctx-trampolines=4096" -aot "nimt-trampolines=4096" -aot "ntrampolines=4096"
+</MtouchExtraArgs>
+    <AssemblyName>LexisNexis.Red</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <AssemblyName>LexisNexis.Red</AssemblyName>
+    <DefineConstants>RELEASE;</DefineConstants>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer: 明洲 傅 (48FG945736)</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <IpaPackageName>LexisNexisRed.ipa</IpaPackageName>
+    <AssemblyName>LexisNexis.Red</AssemblyName>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <IpaMetadata>Info.plist</IpaMetadata>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AssemblyName>LexisNexis.Red</AssemblyName>
+    <DefineConstants>RELEASE;</DefineConstants>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <IpaMetadata>Info.plist</IpaMetadata>
+    <IpaPackageName>LexisNexisRed.ipa</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <AssemblyName>LexisNexis.Red</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer: 明洲 傅 (48FG945736)</CodesignKey>
+    <AssemblyName>LexisNexis.Red</AssemblyName>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|iPhone' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Preview</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LexisNexis.Red.iOS</AssemblyName>
+    <CodesignKey>iPhone Distribution: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</CodesignKey>
+    <DefineConstants>PREVIEW;</DefineConstants>
+    <IpaPackageName>LexisNexisRed.ipa</IpaPackageName>
+    <DebugSymbols>true</DebugSymbols>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignProvision>2c331ffa-f4c6-4a1c-a7ab-3b3c7ba29730</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <IpaMetadata>Info.plist</IpaMetadata>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|iPhoneSimulator' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Preview</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LexisNexis.Red.iOS</AssemblyName>
+    <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+    <DefineConstants>PREVIEW;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Preview</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LexisNexis.Red.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Testing|iPhone' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Testing</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LexisNexis.Red.iOS</AssemblyName>
+    <CodesignKey>iPhone Developer: Fred Fu (QZG36EPF7Y)</CodesignKey>
+    <CodesignProvision>b3b06189-84a6-44e6-8dda-954982af65cf</CodesignProvision>
+    <IpaPackageName>LexisNexisRed.ipa</IpaPackageName>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <IpaMetadata>Info.plist</IpaMetadata>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Testing|iPhoneSimulator' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Testing</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LexisNexis.Red.iOS</AssemblyName>
+    <CodesignProvision>2c331ffa-f4c6-4a1c-a7ab-3b3c7ba29730</CodesignProvision>
+    <CodesignKey>iPhone Distribution: REED INTERNATIONAL BOOKS AUSTRALIA PTY LIMITED (8Q4N4FU2LX)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Testing|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Testing</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LexisNexis.Red.iOS</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Connectivity.Plugin">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.1.0.2\lib\Xamarin.iOS10\Connectivity.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Connectivity.Plugin.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.1.0.2\lib\Xamarin.iOS10\Connectivity.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="ICSharpCode.SharpZipLib.Portable">
+      <HintPath>..\packages\SharpZipLib.Portable.0.86.0.0002\lib\portable-net45+netcore45+wp8+win8+wpa81+MonoTouch+MonoAndroid\ICSharpCode.SharpZipLib.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="MBProgressHUD">
+      <HintPath>..\packages\mbprogresshud-0.9.0.2\lib\ios-unified\MBProgressHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="ZipArchive">
+      <HintPath>..\Components\ZipArchive-1.4.0.1\lib\ios-unified\ZipArchive.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\packages\Xamarin.Insights.1.11.1\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCrashReporterUnifiedBinding">
+      <HintPath>..\packages\Xamarin.Insights.1.11.1\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack-PCL">
+      <HintPath>..\packages\HtmlAgilityPack-PCL.1.4.6\lib\HtmlAgilityPack-PCL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\76x76.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\152x152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+    <InterfaceDefinition Include="Publication\Annotation\PublicationAnnotationCell.xib" />
+    <InterfaceDefinition Include="Publication\Info\PublicationInfoModalController.xib" />
+    <InterfaceDefinition Include="Annotation\CustomizedAnnotationTableViewCell.xib" />
+    <InterfaceDefinition Include="Tag\View\CustomizeTagTableViewCell.xib" />
+    <InterfaceDefinition Include="Setting\View\PublicationTextSettingController.xib" />
+    <InterfaceDefinition Include="Setting\View\SettingTableViewItem.xib" />
+    <InterfaceDefinition Include="Login\View\ChangePasswordController.xib" />
+    <InterfaceDefinition Include="Publication\History\View\CustomizedHistoryTableViewCell.xib" />
+    <InterfaceDefinition Include="Publication\History\View\CustomizedPopoverHisoryTableViewCell.xib" />
+    <InterfaceDefinition Include="Publication\TableOfContent\View\CustomizedTableOfContentCell.xib" />
+    <InterfaceDefinition Include="Search\Content\View\CustomizedResultTableViewCell.xib" />
+    <InterfaceDefinition Include="Search\Content\View\ResultViewController.xib" />
+    <InterfaceDefinition Include="Publication\Content\View\GotoTableViewControllerCell.xib" />
+    <InterfaceDefinition Include="Publication\Content\View\PBOPageNavigation.storyboard" />
+    <InterfaceDefinition Include="Publication\Annotation\LegalDefine\LegalDefineViewController.xib" />
+    <InterfaceDefinition Include="Setting\Controller\ContactUsViewController.xib" />
+    <InterfaceDefinition Include="Publication\Annotation\NoteText\View\NoteTextTagEditController.xib" />
+    <InterfaceDefinition Include="Publication\Annotation\NoteText\View\NoteTextTagViewCell.xib" />
+    <InterfaceDefinition Include="Publication\Annotation\NoteText\View\NoteTextNavgation.storyboard" />
+    <InterfaceDefinition Include="Resources\Publication\Annotation\Highlight\HighlightTableViewControllerCell.xib" />
+    <InterfaceDefinition Include="Publication\Annotation\Highlight\View\HighlightTableViewControllerCell.xib" />
+    <InterfaceDefinition Include="Tag\View\TagEditstory.storyboard" />
+    <InterfaceDefinition Include="Tag\View\PopoverTagManage.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Common\Implementation\FileDirectory.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Common\Implementation\Cryptogram.cs" />
+    <Compile Include="Common\Util\ColorUtil.cs" />
+    <Compile Include="Common\Util\LangUtil.cs" />
+    <Compile Include="Common\Util\TextDisplayUtil.cs" />
+    <Compile Include="Common\Util\AppDataUtil.cs" />
+    <Compile Include="Common\Core\Observer.cs" />
+    <Compile Include="Common\Core\Subject.cs" />
+    <Compile Include="Common\Util\AppDisplayUtil.cs" />
+    <Compile Include="Common\Implementation\DeviceNetwork.cs" />
+    <Compile Include="Common\Implementation\Device.cs" />
+    <Compile Include="Common\Implementation\PackageFile.cs" />
+    <Compile Include="Common\View\CircularProgressView.cs" />
+    <Compile Include="Common\View\DoubleCircleView.cs" />
+    <Compile Include="Common\View\LNBadageBarButtonItem.cs" />
+    <Compile Include="Common\View\LNWebview.cs" />
+    <Compile Include="Common\View\TripleCircleView.cs" />
+    <Compile Include="Common\View\ViewConstant.cs" />
+    <Compile Include="Publication\Annotation\AnnotationController.cs" />
+    <Compile Include="Publication\Annotation\AnnotationController.designer.cs">
+      <DependentUpon>..\..\Controllers\Publication\Annotation\AnnotationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\PublicationAnnotationCell.cs" />
+    <Compile Include="Publication\Annotation\PublicationAnnotationCell.designer.cs">
+      <DependentUpon>..\..\Controllers\Publication\Annotation\PublicationAnnotationCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\PublicationAnnotationTableViewController.cs" />
+    <Compile Include="Publication\Annotation\PublicationAnnotationTableViewController.designer.cs">
+      <DependentUpon>..\..\Controllers\Publication\Annotation\PublicationAnnotationTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Content\LNWebViewDelegate.cs" />
+    <Compile Include="Publication\Index\IndexController.cs" />
+    <Compile Include="Publication\Index\IndexController.designer.cs">
+      <DependentUpon>..\..\Controllers\Publication\Index\IndexController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Index\IndexTableViewCell.cs" />
+    <Compile Include="Publication\Info\PublicationInfoModalController.cs" />
+    <Compile Include="Publication\Info\PublicationInfoModalController.designer.cs">
+      <DependentUpon>..\..\Controllers\Publication\Info\PublicationInfoModalController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\MyPublicationViewController.cs" />
+    <Compile Include="Publication\MyPublicationViewController.designer.cs">
+      <DependentUpon>..\Controllers\Publication\MyPublicationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Sorting\PublicationSortingCell.cs" />
+    <Compile Include="Publication\Sorting\PublicationSortingController.cs" />
+    <Compile Include="Publication\Sorting\PublicationSortingSource.cs" />
+    <Compile Include="Publication\TableOfContent\TableOfContentController.cs" />
+    <Compile Include="Publication\TableOfContent\TableOfContentController.designer.cs">
+      <DependentUpon>..\..\Controllers\Publication\TableOfContent\TableOfContentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\TableOfContent\TableOfContentTableViewController.cs" />
+    <Compile Include="Publication\TableOfContent\TableOfContentTableViewSource.cs" />
+    <Compile Include="Common\Controller\HomeTabBarController.cs" />
+    <Compile Include="Common\Controller\HomeTabBarController.designer.cs">
+      <DependentUpon>HomeTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Annotation\AnnotationListViewController.cs" />
+    <Compile Include="Annotation\AnnotationListViewController.designer.cs">
+      <DependentUpon>..\Controllers\Annotation\AnnotationListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Annotation\AnnotationsManageController.cs" />
+    <Compile Include="Annotation\AnnotationsManageController.designer.cs">
+      <DependentUpon>..\Controllers\Annotation\AnnotationsManageController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Annotation\AnnotationTableViewCell.cs" />
+    <Compile Include="Annotation\AnnotationTableViewController.cs" />
+    <Compile Include="Annotation\AnnotationTableViewSource.cs" />
+    <Compile Include="Annotation\CustomizedAnnotationTableViewCell.cs" />
+    <Compile Include="Annotation\CustomizedAnnotationTableViewCell.designer.cs">
+      <DependentUpon>..\Controllers\Annotation\CustomizedAnnotationTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\View\PublicationCover.cs" />
+    <Compile Include="Publication\View\PublicationView.cs" />
+    <Compile Include="Publication\View\TriangleView.cs" />
+    <Compile Include="Tag\View\AllTagView.cs" />
+    <Compile Include="Tag\View\ColorCollectionViewCell.cs" />
+    <Compile Include="Tag\View\ColorCollectionViewCell.designer.cs">
+      <DependentUpon>ColorCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tag\View\TagFilterView.cs" />
+    <Compile Include="Tag\Controller\ColorCollectionViewController.cs" />
+    <Compile Include="Tag\Controller\ColorCollectionViewController.designer.cs">
+      <DependentUpon>..\..\Controllers\Tag\ColorCollectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tag\Controller\TagEditViewController.cs" />
+    <Compile Include="Tag\Controller\TagEditViewController.designer.cs">
+      <DependentUpon>..\..\Controllers\Tag\TagEditViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tag\Controller\TagTableViewController.cs" />
+    <Compile Include="Tag\Controller\UserTagTableViewController.cs" />
+    <Compile Include="Tag\Controller\UserTagTableViewController.designer.cs">
+      <DependentUpon>..\..\Controllers\Tag\UserTagTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tag\View\CustomizeTagTableViewCell.cs" />
+    <Compile Include="Tag\View\CustomizeTagTableViewCell.designer.cs">
+      <DependentUpon>..\..\Controllers\Tag\CustomizeTagTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tag\View\TagColorCollectionViewCell.cs" />
+    <Compile Include="Tag\View\TagTableViewCell.cs" />
+    <Compile Include="Setting\View\AboutListCell.cs" />
+    <Compile Include="Setting\View\HelpListCell.cs" />
+    <Compile Include="Setting\Controller\AboutListController.cs" />
+    <Compile Include="Setting\Controller\HelpListController.cs" />
+    <Compile Include="Setting\Controller\PublicationTextSettingController.cs" />
+    <Compile Include="Setting\Controller\PublicationTextSettingController.designer.cs">
+      <DependentUpon>..\..\Controllers\Setting\PublicationTextSettingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\Controller\SettingListController.cs" />
+    <Compile Include="Setting\Controller\SettingTableViewItem.cs" />
+    <Compile Include="Setting\Controller\SettingTableViewItem.designer.cs">
+      <DependentUpon>..\..\Controllers\Setting\SettingTableViewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\View\RegionsTableViewCell.cs" />
+    <Compile Include="Login\Controller\ChangePasswordController.cs" />
+    <Compile Include="Login\Controller\ChangePasswordController.designer.cs">
+      <DependentUpon>..\..\Controllers\Login\ChangePasswordController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Controller\LoginInterceptorViewController.cs" />
+    <Compile Include="Login\Controller\LoginInterceptorViewController.designer.cs">
+      <DependentUpon>..\..\Controllers\Login\LoginInterceptorViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Controller\LoginViewController.cs" />
+    <Compile Include="Login\Controller\LoginViewController.designer.cs">
+      <DependentUpon>..\..\Controllers\Login\LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Controller\RegionsTableViewController.cs" />
+    <Compile Include="Login\Controller\ResetPasswordViewController.cs" />
+    <Compile Include="Login\Controller\ResetPasswordViewController.designer.cs">
+      <DependentUpon>..\..\Controllers\Login\ResetPasswordViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Content\Controller\ContentLeftTabBarController.cs" />
+    <Compile Include="Publication\Content\Controller\ContentLeftTabBarController.designer.cs">
+      <DependentUpon>..\..\..\Controllers\Publication\Content\ContentLeftTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Content\Controller\ContentViewController.cs" />
+    <Compile Include="Publication\Content\Controller\ContentViewController.designer.cs">
+      <DependentUpon>..\..\..\Controllers\Publication\Content\ContentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Content\Controller\PublicationDetailController.cs" />
+    <Compile Include="Publication\Content\Controller\PublicationDetailController.designer.cs">
+      <DependentUpon>..\..\..\Controllers\Publication\Content\PublicationDetailController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\History\View\CustomizedHistoryTableViewCell.cs" />
+    <Compile Include="Publication\History\View\CustomizedHistoryTableViewCell.designer.cs">
+      <DependentUpon>..\..\..\Controllers\Publication\History\CustomizedHistoryTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\History\View\CustomizedPopoverHisoryTableViewCell.cs" />
+    <Compile Include="Publication\History\View\CustomizedPopoverHisoryTableViewCell.designer.cs">
+      <DependentUpon>..\..\..\Controllers\Publication\History\CustomizedPopoverHisoryTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\History\View\HistoryTableViewCell.cs" />
+    <Compile Include="Publication\History\View\PopoverHistoryTableViewCell.cs" />
+    <Compile Include="Publication\History\Controller\HistoryTableViewController.cs" />
+    <Compile Include="Publication\History\Controller\PopoverHistoryTableViewController.cs" />
+    <Compile Include="Tag\Model\Tag.cs" />
+    <Compile Include="Common\Lib\Network\Reachability.cs" />
+    <Compile Include="Tag\View\TagsButton.cs" />
+    <Compile Include="Tag\Controller\TagTableViewSource.cs" />
+    <Compile Include="Tag\Controller\UserTagTableViewSource.cs" />
+    <Compile Include="Setting\Controller\AboutListSource.cs" />
+    <Compile Include="Setting\Controller\HelpListSource.cs" />
+    <Compile Include="Setting\Controller\SettingListSource.cs" />
+    <Compile Include="Publication\Content\Model\OpenedPublication.cs" />
+    <Compile Include="Publication\Content\Model\PublicationContentTypeEnum.cs" />
+    <Compile Include="Publication\View\PublicationViewFactory.cs" />
+    <Compile Include="Login\Controller\RegionsTableViewSource.cs" />
+    <Compile Include="Publication\History\Controller\HistoryTableViewSource.cs" />
+    <Compile Include="Publication\History\Controller\PopoverHistoryTableViewSource.cs" />
+    <Compile Include="Publication\TableOfContent\Model\TOCNodeTree.cs" />
+    <Compile Include="Publication\TableOfContent\View\TableOfContentTableViewCell.cs" />
+    <Compile Include="Publication\TableOfContent\View\CustomizedTableOfContentCell.cs" />
+    <Compile Include="Publication\TableOfContent\View\CustomizedTableOfContentCell.designer.cs">
+      <DependentUpon>..\..\..\Controllers\Publication\TableOfContent\CustomizedTableOfContentCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Content\View\CustomizedResultTableViewCell.cs" />
+    <Compile Include="Search\Content\View\CustomizedResultTableViewCell.designer.cs">
+      <DependentUpon>CustomizedResultTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Content\View\DocTypeFilterTableViewCell.cs" />
+    <Compile Include="Search\Content\Controller\DocTypeFilterTableViewController.cs" />
+    <Compile Include="Search\Content\Controller\DocTypeFilterTableViewSource.cs" />
+    <Compile Include="Search\Content\Controller\ResultTableViewController.cs" />
+    <Compile Include="Search\Content\Controller\ResultTableViewSource.cs" />
+    <Compile Include="Search\Content\Controller\ResultViewController.cs" />
+    <Compile Include="Search\Content\Controller\ResultViewController.designer.cs">
+      <DependentUpon>ResultViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Content\View\ResultTableViewCell.cs" />
+    <Compile Include="Publication\Index\IndexTableViewController.cs" />
+    <Compile Include="Publication\Index\IndexTableViewController.designer.cs">
+      <DependentUpon>IndexTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Content\IndexSearchBarDelegate.cs" />
+    <Compile Include="Search\Content\TOCSearchBarDelegate.cs" />
+    <Compile Include="Publication\Content\Controller\GotoCollectionReusableView.cs" />
+    <Compile Include="Publication\Content\Controller\GotoCollectionReusableView.designer.cs">
+      <DependentUpon>GotoCollectionReusableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Content\Controller\GotoCollectionViewController.cs" />
+    <Compile Include="Publication\Content\Controller\GotoCollectionViewController.designer.cs">
+      <DependentUpon>GotoCollectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Content\Controller\GotoTableViewControllerController.cs" />
+    <Compile Include="Publication\Content\Controller\GotoTableViewControllerSource.cs" />
+    <Compile Include="Publication\Content\View\GotoCollectionViewCell.cs" />
+    <Compile Include="Publication\Content\View\GotoTableViewControllerCell.cs" />
+    <Compile Include="Common\Util\ContentFormatUtil.cs" />
+    <Compile Include="Publication\Annotation\LegalDefine\LegalDefineViewController.cs" />
+    <Compile Include="Publication\Annotation\LegalDefine\LegalDefineViewController.designer.cs">
+      <DependentUpon>LegalDefineViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\LegalDefine\LegalWebViewDelegate.cs" />
+    <Compile Include="Setting\View\ContactUsViewController.cs" />
+    <Compile Include="Setting\View\ContactUsViewController.designer.cs">
+      <DependentUpon>ContactUsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextNewTagAnnotationController.cs" />
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextTagEditController.cs" />
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextTagViewController.cs" />
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextTagViewSource.cs" />
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextTagEditViewController.cs" />
+    <Compile Include="Publication\Annotation\NoteText\View\NoteTextTagViewCell.cs" />
+    <Compile Include="Publication\Annotation\NoteText\View\NoteTextTagViewCell.designer.cs">
+      <DependentUpon>NoteTextTagViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextTagViewController.designer.cs">
+      <DependentUpon>NoteTextTagViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextTagEditViewController.designer.cs">
+      <DependentUpon>NoteTextTagEditViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextTagEditController.designer.cs">
+      <DependentUpon>NoteTextTagEditController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteTextNewTagAnnotationController.designer.cs">
+      <DependentUpon>NoteTextNewTagAnnotationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteViewController.cs" />
+    <Compile Include="Publication\Annotation\NoteText\Controller\NoteViewController.designer.cs">
+      <DependentUpon>NoteViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\Highlight\View\HighlightTableViewControllerCell.cs" />
+    <Compile Include="Publication\Annotation\Highlight\View\HighlightTableViewControllerCell.designer.cs">
+      <DependentUpon>HighlightTableViewControllerCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication\Annotation\Highlight\Controller\HighlightTableViewControllerController.cs" />
+    <Compile Include="Publication\Annotation\Highlight\Controller\HighlightTableViewControllerSource.cs" />
+    <Compile Include="Publication\Content\ContentPrintPageRender.cs" />
+    <Compile Include="Common\Util\PdfUtil.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\SQLitePCL.raw_basic.0.8.0\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.0\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets')" />
+  <Import Project="..\packages\Xamarin.Insights.1.11.1\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.11.1\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Common\" />
+    <Folder Include="Resources\Images\Login\" />
+    <Folder Include="Resources\Images\Publication\" />
+    <Folder Include="Common\Implementation\" />
+    <Folder Include="Resources\Images\NationalFlag\" />
+    <Folder Include="Resources\Images\Setting\" />
+    <Folder Include="Resources\Lang\" />
+    <Folder Include="Resources\Lang\en\" />
+    <Folder Include="Resources\Images\Navigation\" />
+    <Folder Include="Resources\Images\Annotation\" />
+    <Folder Include="Common\Util\" />
+    <Folder Include="Resources\Images\Publication\TOC\" />
+    <Folder Include="Common\Core\" />
+    <Folder Include="Resources\Images\Publication\Cover\" />
+    <Folder Include="Resources\Images\Publication\TabBar\" />
+    <Folder Include="Resources\Html\" />
+    <Folder Include="Resources\Images\Content\" />
+    <Folder Include="Common\View\" />
+    <Folder Include="Common\Controller\" />
+    <Folder Include="Publication\View\" />
+    <Folder Include="Tag\View\" />
+    <Folder Include="Tag\Controller\" />
+    <Folder Include="Tag\Model\" />
+    <Folder Include="Setting\View\" />
+    <Folder Include="Setting\Controller\" />
+    <Folder Include="Setting\Model\" />
+    <Folder Include="Login\View\" />
+    <Folder Include="Login\Controller\" />
+    <Folder Include="Login\Model\" />
+    <Folder Include="Publication\Content\Controller\" />
+    <Folder Include="Publication\History\Controller\" />
+    <Folder Include="Publication\History\View\" />
+    <Folder Include="Publication\History\Model\" />
+    <Folder Include="Publication\TableOfContent\Model\" />
+    <Folder Include="Publication\TableOfContent\View\" />
+    <Folder Include="Search\" />
+    <Folder Include="Search\Content\" />
+    <Folder Include="Search\Content\View\" />
+    <Folder Include="Search\Content\Controller\" />
+    <Folder Include="Publication\Content\View\" />
+    <Folder Include="Publication\Annotation\NoteText\" />
+    <Folder Include="Publication\Annotation\LegalDefine\" />
+    <Folder Include="Publication\Annotation\Highlight\" />
+    <Folder Include="Publication\Annotation\Highlight\View\" />
+    <Folder Include="Publication\Annotation\Highlight\Controller\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\NationalFlag\AU.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\AU%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\HK.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\HK%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\MY.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\MY%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\NZ.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\NZ%402x.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\SG.png" />
+    <BundleResource Include="Resources\Images\NationalFlag\SG%402x.png" />
+    <BundleResource Include="Resources\Images\Login\ChangePasswordFormBackground.png" />
+    <BundleResource Include="Resources\Images\Setting\GearWhite.png" />
+    <BundleResource Include="Resources\Images\Setting\GearWhite%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\Gear.png" />
+    <BundleResource Include="Resources\Images\Navigation\BackIcon.png" />
+    <BundleResource Include="Resources\Images\Annotation\Note.png" />
+    <BundleResource Include="Resources\Images\Navigation\ShareIcon.png" />
+    <BundleResource Include="Resources\Images\Navigation\HistoryIcon.png" />
+    <BundleResource Include="Resources\Images\Navigation\InfoIcon.png" />
+    <BundleResource Include="Resources\Images\Navigation\SidebarIcon.png" />
+    <BundleResource Include="Resources\Images\Navigation\TagsIcon.png" />
+    <BundleResource Include="Resources\Images\Navigation\SettingsIcon.png" />
+    <BundleResource Include="Resources\Images\Navigation\HistoryIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\InfoIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\SettingsIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\ShareIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\SidebarIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\TagsIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\HistoryIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Navigation\InfoIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Navigation\SettingsIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Navigation\ShareIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Navigation\SidebarIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Navigation\TagsIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Navigation\GrayForwardArrow.png" />
+    <BundleResource Include="Resources\Images\Navigation\GrayForwardArrow%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\GrayForwardArrow%403x.png" />
+    <BundleResource Include="Resources\Images\Navigation\RedBackArrow.png" />
+    <BundleResource Include="Resources\Images\Navigation\RedBackArrow%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\RedBackArrow%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\PlusCasesSash.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\PlusCasesSash%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\PlusCasesSash%403x.png" />
+    <BundleResource Include="Resources\AppleGaramond.ttf" />
+    <BundleResource Include="Resources\AppleGaramond-Bold.ttf" />
+    <BundleResource Include="Resources\Images\Setting\About.png" />
+    <BundleResource Include="Resources\Images\Setting\Account.png" />
+    <BundleResource Include="Resources\Images\Setting\Help.png" />
+    <BundleResource Include="Resources\Images\Setting\Text.png" />
+    <BundleResource Include="Resources\Images\Setting\About%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\Account%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\Help%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\Text%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\About%403x.png" />
+    <BundleResource Include="Resources\Images\Setting\Account%403x.png" />
+    <BundleResource Include="Resources\Images\Setting\Help%403x.png" />
+    <BundleResource Include="Resources\Images\Setting\Text%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\DownloadFailed%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\DownloadFailed.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\DownloadFailed%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\CloudInstall.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\CloudInstall%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\Cover\CloudInstall%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\PageIconWhite%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\PageIconWhite%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\PageIconWhite.png" />
+    <BundleResource Include="Resources\Images\Navigation\SidebarIconWhite.png" />
+    <BundleResource Include="Resources\Images\Navigation\SidebarIconWhite%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\SidebarIconWhite%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\PageIcon.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\PageIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\PageIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\DownArrow.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\DownArrow%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\TOC\DownArrow%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\PublicationsTabBarIcon.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\PublicationsTabBarIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\PublicationsTabBarIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\PublicationsTabBarSelected.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\PublicationsTabBarSelected%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\PublicationsTabBarSelected%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\AnnotationsTabBarIcon.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\AnnotationsTabBarIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\AnnotationsTabBarIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\AnnotationsTabBarSelectedIcon.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\AnnotationsTabBarSelectedIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\AnnotationsTabBarSelectedIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\IndexTabBarIcon.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\IndexTabBarIcon%402x.png" />
+    <BundleResource Include="Resources\Html\htmlDoc.html" />
+    <BundleResource Include="Resources\Images\Content\Loading.gif" />
+    <BundleResource Include="Resources\Html\JS\jquery.scrollTo.min.js" />
+    <BundleResource Include="Resources\Html\JS\jquery-1.8.3.min.js" />
+    <BundleResource Include="Resources\Html\JS\infinitescroll.js" />
+    <BundleResource Include="Resources\Images\Login\LoginBackgroundPortrait%402x.png" />
+    <BundleResource Include="Resources\Images\Login\LoginBackgroundPortrait.png" />
+    <BundleResource Include="Resources\Images\Login\RedLogo.png" />
+    <BundleResource Include="Resources\Images\Login\RedLogo%402x.png" />
+    <BundleResource Include="Resources\Images\Navigation\RedBackIcon.jpg" />
+    <BundleResource Include="Resources\Images\Setting\EmailIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Setting\LocationIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Setting\PhoneIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Setting\PhoneIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\EmailIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\LocationIcon%402x.png" />
+    <BundleResource Include="Resources\Images\Setting\PhoneIcon.png" />
+    <BundleResource Include="Resources\Images\Setting\LocationIcon.png" />
+    <BundleResource Include="Resources\Images\Setting\EmailIcon.png" />
+    <BundleResource Include="Resources\Html\JS\hilitor.js" />
+    <BundleResource Include="Resources\Html\JS\highlight.js" />
+    <BundleResource Include="Resources\Images\Content\cbcc.gif" />
+    <BundleResource Include="Resources\Images\Content\delete.png" />
+    <BundleResource Include="Resources\Html\CSS\ios_content.css" />
+    <BundleResource Include="Resources\Html\CSS\common_content.css" />
+    <BundleResource Include="Resources\Html\JS\jquery.ready.js" />
+    <BundleResource Include="Resources\Images\Content\cautionary.png" />
+    <BundleResource Include="Resources\Images\Content\citation.png" />
+    <BundleResource Include="Resources\Images\Content\negative.png" />
+    <BundleResource Include="Resources\Images\Content\positive.png" />
+    <BundleResource Include="Resources\Images\Content\neutral.png" />
+    <BundleResource Include="Resources\Html\JS\rangy-classapplier.js" />
+    <BundleResource Include="Resources\Html\JS\rangy-core.js" />
+    <BundleResource Include="Resources\Html\JS\rangy-highlighter.js" />
+    <BundleResource Include="Resources\Images\Content\nzcitator.gif" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\IndexTabBarSelectedIcon.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\IndexTabBarSelectedIcon%403x.png" />
+    <BundleResource Include="Resources\Images\Publication\TabBar\IndexTabBarSelectedIcon%402x.png" />
+    <BundleResource Include="Resources\Html\JS\rangy-serializer.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LexisNexis.Red.Common\LexisNexis.Red.Common.csproj">
+      <Project>{DB646126-0816-4769-9FFC-CD0D63524613}</Project>
+      <Name>LexisNexis.Red.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="ZipArchive">
+      <Version>1.4.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

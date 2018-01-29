@@ -1,0 +1,416 @@
+﻿/*** 
+
+v0.1 - PDW - Oct 2015 - Initial Alpha of CSS rendering --- Still waiting on final HTML with corrected headers, para's and sub para's
+
+***/
+
+
+div.collapsediv{
+	overflow: hidden;
+	height: 25px;
+	
+}
+
+div.expanddiv{
+	overflow: visible;
+	  height: 100%;
+}
+
+div.hiddendiv{
+	display:none;
+}
+
+.page {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	text-align: right;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+	-webkit-user-select: initial;
+    -webkit-touch-callout: initial;
+	display: block;
+} 
+
+font.page:after {
+	content:"Page " attr(page-number) "\00a0\00a0";
+	-webkit-user-select: none;
+}
+
+div.pageDiv {
+	-webkit-user-select: none;
+}
+
+
+body {
+	font-family: "Helvetica Neue", "Ariel", "Roboto";
+	font-size: 11pt;
+	margin: 0px;
+/*  -- pdw -- asthetic border 	*/
+	padding: 50px; 
+	border: 80px solid #E6E6E6 ;
+	max-width: 704px;
+}
+
+body.pdfprint_body {
+	padding: 0px;
+	border: 0px;
+}
+
+aside.comntry {
+	position: relative;
+	background: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 70px;
+	padding-right: 140px;
+	margin-left: -70px;
+	margin-right: -140px;
+	margin-top: 20px;
+	border:1px solid #dadada;
+	min-height: 300px;
+	
+}
+
+div.note {
+	display: none;
+}
+
+font.bf {
+	font-weight: bold;
+}
+
+font.small {
+	font-size: 11pt;
+}
+
+font.it {
+	font-style: italic;
+}
+
+font.ib {
+	font-weight: bold;
+	font-style: italic;
+}
+
+font.un {
+	text-decoration: underline;
+}
+
+font.ro {
+	font-weight: normal;
+}
+
+p {
+    display: block;
+}
+
+/* PDW - debate around styling of blockquotes still ongoing
+
+blockquote {
+	font-style: italic;
+	color: grey;	
+}
+
+*/
+
+/*3.0*/
+h1 {
+	color: #0000FF;
+	font-weight: bold;
+	font-size: 18pt;
+	line-height: 25pt;
+	margin-bottom: 1cm;
+}
+
+h2 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 16pt;
+	line-height: 22.5pt;
+/*	background-color: #f3e792;*/
+}
+
+h3 {
+	/*text-shadow: 1px 1px 0px #dddddd;*/
+	color: #000000;
+	font-weight: bold;
+	font-size: 14pt;
+	line-height: 19.5pt;
+/*	background-color: #f3e792;*/
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 17pt;
+}
+
+note{
+    font-weight: bold;
+	font-size: 12pt;
+	line-height: 17pt;
+}
+
+a {
+	color: #ed1c24;
+	text-decoration: none;
+}
+
+a.external {
+	color: #0080fc;
+	text-decoration: none;
+}
+
+a.interbook {
+	color: #ed1c24;
+	text-decoration: none;
+}
+
+span{
+	display: marker;
+	text-align: left;
+}
+
+span.SEARCHRESULT {
+	background-color: #FF9966;
+}
+
+span.sectionNumber {
+	color: #7D7D7D;
+}
+
+span.it{
+	font-style: italic;
+}
+
+table {
+	table-layout: auto;
+}
+
+td{
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: 16pt;
+    vertical-align:text-top;
+    
+}
+
+th{
+    font-weight: bold;
+    font-size: 11pt;
+    line-height: 18pt;
+}
+
+tr.bf {
+	font-weight: bold;
+}
+
+.pagebreak {
+    text-align: right;
+    display: block;
+    font-size:15pt;
+    font-weight:bold;
+    line-height:25pt; 
+}
+
+.pagenumber {
+}
+
+
+.casename {
+    font-style: italic;
+    font-size: 15pt;
+    line-height: 21pt;
+}
+
+.edpnum {
+	padding-right: 10px;
+
+}
+
+.designum {
+	padding-right: 10px;
+
+}
+
+.commchaptitle {
+	font-style: normal;
+    font-weight: bold;
+    font-size: 12pt;
+    color: black;
+
+}
+
+.paratitle {
+	border-style: solid;
+	border-width: 2px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	border-color: #5979de;
+	padding-bottom: 3px;
+}
+
+aside .paratitle {
+	border-style: none;
+}
+
+.lilabel {
+	width: 70px;
+    position: absolute; 
+    text-indent: -53px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+li {
+	padding-bottom: 5px;
+}
+
+ul {
+	list-style-type: none;
+	/* margin-left: 40px; */
+}
+
+.fnlabel {
+	color:red;
+	width: 40px;
+    position: absolute; 
+    text-indent: -33px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+.footnote {
+	/* background-color: rgba(0,0,0,0.68); */
+	font-style: normal;k
+    font-size: 10pt;
+    color: rgba(154,154,154,1);
+    line-height: 21pt;
+    padding-left: 40pt;
+    padding-bottom: 5px;
+}
+
+.footnotelist {
+	margin: 20px;
+	padding-top: 15px;
+	padding-right: 50px; 
+    font-weight: normal;
+    font-size: 12pt;
+    line-height: 17pt;
+}
+
+
+
+
+
+.historynote {
+}
+
+.sectionnumber {
+}
+
+.empoweringlegislation {
+	text-align: right;
+}
+
+.quoted {
+}
+
+#container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#div_container{
+   min-width: 390pt;
+   max-width: 704pt;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#div_note_tag{
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+/*For infinite scrolling*/
+.content_body{
+    font-weight: normal;
+    font-size: 15pt;
+    line-height: 21pt;
+	background-color: #ffffff;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-top: 25px;
+}
+
+.div_preloading{
+    border: 1px solid #C8C8C8; 
+	border-style: none none solid none;
+	border-color: #efefef;
+	background-color: #ffffff;
+    margin-top: 10px
+    margin-bottom: 10px;
+	margin-left: -10%;
+	margin-right: -10%;
+	height: 80px; 
+	text-align: center;
+	font-size: 11;
+	vertical-align: center;
+}
+
+.div_nextloading{
+    border: 1px solid #C8C8C8; 
+	border-style: solid none none none;
+	border-color: #efefef;
+	background-color: #ffffff;
+    margin-top: 10px
+    margin-bottom: 10px;
+	margin-left: -10%;
+	margin-right: -10%;
+	height: 80px; 
+	text-align: center;
+	font-size: 11;
+	vertical-align: center;
+}
+
+.separator_div{
+	height: 16px; 
+	margin-left: -10%;
+	margin-right: -10%;
+	background-color: #fafafa;
+}
+
+#nextPageFrame{
+	border-style: solid solid none solid;
+	border-width: 1 1 0 1;
+	border-color: #efefef;
+	height: 26px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10pt;
+	background-color: #ffffff;
+}
+
+#prePageFrame{
+	border-style: none solid solid solid;
+	border-width: 0 1 1 1;
+	border-color: #efefef;
+	height: 26px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 0pt;
+	margin-top: -20pt;
+	background-color: #ffffff;
+}
+
+
+
+

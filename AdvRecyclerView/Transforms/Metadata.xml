@@ -1,0 +1,25 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.SwipeDismissItemRemoveAnimationManager']" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.SwipeDismissRemoveAnimationInfo']" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.SwipeDismissItemChangeAnimationManager']" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.SwipeDismissItemMoveAnimationManager']" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.DefaultItemAddAnimationManager']" />
+
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.utils']/class[@name='AbstractExpandableItemAdapter']" />
+
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='RefactoredDefaultItemAnimator.DefaultItemAddAnimationManager']" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='RefactoredDefaultItemAnimator.DefaultItemChangeAnimationManager']" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='RefactoredDefaultItemAnimator.DefaultItemMoveAnimationManager']" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='RefactoredDefaultItemAnimator.DefaultItemRemoveAnimationManager']" />
+
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.utils']/class[@name='BaseWrapperAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='VH'] and parameter[2][@type='int']]" />
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.utils']/class[@name='BaseWrapperAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]" />
+</metadata>

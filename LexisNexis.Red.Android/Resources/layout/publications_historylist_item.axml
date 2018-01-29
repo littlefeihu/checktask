@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/flDivider"
+        android:background="#cccccc" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/llItemBackground">
+        <FrameLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:id="@+id/flPublicationBar" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="Publication Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPublicationTitle"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:singleLine="true"
+                android:ellipsize="end" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="TOC Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTOCTitle"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#8a000000"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </LinearLayout>
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="3:15pm, 9 Apr 2015"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLastReadDate"
+            app:fontName="Roboto-Regular.ttf"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:textColor="#8a000000"
+            android:layout_marginLeft="24dp"
+            android:gravity="right"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

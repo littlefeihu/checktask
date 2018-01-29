@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_background">
+    <ImageView
+        android:src="@drawable/ln_logo"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="110dp"
+        android:background="#533736"
+        android:id="@+id/linearLayout1" />
+    <FrameLayout
+        android:orientation="vertical"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:id="@+id/frgForm"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="8pt"
+        android:layout_marginTop="320dp"
+        android:id="@+id/tvLoginWaringMessage"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+    <TextView
+        android:text="@string/ReminderPassword_SupportPromote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="320dp"
+        android:id="@+id/tvSupportPromote"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@id/frgForm"
+        android:layout_alignLeft="@id/frgForm"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        app:actionLayout="@layout/newtag_actionmenu_save"
+        android:title="Save"
+        app:showAsAction="always"/>
+</menu>

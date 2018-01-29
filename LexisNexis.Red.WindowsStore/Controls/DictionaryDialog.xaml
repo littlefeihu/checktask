@@ -1,0 +1,37 @@
+﻿<UserControl
+    x:Class="LexisNexis.Red.WindowsStore.Controls.DictionaryDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LexisNexis.Red.WindowsStore.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   >
+    <Grid Name="DialogRoot" >
+        <Grid Background="#01FFFFFF" Tapped="CloseDialog" PointerReleased="Grid_PointerReleased"/>
+        <Border Name="DialogBorder" Height="340" Width="324" BorderThickness="1" BorderBrush="#FFCFCFCF" Background="{StaticResource PageHeaderBackgroundColorBrush}" HorizontalAlignment="Right"  VerticalAlignment="Top">
+            <Grid Margin="12,0,12,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Name="Title" Style="{StaticResource DictionaryTitleStyle}" VerticalAlignment="Center" TextAlignment="Left" TextWrapping="NoWrap"/>
+                    <Button Name="BackBtn" Grid.Column="1" Style="{StaticResource BackButtonStyle}" Width="40" MinWidth="40" Height="40" MinHeight="40" Click="BackWord"/>
+                    <Button Name="NextBtn" Grid.Column="2" Style="{StaticResource ForwardButtonStyle}" Width="40" MinWidth="40" Height="40" MinHeight="40" Click="ForWord"/>
+                </Grid>
+                <Grid Background="White" Grid.Row="1" Height="250">
+                    <WebView Name="LegalDefineDialog"  ScriptNotify="ScriptNotify" />
+                    <TextBlock Name="NoResultTitle" x:Uid="NoLegalDefine" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" Foreground="#FF000000"/>
+                </Grid>
+                <Button Grid.Row="2" Content="Search Web" HorizontalAlignment="Right" Click="SearchOnWeb"/>           
+            </Grid>
+        </Border>       
+    </Grid>
+</UserControl>

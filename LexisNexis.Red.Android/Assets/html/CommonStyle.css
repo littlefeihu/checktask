@@ -1,0 +1,174 @@
+/*  2.0  */
+div.collapsediv {
+    overflow: hidden;
+    height: 25px;
+}
+
+div.expanddiv {
+    overflow: visible;
+    height: 100%;
+}
+
+div.hiddendiv {
+    display: none;
+}
+
+font.bf {
+    font-weight: bold;
+}
+
+font.small {
+    font-size: 11pt;
+}
+
+font.it {
+    font-style: italic;
+}
+
+font.ib {
+    font-weight: bold;
+    font-style: italic;
+}
+
+font.un {
+    text-decoration: underline;
+}
+
+font.ro {
+    font-weight: normal;
+}
+
+p {
+    display: block;
+}
+
+span {
+    display: marker;
+    text-align: left;
+}
+
+/*  3.0  */
+h1 {
+    color: #000000;
+    font-family: "Roboto Medium";
+    font-weight: normal;
+    font-size: 18pt;
+    line-height: 25pt;
+}
+
+h2 {
+    color: #000000;
+    font-family: "Roboto Medium";
+    font-weight: normal;
+    font-size: 16pt;
+    line-height: 22.5pt;
+}
+
+h3 {
+    color: #000000;
+    font-family: "Roboto Medium";
+    font-weight: normal;
+    font-size: 14pt;
+    line-height: 19.5pt;
+}
+
+h4 {
+    color: #000000;
+    font-family: "Roboto Medium";
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 17pt;
+}
+
+note {
+    font-family: "Roboto Regular";
+    font-weight: normal;
+    font-size: 12pt;
+    line-height: 17pt;
+}
+
+a {
+    color: #ed1c24;
+    text-decoration: none;
+}
+
+    a.external {
+        color: #2196f3;
+        text-decoration: none;
+    }
+
+    a.interbook {
+        color: #ed1c24;
+        text-decoration: none;
+    }
+
+
+
+td {
+    font-family: "Roboto Regular";
+    font-weight: normal;
+    font-size: 13pt;
+    line-height: 18pt;
+}
+
+th {
+    font-family: "Roboto Medium";
+    font-weight: normal;
+    font-size: 14pt;
+    line-height: 20pt;
+}
+
+tr.bf {
+    font-weight: bold;
+}
+
+.pagebreak {
+    text-align: right;
+}
+
+
+.pagenumber {
+
+}
+
+.casename {
+    font-family: "Roboto Regular";
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15pt;
+    line-height: 21pt;
+}
+
+.footnote {
+    font-family: "Roboto Medium";
+    font-weight: normal;
+    font-size: 15pt;
+    line-height: 21pt;
+}
+
+.footnotelist {
+    font-family: "Roboto Medium";
+    font-weight: normal;
+    font-size: 12pt;
+    line-height: 17pt;
+}
+
+li{
+    list-style:none;
+}
+
+.historynote{
+
+}
+
+.sectionnumber{
+
+}
+
+.empoweringlegislation{
+ text-align: right;
+}
+
+.quoted{
+
+}

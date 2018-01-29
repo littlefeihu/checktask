@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="GotoTableViewControllerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAw-xW-Xpl">
+                    <rect key="frame" x="20" y="38" width="280" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eP-Yp-gw2">
+                    <rect key="frame" x="20" y="5" width="280" height="23"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HAw-xW-Xpl" secondAttribute="trailing" constant="20" id="Cs7-cK-YU6"/>
+                <constraint firstItem="HAw-xW-Xpl" firstAttribute="top" secondItem="7eP-Yp-gw2" secondAttribute="bottom" constant="10" id="D1g-Ju-3ST"/>
+                <constraint firstItem="HAw-xW-Xpl" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Dd1-vG-pr6"/>
+                <constraint firstItem="7eP-Yp-gw2" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Gmq-Lf-4uf"/>
+                <constraint firstAttribute="trailing" secondItem="7eP-Yp-gw2" secondAttribute="trailing" constant="20" id="L2S-6N-7Mp"/>
+                <constraint firstItem="HAw-xW-Xpl" firstAttribute="top" secondItem="7eP-Yp-gw2" secondAttribute="bottom" constant="10" id="QhR-rc-Rem"/>
+                <constraint firstAttribute="bottom" secondItem="HAw-xW-Xpl" secondAttribute="bottom" constant="5" id="kHo-7C-g0o"/>
+                <constraint firstItem="7eP-Yp-gw2" firstAttribute="top" secondItem="1" secondAttribute="top" constant="5" id="lYE-Lo-V8s"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="448" y="635.5"/>
+        </view>
+    </objects>
+</document>

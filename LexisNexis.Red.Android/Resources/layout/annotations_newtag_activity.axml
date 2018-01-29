@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:id="@+id/llRootView">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llStatusBarStub" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_actionbar"
+        style="@style/ToolBarStyle"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTagName"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="24dp"
+        android:textSize="16sp"
+        android:textColorHint="#89000000"
+        android:textColor="#dd000000"
+        android:hint="@string/AnnotationNewTagPage_EnterATagName" />
+    <TextView
+        android:text="@string/AnnotationNewTagPage_SelectATagColour"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/textView1"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="96dp"
+        android:textColor="#dd000000"
+        android:textSize="14sp"
+        android:gravity="center_vertical" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llColorsContainer"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="96dp" />
+</LinearLayout>

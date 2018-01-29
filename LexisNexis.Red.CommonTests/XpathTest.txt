@@ -1,0 +1,933 @@
+﻿﻿﻿<div class="main" data-docid="CE_LATUP.SGM_CE.LATUP.C1" data-filename="latup10001000.xml" data-contenttype="Commentary">
+  <div data-partitionnum="1" data-doc.lang="en" data-doc.country="AU" data-bookseqnum="10000000" data-dpsi="007S" data-selector="commentary">
+    <div id="datainfo:hier">
+      <div data-tag="hierlev" data-role="ancestor">
+        <div data-tag="heading">
+          <div data-tag="title" data-value="Latest Updates"></div>
+        </div>
+        <div data-tag="hierlev" data-role="ancestor">
+          <div data-tag="heading">
+            <div data-tag="title" data-value="Cross on Evidence   LATEST UPDATES"></div>
+          </div>
+          <div data-tag="hierlev" data-role="me">
+            <div data-tag="heading">
+              <div data-tag="title" data-value="Cross on Evidence"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.C1">  </div>
+  <div>
+    <div class="title">
+      <h1 class="commchaptitle"><span id="CE.LATUP.C1" type="ext"></span><span id="1">Cross on Evidence&#x2003;</span><br><br><span id="2">LATEST UPDATES&#x2003;</span></h1>
+    </div>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S177">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S177" type="ext"></span><span id="3">HARDCOPY SERVICE 177 — JANUARY 2015:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="4">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="5">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="6">—&#x2003;</span></span><span id="7">Supplementary Index </span><span class="it"><span id="8">updated</span></span><span id="9">. Current to Service 176.</span></li>
+        </ul>
+        <p><span id="10">Commentary</span></p>
+        <ul>
+          <li><span class="lilabel"><span id="11">—&#x2003;</span></span><span id="12">The following guidecards have been updated: Introduction, Estoppels, Burden of Proof and Presumptions, Degrees of Proof, Functions of Judge and Jury, Competence and Compellability of Witnesses, Corroboration, Opinion, Rule against Hearsay, Doctrine of Res Gestae, Documentary Evidence and Proof of Frequently Recurring Matters.</span></li>
+          <li><span class="lilabel"><span id="13">—&#x2003;</span></span><span id="14">The project to add paragraph titles and additional headings will continue in this service with Chapter 19: Doctrine of Res Gestae.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="15">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="16">—&#x2003;</span></span><span class="bf"><span id="17">Commonwealth Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="18">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.FOEA94&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Foreign%20Evidence%20Act%201994"><span id="19">Foreign Evidence Act 1994</span></a><span class="it"><span id="20">amended</span></span><span id="21"> by Counter-Terrorism Legislation Amendment (Foreign Fighters) Act 2014 No116.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="22">—&#x2003;</span></span><span class="bf"><span id="23">New South Wales Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="24">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=CE.NSWL.EAN98&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;Audio%20and%20Audio%20Visual%20Links%29;%20Act%201998"><span id="25">Evidence (Audio and Audio Visual Links) Act 1998</span></a><span id="26"> No105 </span><span class="it"><span id="27">amended</span></span><span id="28"> by Courts and Other Miscellaneous Legislation Amendment Act 2013 No38.</span></li>
+              <li><span class="lilabel"><span id="29">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NSWL.CAN&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Crimes%20Act%201900"><span id="30">Crimes Act 1900</span></a><span class="it"><span id="31">amended</span></span><span id="32"> by Crimes Amendment (Provocation) Act 2014 No13.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="33">—&#x2003;</span></span><span class="bf"><span id="34">Victorian Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="35">•&#x2003;</span></span><span id="36">Consolidated Index </span><span class="it"><span id="37">updated</span></span><span id="38">. Current to Service 176.</span></li>
+              <li><span class="lilabel"><span id="39">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=CE.VL.EAV08&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%202008"><span id="40">Evidence Act 2008</span></a><span class="it"><span id="41">amended</span></span><span id="42"> by Crimes Amendment (Abolition of Defensive Homicide) Act 2014 No63.</span></li>
+              <li><span class="lilabel"><span id="43">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.VL.CRIMV&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Crimes%20Act%201958"><span id="44">Crimes Act 1958</span></a><span class="it"><span id="45">amended</span></span><span id="46"> by Victoria Police Amendment (Consequential and Other Matters) Act 2014 No37.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="47">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S176">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S176" type="ext"></span><span id="48">HARDCOPY SERVICE 176 — DECEMBER 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="49">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="50">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="51">—&#x2003;</span></span><span id="52">Supplementary Index </span><span class="it"><span id="53">updated</span></span><span id="54">. Current to Service 175.</span></li>
+        </ul>
+        <p><span id="55">Commentary</span></p>
+        <ul>
+          <li><span class="lilabel"><span id="56">—&#x2003;</span></span><span id="57">The project to add paragraph titles and additional headings will continue in this service with Chapter 18 Rule against Hearsay: Statutory Exceptions.</span></li>
+          <li><span class="lilabel"><span id="58">—&#x2003;</span></span><span id="59">The following guidecards have been updated: Introduction, Estoppels, Burden of Proof and Presumptions, Course of Evidence, Character and Credibility, Similar Fact Evidence, Evidence by Accused Persons, Privilege, Public Interest, Rule against Hearsay: Principal Exceptions at Common Law and Rule against Hearsay: Statutory Exceptions.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="60">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="61">—&#x2003;</span></span><span class="bf"><span id="62">Victorian Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="63">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.VL.EAV&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;Miscellaneous%20Provisions%29;%20Act%201958"><span id="64">Evidence (Miscellaneous Provisions) Act 1958</span></a><span id="65"> is </span><span class="it"><span id="66">amended</span></span><span id="67"> by the Inquiries Act 2014 No 67.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="68">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S175">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S175" type="ext"></span><span id="69">HARDCOPY SERVICE 175 — NOVEMBER 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="70">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="71">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="72">—&#x2003;</span></span><span id="73">Supplementary Index </span><span class="it"><span id="74">updated</span></span><span id="75">. Current to Service 174.</span></li>
+        </ul>
+        <p><span class="bf"><span id="76">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="77">—&#x2003;</span></span><span id="78">The following guidecards have been updated:</span><ul>
+              <li><span class="lilabel"><span id="79">•&#x2003;</span></span><span id="80">Introduction – in addition to regular updating, a new section 13 has been added entitled “The relationship between the weight and the admissibility of evidence”.</span></li>
+              <li><span class="lilabel"><span id="81">•&#x2003;</span></span><span id="82">Degrees of Proof, Functions of Judge and Jury, Similar Fact Evidence, Privilege, Public Interest, Opinion – regular updating due to case law and commentary changes </span></li>
+              <li><span class="lilabel"><span id="83">•&#x2003;</span></span><span id="84">Rule against Hearsay and Rule against Hearsay: Principal Exceptions at Common Law – continuation of the project to add paragraph titles and additional headings alongside regular updating.</span></li>
+            </ul>
+          </li>
+        </ul>
+        <p><span class="bf"><span id="85">Key Cases</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="86">—&#x2003;</span></span><span id="87">Selected Key Cases have been updated to remove the duplicated case entry.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="88">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="89">—&#x2003;</span></span><span class="bf"><span id="90">Queensland Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="91">•&#x2003;</span></span><span id="92">Commentary references </span><span class="it"><span id="93">updated</span></span><span id="94">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="95">—&#x2003;</span></span><span class="bf"><span id="96">Western Australian Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="97">•&#x2003;</span></span><span id="98">Commentary references </span><span class="it"><span id="99">updated</span></span><span id="100">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="101">—&#x2003;</span></span><span class="bf"><span id="102">South Australian Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="103">•&#x2003;</span></span><span id="104">Commentary references </span><span class="it"><span id="105">updated</span></span><span id="106">.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="107">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S174">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S174" type="ext"></span><span id="108">HARDCOPY SERVICE 174 — OCTOBER 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="109">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="110">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="111">—&#x2003;</span></span><span id="112">Supplementary Index </span><span class="it"><span id="113">updated</span></span><span id="114">. Current to Service 172.</span></li>
+        </ul>
+        <p><span class="bf"><span id="115">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="116">—&#x2003;</span></span><span id="117">The project to add paragraph titles and additional headings will continue in this service with Chapter 13 Privilege, along with insertion of recent case reference.</span></li>
+        </ul>
+        <p><span class="bf"><span id="118">Key Cases</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="119">—&#x2003;</span></span><span id="120">Selected Key Cases have been updated to include additional references in the “Cases referring to this case” and “Cases considered by this case” sections where required.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="121">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S173">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S173" type="ext"></span><span id="122">HARDCOPY SERVICE 173 — OCTOBER 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="123">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="124">Contents • Tables</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="125">—&#x2003;</span></span><span id="126">Consolidated Table of Statutes </span><span class="it"><span id="127">updated</span></span><span id="128">. Current to Service 172.</span></li>
+        </ul>
+        <p><span class="bf"><span id="129">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="130">—&#x2003;</span></span><span id="131">The project to add paragraph titles and additional headings will continue in this service with Chapter 14 — Public Interest.</span></li>
+        </ul>
+        <ul>
+          <li><span class="lilabel"><span id="132">—&#x2003;</span></span><span id="133">The following guidecards have been updated: Introduction, Degrees of Proof, Functions of Judge and Jury, Corroboration, Course of Evidence, Character and Credibility, Similar Fact Evidence, Opinion, Rule against Hearsay: Principal Exceptions at Common Law, Rule against Hearsay: Statutory Exceptions and Documentary Evidence. </span></li>
+        </ul>
+        <p><span class="bf"><span id="134">Key Cases</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="135">—&#x2003;</span></span><span id="136">Selected Key Cases have been updated to include additional references in the “Cases referring to this case” and “Cases considered by this case” sections where required.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="137">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="138">Queensland Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="139">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="140">Evidence Act 1977</span></a><span id="141"> is </span><span class="it"><span id="142">amended</span></span><span id="143"> by the Safe Night Out Legislation Amendment Act 2014 No 42.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="144">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S172">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S172" type="ext"></span><span id="145">HARDCOPY SERVICE 172 — SEPTEMBER 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="146">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="147">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="148">—&#x2003;</span></span><span id="149">Consolidated Index </span><span class="it"><span id="150">updated</span></span><span id="151">. Current to Service 171.</span></li>
+        </ul>
+        <p><span class="bf"><span id="152">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="153">—&#x2003;</span></span><span id="154">The project to add paragraph titles and additional headings will continue in this service with Chapter 11 — Similar Fact Evidence and Chapter 12 — Evidence by Accused Persons.</span></li>
+        </ul>
+        <ul>
+          <li><span class="lilabel"><span id="155">—&#x2003;</span></span><span id="156">The following guidecards have been updated: Introduction, Degrees of Proof, Functions of Judge and Jury, Corroboration, Character and Credibility, Privilege, Opinion, Rule against Hearsay, Rule against Hearsay: Principal Exceptions at Common Law, Rule against Hearsay: Statutory Exceptions and Documentary Evidence. </span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="157">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="158">Victorian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="159">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.VL.EAV&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;Miscellaneous%20Provisions%29;%20Act%201958"><span id="160">Evidence (Miscellaneous Provisions) Act 1958</span></a><span id="161"> is </span><span class="it"><span id="162">amended</span></span><span id="163"> by the Criminal Organisations Control and Other Acts Amendment Act 2014 No 55.</span></li>
+        </ul>
+        <p><span class="bf"><span id="164">Queensland Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="165">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="166">Evidence Act 1977</span></a><span id="167"> is </span><span class="it"><span id="168">amended</span></span><span id="169"> by the Criminal Law Amendment Act 2014 No 39.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="170">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S171">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S171" type="ext"></span><span id="171">HARDCOPY SERVICE 171 — AUGUST 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="172">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="173">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="174">—&#x2003;</span></span><span id="175">The project to add paragraph titles and additional headings will continue in this service with Chapter 10 Character and Credibility.</span></li>
+          <li><span class="lilabel"><span id="176">—&#x2003;</span></span><span id="177">The following guidecards have been updated: Introduction, Estoppels, The Burden of Proof and Presumptions, Functions of Judge and Jury, Corroboration, Course of Evidence, Similar Fact Evidence, Privilege, Public Interest, Opinion, The Rule against Hearsay: Exceptions at Common Law, and The Rule against Hearsay: Statutory Exceptions.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="178">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="179">Commonwealth Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="180">—&#x2003;</span></span><span id="181">Commentary references </span><span class="it"><span id="182">updated</span></span><span id="183">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="184">New South Wales Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="185">—&#x2003;</span></span><span id="186">Commentary references </span><span class="it"><span id="187">updated</span></span><span id="188">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="189">Victorian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="190">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=CE.VL.EAV08&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%202008"><span id="191">Evidence Act 2008</span></a><span id="192"> is </span><span class="it"><span id="193">amended</span></span><span id="194"> by the Treasury Legislation and Other Acts Amendment Act 2014 No 44.</span></li>
+          <li><span class="lilabel"><span id="195">—&#x2003;</span></span><span id="196">Commentary references </span><span class="it"><span id="197">updated</span></span><span id="198">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="199">Queensland Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="200">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="201">Evidence Act 1977</span></a><span id="202"> is </span><span class="it"><span id="203">amended</span></span><span id="204"> by the Police Powers and Responsibilities and Other Legislation Amendment Act 1 of 2014.</span></li>
+        </ul>
+        <p><span class="bf"><span id="205">Northern Territory Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="206">—&#x2003;</span></span><span id="207">Commentary refences </span><span class="it"><span id="208">updated</span></span><span id="209">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="210">Australian Capital Territory Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="211">—&#x2003;</span></span><span id="212">Commentary references </span><span class="it"><span id="213">updated</span></span><span id="214">.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="215">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S170">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S170" type="ext"></span><span id="216">HARDCOPY SERVICE 170 — JULY 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="217">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="218">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="219">—&#x2003;</span></span><span id="220">Supplementary Index </span><span class="it"><span id="221">updated</span></span><span id="222">. Current to Service 169.</span></li>
+        </ul>
+        <p><span class="bf"><span id="223">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="224">—&#x2003;</span></span><span id="225">The project to add paragraph titles and additional headings will continue in this service with Chapter 9 Opinion.</span></li>
+          <li><span class="lilabel"><span id="226">—&#x2003;</span></span><span id="227">The following guidecards have been updated: Introduction, Facts which Need Not be Proved by Evidence, Degrees of Proof, Functions of Judge and Jury, Competence and Compellability of Witnesses, Corroboration, Course of Evidence, Character and Credibility, Similar Fact Evidence, Privilege, Public Interest, Opinion, The Rule against Hearsay: Exceptions at Common Law, Doctrine of Res Gestae, Documentary Evidence and Proof of Frequently Recurring Matters. </span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="228">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="229">Commonwealth Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="230">—&#x2003;</span></span><span id="231">Commentary references </span><span class="it"><span id="232">updated</span></span><span id="233">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="234">New South Wales Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="235">—&#x2003;</span></span><span id="236">Commentary references </span><span class="it"><span id="237">updated</span></span><span id="238">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="239">Victorian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="240">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=CE.VL.EAV08&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%202008"><span id="241">Evidence Act 2008</span></a><span id="242"> is </span><span class="it"><span id="243">amended</span></span><span id="244"> by the Victoria Police Amendment (Consequential and Other Matters) Act 2014 No 37.</span></li>
+          <li><span class="lilabel"><span id="245">—&#x2003;</span></span><span id="246">Commentary references </span><span class="it"><span id="247">updated</span></span><span id="248">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="249">Queensland Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="250">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="251">Evidence Act 1977</span></a><span id="252"> is </span><span class="it"><span id="253">amended</span></span><span id="254"> by the Child Protection Reform Amendment Act 2014 No 28.</span></li>
+        </ul>
+        <p><span class="bf"><span id="255">South Australian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="256">—&#x2003;</span></span><span id="257">Consolidated Index </span><span class="it"><span id="258">updated</span></span><span id="259">. Current to Service 169.</span></li>
+          <li><span class="lilabel"><span id="260">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.SAL.EASA29&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201929"><span id="261">Evidence Act 1929</span></a><span id="262"> is </span><span class="it"><span id="263">amended</span></span><span id="264"> by the Evidence (Identification Evidence) Amendment Act 2013 No 58.</span></li>
+        </ul>
+        <p><span class="bf"><span id="265">Tasmanian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="266">—&#x2003;</span></span><span id="267">Commentary references </span><span class="it"><span id="268">updated</span></span><span id="269">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="270">Northern Territory Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="271">—&#x2003;</span></span><span id="272">Consolidated Index </span><span class="it"><span id="273">updated</span></span><span id="274">. Current to Service 169.</span></li>
+          <li><span class="lilabel"><span id="275">—&#x2003;</span></span><span id="276">Commentary refences </span><span class="it"><span id="277">updated</span></span><span id="278">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="279">Australian Capital Territory Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="280">—&#x2003;</span></span><span id="281">Commentary references </span><span class="it"><span id="282">updated</span></span><span id="283">.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="284">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S169">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S169" type="ext"></span><span id="285">HARDCOPY SERVICE 169 — JUNE 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="286">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="287">Contents • Tables</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="288">—&#x2003;</span></span><span id="289">Table of Defined Terms inserted. Current to Service 168.</span></li>
+        </ul>
+        <p><span class="bf"><span id="290">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="291">—&#x2003;</span></span><span id="292">Supplementary Index updated. Current to Service 168.</span></li>
+        </ul>
+        <p><span class="bf"><span id="293">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="294">—&#x2003;</span></span><span id="295">The project to add paragraph titles and additional headings will continue in this service with Chapter 15 Opinion.</span></li>
+          <li><span class="lilabel"><span id="296">—&#x2003;</span></span><span id="297">The following guidecards have been updated: Introduction, Facts which Need not be Proved by Evidence, Estoppels, Burden of Proofs and Presumptions, Course of Evidence, Similar Fact Evidence, Public Interest, Rule against Hearsay, Rule against Hearsay: Statutory Exceptions, and Proof of Frequently Recurring Matters.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="298">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="299">Commonwealth Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="300">—&#x2003;</span></span><span id="301">Commentary updated.</span></li>
+        </ul>
+        <p><span class="bf"><span id="302">New South Wales Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="303">—&#x2003;</span></span><span id="304">Commentary updated.</span></li>
+        </ul>
+        <p><span class="bf"><span id="305">Victorian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="306">—&#x2003;</span></span><span id="307">Commentary updated.</span></li>
+        </ul>
+        <p><span class="bf"><span id="308">Tasmanian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="309">—&#x2003;</span></span><span id="310">Commentary updated.</span></li>
+        </ul>
+        <p><span class="bf"><span id="311">Northern Territory Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="312">—&#x2003;</span></span><span id="313">Commentary updated.</span></li>
+        </ul>
+        <p><span class="bf"><span id="314">Australian Capital Territory Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="315">—&#x2003;</span></span><span id="316">Commentary inserted and updated.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="317">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S168">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S168" type="ext"></span><span id="318">HARDCOPY SERVICE 168 — JUNE 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="319">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="320">Contents • Tables</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="321">—&#x2003;</span></span><span id="322">Consolidated Table of Cases updated. Current to Service 167.</span></li>
+        </ul>
+        <p><span class="bf"><span id="323">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="324">—&#x2003;</span></span><span id="325">The guidecard Privilege has been updated.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="326">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="327">New South Wales Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="328">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.EA95&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201995"><span id="329">Evidence Act 1995</span></a><span id="330"> is </span><span class="it"><span id="331">amended</span></span><span id="332"> by the Bail (Consequential Amendments) Act 2014 No 5.</span></li>
+        </ul>
+        <p><span class="bf"><span id="333">Queensland Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="334">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="335">Evidence Act 1977</span></a><span id="336"> is amended by the Public Safety Business Agency Act 2014 No 17 and Crime and Misconduct and Other Legislation Amendment 2014 Act 21.</span></li>
+        </ul>
+        <p><span class="bf"><span id="337">South Australian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="338">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.SAL.EASA29&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201929"><span id="339">Evidence Act 1929</span></a><span id="340"> is amended by the Statutes Amendment (Attorney-General’s Portfolio No 2) Act 2013 Act 47.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="341">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S167">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S167" type="ext"></span><span id="342">HARDCOPY SERVICE 167 — MAY 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="343">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="344">Contents • Tables</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="345">—&#x2003;</span></span><span id="346">Supplementary Table of Cases </span><span class="it"><span id="347">updated</span></span><span id="348">. Current to Service 166.</span></li>
+          <li><span class="lilabel"><span id="349">—&#x2003;</span></span><span id="350">Consolidated Table of Statutes </span><span class="it"><span id="351">updated</span></span><span id="352">. Current to Service 166.</span></li>
+        </ul>
+        <p><span class="bf"><span id="353">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="354">—&#x2003;</span></span><span id="355">Supplementary Index </span><span class="it"><span id="356">updated</span></span><span id="357">. Current to Service 166.</span></li>
+        </ul>
+        <p><span class="bf"><span id="358">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="359">—&#x2003;</span></span><span id="360">The project to add paragraph titles and additional headings will continue in this service with chapters 5 Degrees of Proofs; 6 Functions of Judge and Jury; 7 Competence and Compellability of Witnesses and 8 Corroboration. In addition to these changes, new cases and amendments have been added to these chapters as necessary.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="361">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="362">New South Wales Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="363">—&#x2003;</span></span><span id="364">Consolidated Index </span><span class="it"><span id="365">updated</span></span><span id="366">. Current to Service 166.</span></li>
+          <li><span class="lilabel"><span id="367">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.EA95&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201995"><span id="368">Evidence Act 1995</span></a><span id="369"> is </span><span class="it"><span id="370">amended</span></span><span id="371"> by the Bail (Consequential Amendments) Act 2014 No5.</span></li>
+        </ul>
+        <p><span class="bf"><span id="372">Victorian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="373">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.VL.CRIMV&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Crimes%20Act%201958"><span id="374">Crimes Act 1958</span></a><span id="375"> (Extracts) is </span><span class="it"><span id="376">amended</span></span><span id="377"> by the Justice Legislation Amendment (Discovery, Disclosure and Other Matters) Act 2014 No25.</span></li>
+        </ul>
+        <p><span class="bf"><span id="378">Tasmanian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="379">—&#x2003;</span></span><span id="380">Consolidated Index </span><span class="it"><span id="381">updated</span></span><span id="382">. Current to Service 166.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="383">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S166">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S166" type="ext"></span><span id="384">HARDCOPY SERVICE 166 — APRIL 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="385">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="386">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="387">—&#x2003;</span></span><span id="388">The project to add paragraph titles and additional headings will continue in this service with chapters 2 Facts which Need not be Proved by Evidence; 3 Estoppels and 4 The Burden of Proof and Presumptions. In addition to these changes, new cases and amendments have been added to these chapters as necessary, and also to Chapter 17 The Rule against Hearsay: Principal Exceptions at Common Law.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="389">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="390">Commonwealth Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="391">—&#x2003;</span></span><span id="392">Commentary references </span><span class="it"><span id="393">inserted</span></span><span id="394"> and </span><span class="it"><span id="395">updated</span></span><span id="396">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="397">New South Wales Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="398">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NSWL.CPAN05&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Civil%20Procedure%20Act%202005"><span id="399">Civil Procedure Act 2005</span></a><span id="400"> (Extracts) and Uniform Civil Procedure Rules 2005 (Extracts) have been </span><span class="it"><span id="401">inserted</span></span><span id="402">.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="403">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S165">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S165" type="ext"></span><span id="404">HARDCOPY SERVICE 165 — MARCH 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="405">Volume 1&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="406">Index</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="407">—&#x2003;</span></span><span id="408">Consolidated Index </span><span class="it"><span id="409">updated</span></span><span id="410">. Current to Service 164.</span></li>
+        </ul>
+        <p><span class="bf"><span id="411">Commentary</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="412">—&#x2003;</span></span><span id="413">The following guide cards have been updated: Introduction, Competence and Compellability of Witnesses, Course of Evidence, Similar Fact Evidence and Public Interest.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="414">Volume 2&#x2003;</span></h3>
+        </div>
+        <p><span class="bf"><span id="415">Commonwealth Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="416">—&#x2003;</span></span><span id="417">Commentary references </span><span class="it"><span id="418">inserted</span></span><span id="419"> and </span><span class="it"><span id="420">updated</span></span><span id="421">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="422">Victorian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="423">—&#x2003;</span></span><span id="424">Commentary references </span><span class="it"><span id="425">inserted</span></span><span id="426"> and </span><span class="it"><span id="427">updated</span></span><span id="428">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="429">Western Australian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="430">—&#x2003;</span></span><span id="431">Commentary references </span><span class="it"><span id="432">inserted</span></span><span id="433"> and </span><span class="it"><span id="434">updated</span></span><span id="435">.</span></li>
+        </ul>
+        <p><span class="bf"><span id="436">Tasmanian Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="437">—&#x2003;</span></span><span id="438">The </span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.TL.ECSWAT01&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;Children%20and%20Special%20Witnesses%29;%20Act%202001"><span id="439">Evidence (Children and Special Witnesses) Act 2001</span></a><span id="440"> is </span><span class="it"><span id="441">amended</span></span><span id="442"> by the Evidence (Children and Special Witnesses) Amendment Act 2013, No63/2013 commencing on 1March 2014.</span></li>
+        </ul>
+        <p><span class="bf"><span id="443">Northern Territory Legislation</span></span></p>
+        <ul>
+          <li><span class="lilabel"><span id="444">—&#x2003;</span></span><span id="445">Commentary references </span><span class="it"><span id="446">inserted</span></span><span id="447"> and </span><span class="it"><span id="448">updated</span></span><span id="449">.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="450">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S164">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S164" type="ext"></span><span id="451">HARDCOPY SERVICE 164— JANUARY 2014:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="452">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="453">—&#x2003;</span></span><span id="454">Table of Cases </span><span class="it"><span id="455">updated</span></span><span id="456">. Current to Service 164.</span></li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="457">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="458">—&#x2003;</span></span><span class="bf"><span id="459">New South Wales Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="460">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NSWL.CPROC&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Procedure%20Act%201986"><span id="461">Criminal Procedure Act 1986</span></a><span id="462"> (Extracts) is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="463">•&#x2003;</span></span><span id="464">Crimes Legislation Amendment Act 2013 No 90</span></li>
+                </ul>
+              </li>
+              <li><span class="lilabel"><span id="465">•&#x2003;</span></span><span id="466">Commentary references </span><span class="it"><span id="467">inserted</span></span><span id="468"> and </span><span class="it"><span id="469">updated</span></span><span id="470">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="471">—&#x2003;</span></span><span class="bf"><span id="472">Tasmanian Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="473">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.TL.EAT01&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%202001"><span id="474">Evidence Act 2001</span></a><span id="475"> is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="476">•&#x2003;</span></span><span id="477">Forest Management (Consequential Amendments) Act 2013 Act No 50</span></li>
+                </ul>
+              </li>
+              <li><span class="lilabel"><span id="478">•&#x2003;</span></span><span id="479">Commentary references </span><span class="it"><span id="480">inserted</span></span><span id="481"> and </span><span class="it"><span id="482">updated</span></span><span id="483">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="484">—&#x2003;</span></span><span class="bf"><span id="485">Australian Capital Territory Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="486">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.ACTL.EAA11&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%202011"><span id="487">Evidence Act 2011</span></a><span id="488"> is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="489">•&#x2003;</span></span><span id="490">Marriage Equality (Same Sex) Act 2013 No 39</span></li>
+                </ul>
+              </li>
+              <li><span class="lilabel"><span id="491">•&#x2003;</span></span><span id="492">Commentary references </span><span class="it"><span id="493">inserted</span></span><span id="494"> and </span><span class="it"><span id="495">updated</span></span><span id="496">.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="497">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S163">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S163" type="ext"></span><span id="498">HARDCOPY SERVICE 163— DECEMBER 2013:&#x2003;</span></h3>
+      </div><section title="Commentary" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="499">Commentary&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="500">—&#x2003;</span></span><span id="501">Paragraph titles and additional headings will be introduced to the service over the 2014 services in a response to customer requests to make navigation through the text more efficient.  The first chapter to incorporate the change is Chapter 1 – Introduction. In addition to the extra headings and paragraph titles, the commentary in Section 9 concerning the Evidence Acts has been extensively re-written and updated. The following guide cards have been updated: Introduction,  Facts which Need not be Proved by Evidence, Estoppels, Functions of Judge and Jury, Competence and Compellability of Witnesses, Course of Evidence, Similar Fact Evidence, Public Interest, Rules against Hearsay: Statutory Exceptions, Documentary Evidence and Proof of Frequently Recurring Matters.</span></li>
+        </ul></section><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="502">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="503">—&#x2003;</span></span><span id="504">Contents • Tables</span><ul>
+              <li><span class="lilabel"><span id="505">•&#x2003;</span></span><span id="506">Consolidated Table of Cases current to and includes Service 162.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="507">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="508">—&#x2003;</span></span><span id="509">New South Wales Legislation</span><ul>
+              <li><span class="lilabel"><span id="510">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NSWL.EAN95&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201995"><span id="511">Evidence Act 1995</span></a><span id="512"> is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="513">•&#x2003;</span></span><span id="514">Crimes and Courts Legislation Amendment Act2013 No80</span></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li><span class="lilabel"><span id="515">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NSWL.CPROC&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Procedure%20Act%201986"><span id="516">Criminal Procedure Act 1986</span></a><span id="517"> (Extracts) is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="518">•&#x2003;</span></span><span id="519">Crimes and Courts Legislation Amendment Act2013 No80</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="520">—&#x2003;</span></span><span id="521">Queensland Legislation</span><ul>
+              <li><span class="lilabel"><span id="522">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="523">Evidence Act 1977</span></a><span id="524"> is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="525">•&#x2003;</span></span><span id="526">Treasury and Trade and Other Legislation Amendment Act2013 No39</span></li>
+                  <li><span class="lilabel"><span id="527">•&#x2003;</span></span><span id="528">Criminal Law (Criminal Organisations Disruption) and Other Legislation Amendment Act2013 No64</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="529">—&#x2003;</span></span><span id="530">Western Australian Legislation</span><ul>
+              <li><span class="lilabel"><span id="531">•&#x2003;</span></span><span id="532">Evidence Act 1906 (WA) is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="533">•&#x2003;</span></span><span id="534">Criminal Organisations Control Act2012 No49</span></li>
+                  <li><span class="lilabel"><span id="535">•&#x2003;</span></span><span id="536">Courts and Tribunals (Electronic Processes Facilitation) Act2013 No20</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="537">—&#x2003;</span></span><span id="538">South Australian Legislation</span><ul>
+              <li><span class="lilabel"><span id="539">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.SAL.EASA29&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201929"><span id="540">Evidence Act 1929</span></a><span id="541"> is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="542">•&#x2003;</span></span><span id="543">Evidence (Discreditable Conduct) Amendment Act2013 No50</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="544">—&#x2003;</span></span><span id="545"> Northern Territory Legislation</span><ul>
+              <li><span class="lilabel"><span id="546">•&#x2003;</span></span><span id="547">Evidence Act 1939</span><span id="548"> is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="549">•&#x2003;</span></span><span id="550">Local Government Amendment Act2013 No28</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="551">—&#x2003;</span></span><span id="552">Australian Capital Territory Legislation</span><ul>
+              <li><span class="lilabel"><span id="553">•&#x2003;</span></span><span id="554">Evidence Act 2011 is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="555">•&#x2003;</span></span><span id="556">Statute Law Amendment Act2013 (No2) No44</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul></section><section title="The following indexes have been updated and reissued:" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="557">The following indexes have been updated and reissued:&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="558">—&#x2003;</span></span><span id="559">Commonwealth Legislation index.</span></li>
+          <li><span class="lilabel"><span id="560">—&#x2003;</span></span><span id="561">New South Wales Legislation index.</span></li>
+          <li><span class="lilabel"><span id="562">—&#x2003;</span></span><span id="563">Queensland Legislation index.</span></li>
+          <li><span class="lilabel"><span id="564">—&#x2003;</span></span><span id="565">Northern Territory Legislation index.</span></li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="566">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S161">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S161" type="ext"></span><span id="567">HARDCOPY SERVICE 161— NOVEMBER 2013:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="568">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="569">—&#x2003;</span></span><span id="570">Contents • Tables</span><ul>
+              <li><span class="lilabel"><span id="571">•&#x2003;</span></span><span id="572">Supplementary Table of Cases current to and includes Service 160.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="573">—&#x2003;</span></span><span id="574">Commentary</span><ul>
+              <li><span class="lilabel"><span id="575">•&#x2003;</span></span><span id="576">The following guide cards have been updated: Introduction, Facts which Need not by Proved by Evidence, Estoppels, Degrees of Proof, Competence and Compellability of Witnesses, Corroboration, Course of Evidence, Privilege, Public Interest, Opinion, Rule against Hearsay: Statutory Exceptions, Documentary Evidence and Proof of Frequently Recurring Matters.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="577">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="578">—&#x2003;</span></span><span id="579">Commonwealth Legislation</span><ul>
+              <li><span class="lilabel"><span id="580">•&#x2003;</span></span><span id="581">The Trans-Tasman Proceedings Act 2010 No 35 of 2010 commenced on 11 October 2013. This Act repealed the Evidence and Procedure (New Zealand) Act 1994 and its associated Regulations. The 1994 Act and 1995 Regulations have been removed from the service and the Trans-Tasman Proceedings Act 2010 has been inserted.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="582">—&#x2003;</span></span><span id="583">Victorian Legislation</span><ul>
+              <li><span class="lilabel"><span id="584">•&#x2003;</span></span><span id="585">Commentary References have been updated.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="586">—&#x2003;</span></span><span id="587">Australian Capital Territory  Legislation</span><ul>
+              <li><span class="lilabel"><span id="588">•&#x2003;</span></span><span id="589">Commentary References have been updated.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="590">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S160">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S160" type="ext"></span><span id="591">HARDCOPY SERVICE 160— SEPTEMBER 2013:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="592">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="593">—&#x2003;</span></span><span id="594">Commentary</span><ul>
+              <li><span class="lilabel"><span id="595">•&#x2003;</span></span><span id="596">The following guide cards have been updated: Introduction, Facts which Need not by Proved by Evidence, Estoppels, Burden of Proof and Presumptions, Degrees of Proof, Functions of Judge and Jury, Competence and Compellability of Witnesses, Course of Evidence, Similar Fact Evidence, Privilege, Public Interest, Opinion, Rule against Hearsay: Exceptions at Common Law, Rule against Hearsay: Statutory Exceptions, Doctrine of Res Gestae and Documentary Evidence.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="597">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="598">—&#x2003;</span></span><span id="599">New South Wales Legislation</span><ul>
+              <li><span class="lilabel"><span id="600">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NSWL.EAN95&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201995"><span id="601">Evidence Act 1995</span></a><span id="602"> is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="603">•&#x2003;</span></span><span id="604">Evidence Amendment (Evidence of Silence) Act 2013 No 9</span></li>
+                </ul>
+              </li>
+              <li><span class="lilabel"><span id="605">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NSWL.CPROC&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Procedure%20Act%201986"><span id="606">Criminal Procedure Act 1986</span></a><span id="607"> (Extracts) is amended by:</span><ul>
+                  <li><span class="lilabel"><span id="608">•&#x2003;</span></span><span id="609">Criminal Procedure Amendment (Mandatory Pre-trial Defence Disclosure) Act 2013 No 10</span></li>
+                </ul>
+              </li>
+              <li><span class="lilabel"><span id="610">•&#x2003;</span></span><span id="611">Queensland Legislation</span><ul>
+                  <li><span class="lilabel"><span id="612">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="613">Evidence Act 1977</span></a><span id="614"> is amended by:</span><ul>
+                      <li><span class="lilabel"><span id="615">•&#x2003;</span></span><span id="616">Justice and Other Legislation Amendment Act 2013 No 35</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><span class="lilabel"><span id="617">•&#x2003;</span></span><span id="618">Tasmanian Legislation</span><ul>
+                  <li><span class="lilabel"><span id="619">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.TL.CCT24&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Code%201924"><span id="620">Criminal Code 1924</span></a><span id="621"> (Extracts) is amended by:</span><ul>
+                      <li><span class="lilabel"><span id="622">•&#x2003;</span></span><span id="623">Crimes (Miscellaneous Amendments) Act 2013 No 23</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><span class="lilabel"><span id="624">•&#x2003;</span></span><span id="625">Northern Territory Legislation</span><ul>
+                  <li><span class="lilabel"><span id="626">•&#x2003;</span></span><span id="627">To improve the functionality of the loose-leaf service, commentary references from the legislation back to volume 1 are being progressively inserted into the new and amended Northern Territory legislation. In this Service Commentary references have been inserted into Chapters 3 (from Part 3.3), 4 and 5, and the Dictionary of the Evidence (National Uniform Legislation) Act 2011.</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="628">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S158">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S158" type="ext"></span><span id="629">HARDCOPY SERVICE 158 — AUGUST 2013:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="630">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="631">—&#x2003;</span></span><span id="632">Commentary</span><ul>
+              <li><span class="lilabel"><span id="633">•&#x2003;</span></span><span id="634">The following guide cards have been updated: Introduction, Estoppels, Burden of Proof and Presumptions, Degrees of Proof, Functions of Judge and Jury, Competence and Compellability of Witnesses, Corroboration, Course of Evidence, Similar Fact Evidence, Evidence by Accused Persons, Privilege, Public Interest, Opinion, Rule against Hearsay: Exceptions at Common Law, Rule against Hearsay: Statutory Exceptions, Documentary Evidence.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="635">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="636">—&#x2003;</span></span><span id="637">Commonwealth Legislation</span><ul>
+              <li><span class="lilabel"><span id="638">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.CRIMA14&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Crimes%20Act%201914"><span id="639">Crimes Act 1914</span></a><span id="640"> (Extracts) was </span><span class="it"><span id="641">amended</span></span><span id="642"> by Crimes Legislation Amendment (Law Enforcement Integrity, Vulnerable Witness Protection and Other Measures) Act2013 No74.</span></li>
+              <li><span class="lilabel"><span id="643">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.CCOA&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Code%20Act%201995"><span id="644">Criminal Code Act 1995</span></a><span id="645"> was </span><span class="it"><span id="646">amended</span></span><span id="647"> by Crimes Legislation Amendment (Law Enforcement Integrity, Vulnerable Witness Protection and Other Measures) Act2013 No74.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="648">—&#x2003;</span></span><span id="649">New South Wales Legislation</span><ul>
+              <li><span class="lilabel"><span id="650">•&#x2003;</span></span><span id="651">Commentary references </span><span class="it"><span id="652">inserted</span></span><span id="653"> and </span><span class="it"><span id="654">updated</span></span><span id="655">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="656">—&#x2003;</span></span><span id="657">Victorian Legislation</span><ul>
+              <li><span class="lilabel"><span id="658">•&#x2003;</span></span><span id="659">Commentary references </span><span class="it"><span id="660">inserted</span></span><span id="661"> and </span><span class="it"><span id="662">updated</span></span><span id="663">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="664">—&#x2003;</span></span><span id="665">South Australian Legislation</span><ul>
+              <li><span class="lilabel"><span id="666">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.SAL.EASA29&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201929"><span id="667">Evidence Act 1929</span></a><span class="it"><span id="668">amended</span></span><span id="669"> by Statutes Amendment (Attorney- General’s Portfolio) Act2013 No11 and Magistrates (Miscellaneous) Amendment Act2013 No26.</span></li>
+              <li><span class="lilabel"><span id="670">•&#x2003;</span></span><span id="671">Commentary references </span><span class="it"><span id="672">inserted</span></span><span id="673">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="674">—&#x2003;</span></span><span id="675">Tasmanian Legislation</span><ul>
+              <li><span class="lilabel"><span id="676">•&#x2003;</span></span><span id="677">Commentary references </span><span class="it"><span id="678">updated</span></span><span id="679">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="680">—&#x2003;</span></span><span id="681">Northern Territory Legislation</span><ul>
+              <li><span class="lilabel"><span id="682">•&#x2003;</span></span><span id="683">Commentary references </span><span class="it"><span id="684">inserted</span></span><span id="685">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="686">—&#x2003;</span></span><span id="687">Australian Capital Territory Legislation</span><ul>
+              <li><span class="lilabel"><span id="688">•&#x2003;</span></span><span id="689">Commentary references </span><span class="it"><span id="690">updated</span></span><span id="691">.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="692">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S157">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S157" type="ext"></span><span id="693">HARDCOPY SERVICE 157 — JUNE 2013:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="694">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="695">—&#x2003;</span></span><span class="bf"><span id="696">Commentary</span></span><ul>
+              <li><span class="lilabel"><span id="697">•&#x2003;</span></span><span id="698">The following guide cards have been updated: Similar Fact Evidence, Evidence by Accused Persons, Privilege, Public Policy, Opinion, The Rule against Hearsay: Principal Exceptions at Common Law, The Rule against Hearsay: Statutory Exceptions, Documentary Evidence and Proof of Frequently Recurring Matters.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="699">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="700">—&#x2003;</span></span><span class="bf"><span id="701">Commonwealth Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="702">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.ETA99&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Electronic%20Transactions%20Act%201999"><span id="703">Electronic Transactions Act 1999</span></a><span id="704"> was </span><span class="it"><span id="705">inserted</span></span><span id="706">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="707">—&#x2003;</span></span><span class="bf"><span id="708">Victorian Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="709">•&#x2003;</span></span><span id="710">Commentary </span><span class="it"><span id="711">inserted</span></span><span id="712">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="713">—&#x2003;</span></span><span class="bf"><span id="714">Queensland Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="715">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.QL.EAQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201977"><span id="716">Evidence Act 1977</span></a><span class="it"><span id="717">amended</span></span><span id="718"> by Criminal Law (Child Exploitation and Dangerous Drugs) Amendment Act 2013 No 14.</span></li>
+              <li><span class="lilabel"><span id="719">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=CE.QL.CRSXOQ&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Law%20%28;Sexual%20Offences%29;%20Act%201978"><span id="720">Criminal Law (Sexual Offences) Act 1978</span></a><span id="721"> (Extract) was </span><span class="it"><span id="722">inserted</span></span><span id="723">.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="724">—&#x2003;</span></span><span class="bf"><span id="725">Australian Capital Territory Legislation</span></span><ul>
+              <li><span class="lilabel"><span id="726">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.ACTL.EMPA91&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;Miscellaneous%20Provisions%29;%20Act%201991"><span id="727">Evidence (Miscellaneous Provisions) Act 1991</span></a><span class="it"><span id="728">amended</span></span><span id="729"> by Statute Law Amendment Act 2013 No 19.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="730">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S156">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S156" type="ext"></span><span id="731">HARDCOPY SERVICE 156 — JUNE 2013:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="732">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="733">—&#x2003;</span></span><span id="734">Contents • Tables</span><ul>
+              <li><span class="lilabel"><span id="735">•&#x2003;</span></span><span id="736">Table of Cases </span><span class="it"><span id="737">updated</span></span><span id="738">. Current to Service 155.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="739">—&#x2003;</span></span><span id="740">Commentary</span><ul>
+              <li><span class="lilabel"><span id="741">•&#x2003;</span></span><span id="742">The following guide cards have been updated: Introduction, Facts which Need not be Proved by Evidence, Estoppels, The Burden of Proof and Presumptions, Degrees of Proof, Functions of Judge and Jury, The Competence and Compellability of Witnesses, Corroboration, The Course of Evidence and Character and Credibility.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="743">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="744">—&#x2003;</span></span><span id="745">Victorian Legislation</span><ul>
+              <li><span class="lilabel"><span id="746">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.VL.ERV09&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Regulations%202009"><span id="747">Evidence Regulations 2009</span></a><span class="it"><span id="748">amended</span></span><span id="749"> by Evidence Amendment Regulations 2013 SR No 46 of 2013.</span></li>
+              <li><span class="lilabel"><span id="750">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=CE.VL.CPAV09&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Procedure%20Act%202009"><span id="751">Criminal Procedure Act 2009</span></a><span id="752"> No 7 (extracts) </span><span class="it"><span id="753">updated</span></span><span id="754"> sections 377 and 388 were added to the extracts.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="755">—&#x2003;</span></span><span id="756">South Australian Legislation</span><ul>
+              <li><span class="lilabel"><span id="757">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.SAL.CLCS&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Law%20Consolidation%20Act%201935"><span id="758">Criminal Law Consolidation Act 1935</span></a><span class="it"><span id="759">amended</span></span><span id="760"> Statutes Amendment (Appeals) Act  2013 Act No 9 of 2013.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="761">—&#x2003;</span></span><span id="762">Tasmanian Legislation</span><ul>
+              <li><span class="lilabel"><span id="763">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.TL.EAT01&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%202001"><span id="764">Evidence Act  2001</span></a><span class="it"><span id="765">amended</span></span><span id="766"> by Surrogacy (Consequential Amendments) Act 2012 No 31 of 2012.</span></li>
+              <li><span class="lilabel"><span id="767">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.TL.CLDIT95&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Law%20%28;Detention%20and%20Interrogation%29;%20Act%201995"><span id="768">Criminal Law (Detention and Interrogation) Act 1995</span></a><span class="it"><span id="769">was addded.</span></span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="770">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S155">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S155" type="ext"></span><span id="771">HARDCOPY SERVICE 155 — MAY 2013:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="772">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="773">—&#x2003;</span></span><span id="774">Contents • Tables</span><ul>
+              <li><span class="lilabel"><span id="775">•&#x2003;</span></span><span id="776">Table of Cases </span><span class="it"><span id="777">updated</span></span><span id="778">. Current to Service 155.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="779">—&#x2003;</span></span><span id="780">Commentary</span><ul>
+              <li><span class="lilabel"><span id="781">•&#x2003;</span></span><span id="782">The following guide cards have been updated: Introduction, Facts which Need not be Proved by Evidence, Estoppels, The Burden of Proof and Presumptions, Degrees of Proof, The Competence and Compellability of Witnesses, Corroboration, The Course of Evidence, Character and Credibility, Similar Fact Evidence, Public Interest, Opinion, The Rule against Hearsay: Principal Exceptions at Common Law and Documentary Evidence.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="783">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="784">—&#x2003;</span></span><span id="785">Commonwealth Legislation</span><ul>
+              <li><span class="lilabel"><span id="786">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.FOEA94&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Foreign%20Evidence%20Act%201994"><span id="787">Foreign Evidence Act 1994</span></a><span class="it"><span id="788">amended</span></span><span id="789"> by Federal Circuit Court of Australia (Consequential Amendments) Act 2013  Act 2013 No 13 of 2013 .</span></li>
+              <li><span class="lilabel"><span id="790">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.CCOA&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Code%20Act%201995"><span id="791">Criminal Code Act 1995</span></a><span class="it"><span id="792">amended</span></span><span id="793"> by Federal Circuit Court of Australia (Consequential Amendments) Act 2013 No 13 of 2013.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="794">—&#x2003;</span></span><span id="795">Northern Territory Legislation</span><ul>
+              <li><span class="lilabel"><span id="796">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.NT.ENULANT11&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;National%20Uniform%20Legislation%29;%20Act%202011"><span id="797">Evidence (National Uniform Legislation) Act 2011</span></a><span id="798"> No 33 </span><span class="it"><span id="799">amended</span></span><span id="800"> by Evidence (National Uniform Legislation) Amendment Act 2013 (Act 4/2013) .</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="801">—&#x2003;</span></span><span id="802">Australian Capital Territory Legislation</span><ul>
+              <li><span class="lilabel"><span id="803">•&#x2003;</span></span><a class="external" href="looseleaf://opendocument?dpsi=007S&refpt=COE.ACTL.EMPA91&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;Miscellaneous%20Provisions%29;%20Act%201991"><span id="804">Evidence (Miscellaneous Provisions) Act 1991</span></a><span class="it"><span id="805">amended</span></span><span id="806"> by Crimes Legislation Amendment Act 2013 No 12 of 2013.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="807">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S154">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S154" type="ext"></span><span id="808">HARDCOPY SERVICE 154 — APRIL 2013:&#x2003;</span></h3>
+      </div><section title="Volume 1" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="809">Volume 1&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="810">—&#x2003;</span></span><span id="811">Contents • Tables</span><ul>
+              <li><span class="lilabel"><span id="812">•&#x2003;</span></span><span id="813">Table of Statutes </span><span class="it"><span id="814">inserted</span></span><span id="815">. Current to Service 154.</span></li>
+            </ul>
+          </li>
+          <li><span class="lilabel"><span id="816">—&#x2003;</span></span><span id="817">Commentary</span><ul>
+              <li><span class="lilabel"><span id="818">•&#x2003;</span></span><span id="819">The following guide cards have been updated: Privilege, Rule against Hearsay: Statutory Exceptions.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Volume 2" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="820">Volume 2&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="821">—&#x2003;</span></span><span id="822">Commonwealth Legislation</span><ul>
+              <li><span class="lilabel"><span id="823">•&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.CML.CCOA&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Criminal%20Code%20Act%201995"><span id="824">Criminal Code Act 1995</span></a><span class="it"><span id="825">amended</span></span><span id="826"> by Crimes Legislation Amendment (Slavery, Slavery-like Conditions and People Trafficking) Act 2013, Act 6 of 2013.</span></li>
+              <li><span class="lilabel"><span id="827">•&#x2003;</span></span><span id="828">New extract of UNHCR Human Rights Convention </span><span class="it"><span id="829">inserted</span></span><span id="830">.</span></li>
+            </ul>
+          </li>
+        </ul></section></div>
+    <blockquote>
+      <p><span id="831">________________</span></p>
+    </blockquote>
+    <div class="hiddendiv" data-value="CE_LATUP.SGM_CE.LATUP.S153">  </div>
+    <div class="para">
+      <div class="title">
+        <h3 class="paratitle"><span id="CE.LATUP.S153" type="ext"></span><span id="832">HARDCOPY SERVICE 153 — MARCH 2013:&#x2003;</span></h3>
+      </div><section title="Updated legislation — current to 10 February 2013" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="833">Updated legislation — current to 10 February 2013&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="834">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.VL.EAV&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20%28;Miscellaneous%20Provisions%29;%20Act%201958"><span id="835">Evidence (Miscellaneous Provisions) Act 1958</span></a><span id="836"> has been amended by:</span><ul>
+              <li><span class="lilabel"><span id="837">•&#x2003;</span></span><span id="838">Independent Broad-based Anti-corruption Commission Amendment (Examinations) Act 2012, Act 28 of 2012 AND Victorian Inspectorate Amendment Act 2012, Act 19 of 2012.</span></li>
+            </ul>
+          </li>
+        </ul></section><section title="Updated legislation — current to 11 February 2013" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="839">Updated legislation — current to 11 February 2013&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="840">—&#x2003;</span></span><a class="interbook" href="looseleaf://opendocument?dpsi=007S&refpt=COE.SAL.EASA29&remotekey1=REFPTID&remotekey2=&service=DOC-ID&LinkText=Evidence%20Act%201929"><span id="841">Evidence Act 1929</span></a><span id="842"> has been amended by:</span><ul>
+              <li><span class="lilabel"><span id="843">•&#x2003;</span></span><span id="844">Evidence (Reporting on Sexual Offences) Amendment Act 2012, Act 44 of 2012.</span></li>
+            </ul>
+          </li>
+        </ul>
+        <p><span id="845"> </span></p></section><section title="Updated Commentary" class="paragroup"><div class="title">
+          <h3 class="paragrouptitle"><span id="846">Updated Commentary&#x2003;</span></h3>
+        </div>
+        <ul>
+          <li><span class="lilabel"><span id="847">—&#x2003;</span></span><span id="848">The following guide cards have been updated: Introduction, Facts which Need not be Proved by Evidence, Estoppels, Burden of Proof and Presumptions, Degrees of Proof, Functions of Judge and Jury, Competence and Compellability of Witnesses, Corroboration, Course of Evidence, Character and Credibility, Similar Fact Evidence, Evidence by Accused Persons, Public Interest, Opinion, Rule against Hearsay, Rule against Hearsay: Exceptions at Common Law, Rule against Hearsay: Statutory Exceptions, Doctrine of Res Gestae, Documentary Evidence, Proof of Frequently Recurring Matters.</span></li>
+        </ul>
+        <ul>
+          <li><span class="lilabel"><span id="849">—&#x2003;</span></span><span id="850">Northern Territory Legislation: Cross references </span><span class="it"><span id="851">updated</span></span><span id="852">.</span></li>
+        </ul>
+        <blockquote>
+          <p><span id="853">________________</span></p>
+        </blockquote></section></div>
+  </div>
+</div>

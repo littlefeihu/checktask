@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountNotExistErrorMsg" xml:space="preserve">
+    <value>Email address does not exist.</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>LexisNexis Red</value>
+  </data>
+  <data name="CancelButton.Content" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangePwdPopupHeader.Text" xml:space="preserve">
+    <value>Welcome to LexisNexis Red</value>
+  </data>
+  <data name="ChangePwdPopupTip.Text" xml:space="preserve">
+    <value>(minimum of 4 characters)</value>
+  </data>
+  <data name="CountryBox.PlaceholderText" xml:space="preserve">
+    <value>Select Country</value>
+  </data>
+  <data name="CustomerSupportMsgHeader.Text" xml:space="preserve">
+    <value>If you don't have an internet connection please contact customer support
+
+Australia                   1800 999 906
+Hong Kong              +852 2179 7888 
+Malaysia                   1800-88-8856 
+New Zealand            0800 800 986
+Singapore                 +65-6349-0110</value>
+  </data>
+  <data name="DeviceIdNotMatchedMsg" xml:space="preserve">
+    <value>Device id is not mapped to the email address provided.</value>
+  </data>
+  <data name="DeviceLimitMsg" xml:space="preserve">
+    <value>DeviceLimit</value>
+  </data>
+  <data name="EmailOrPwdErrorMsg" xml:space="preserve">
+    <value>Either the email address or password you entered is incorrect.</value>
+  </data>
+  <data name="EmailTextBox.PlaceholderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmptyEmailAndEmptyPwdMsg" xml:space="preserve">
+    <value>Please enter both your email address and password to log in.</value>
+  </data>
+  <data name="EmptyemailAndValidPwdMsg" xml:space="preserve">
+    <value>The email address you entered is not correct.</value>
+  </data>
+  <data name="ErrorMsgHeader" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="InvalidemailAndEmptyPwdMsg" xml:space="preserve">
+    <value>The email address you entered in not correct. Please enter both your email address and password to log in.</value>
+  </data>
+  <data name="InvalidemailAndInvalidPwdMsg" xml:space="preserve">
+    <value>The email address you entered is not correct.</value>
+  </data>
+  <data name="InvalidemailAndValidPwdMsg" xml:space="preserve">
+    <value>Either the email address or password you entered is incorrect.</value>
+  </data>
+  <data name="InValidEmailMsg" xml:space="preserve">
+    <value>Enter valid email address</value>
+  </data>
+  <data name="Login.Content" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginButton.Content" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="NetworkDisconnectPopupMessage" xml:space="preserve">
+    <value>Unable to communicate with LexisNexis Red services. Please ensure you have an internet connection, or try again later as the servers may be busy.</value>
+  </data>
+  <data name="NetworkDisconnectPopupTitle" xml:space="preserve">
+    <value>Server Error</value>
+  </data>
+  <data name="NewPasswordBox.PlaceholderText" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="NotSelectCountryMsg" xml:space="preserve">
+    <value>Select country. Please select a country from the drop down list.</value>
+  </data>
+  <data name="PasswordBox.PlaceholderText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordChangedMsg" xml:space="preserve">
+    <value>Your password has been changed successfully.</value>
+  </data>
+  <data name="PasswordConfirmBox.PlaceholderText" xml:space="preserve">
+    <value>Please re-type it</value>
+  </data>
+  <data name="PasswordNotMatchErrorMsg" xml:space="preserve">
+    <value>Error : Passwords do not match. Please re-enter.</value>
+  </data>
+  <data name="PasswordToShortErrorMsg" xml:space="preserve">
+    <value>Your new password is too short. Please select a password with at least 4 characters.</value>
+  </data>
+  <data name="ResetPassowrdFormHeader.Text" xml:space="preserve">
+    <value>Please enter your email address and select the country below so we can send you a password reminder.</value>
+  </data>
+  <data name="ResetPassword.Content" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="ResetPwdButton.Content" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="ResetPwdSentMsg" xml:space="preserve">
+    <value>Your password reset request has been sent.</value>
+  </data>
+  <data name="SendButton.Content" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="UnExpectedError" xml:space="preserve">
+    <value>Unexpected error.</value>
+  </data>
+  <data name="ValidemailAndEmptyPwdMsg" xml:space="preserve">
+    <value>Please enter both your email address and password to log in.</value>
+  </data>
+  <data name="ValidemailAndInvalidPwdMsg" xml:space="preserve">
+    <value>Either the email address or password you entered is incorrect.</value>
+  </data>
+  <data name="NavMenu-Annotations" xml:space="preserve">
+    <value>Annotations</value>
+  </data>
+  <data name="NavMenu-MyPublications" xml:space="preserve">
+    <value>My Publications</value>
+  </data>
+  <data name="NavMenu-Settings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="NavMenu-SignOut.Text" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>dd MMM yyyy</value>
+  </data>
+  <data name="HistroyTitle.Text" xml:space="preserve">
+    <value>Recent History</value>
+  </data>
+  <data name="Loan.Text" xml:space="preserve">
+    <value>LOAN</value>
+  </data>
+  <data name="NoHistoryMsg.Text" xml:space="preserve">
+    <value>Recent history items will be generated as you navigate through the content</value>
+  </data>
+  <data name="NoPublicationsMsg.Text" xml:space="preserve">
+    <value>You have no titles, please contact your Relationship Manager for support.</value>
+  </data>
+  <data name="PublicationsPageTitle.Text" xml:space="preserve">
+    <value>Publications</value>
+  </data>
+  <data name="PublicationFilterAll.Content" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="PublicationFilterLoan.Content" xml:space="preserve">
+    <value>Loan</value>
+  </data>
+  <data name="PublicationFilterSubscription.Content" xml:space="preserve">
+    <value>Subscription</value>
+  </data>
+  <data name="TryAgain.Text" xml:space="preserve">
+    <value>Try again</value>
+  </data>
+  <data name="AdditionalInformationTitle.Text" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="CancelDownloadMsg" xml:space="preserve">
+    <value>Are you sure you want to cancel the download of this LexisNexis Red publication?</value>
+  </data>
+  <data name="CancelDownloadTitle" xml:space="preserve">
+    <value>Cancel Download</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ContinueText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CurrencyDateLabel.Text" xml:space="preserve">
+    <value>Currency Date</value>
+  </data>
+  <data name="CurrencyDateText" xml:space="preserve">
+    <value>Currency Date </value>
+  </data>
+  <data name="DaysRemainingText" xml:space="preserve">
+    <value> days Remaining</value>
+  </data>
+  <data name="DeletePublicationAlertMsg" xml:space="preserve">
+    <value>You will have to call our Customer Support if you want to re-install it.</value>
+  </data>
+  <data name="DeletePublicationAlertTitle" xml:space="preserve">
+    <value>Delete Publication?</value>
+  </data>
+  <data name="DownloadFailedMsg" xml:space="preserve">
+    <value>Download failed</value>
+  </data>
+  <data name="DownloadOverLimitMsg" xml:space="preserve">
+    <value>This Digital Looseleaf title is over 20MB. We recommend you connect to a Wi-Fi network to download it.</value>
+  </data>
+  <data name="DownloadOverLimitTitle" xml:space="preserve">
+    <value>Download Over 20MB</value>
+  </data>
+  <data name="DownloadText" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DueToExpireText" xml:space="preserve">
+    <value>Due to expire</value>
+  </data>
+  <data name="ExpiredText" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="FullCasesTitle.Text" xml:space="preserve">
+    <value>+ Cases</value>
+  </data>
+  <data name="GuideCardsAddedTitle.Text" xml:space="preserve">
+    <value>GuideCards Added:</value>
+  </data>
+  <data name="GuideCardsDeletedTitle.Text" xml:space="preserve">
+    <value>GuideCards Deleted:</value>
+  </data>
+  <data name="GuideCardsUpdatedTitle.Text" xml:space="preserve">
+    <value>GuideCards Updated:</value>
+  </data>
+  <data name="InstalledDateLabel.Text" xml:space="preserve">
+    <value>Installed</value>
+  </data>
+  <data name="LessText" xml:space="preserve">
+    <value>Less</value>
+  </data>
+  <data name="MissingConnectionMsg" xml:space="preserve">
+    <value>Sorry, there appears to be no Internet connection. A connection is required to complete this task.</value>
+  </data>
+  <data name="MoreText" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="NoAddedGuideCardsMsg" xml:space="preserve">
+    <value>No Files Added</value>
+  </data>
+  <data name="NoDeletedGuideCardsMsg" xml:space="preserve">
+    <value>No Files Deleted</value>
+  </data>
+  <data name="NoUpdatedGuideCardsMsg" xml:space="preserve">
+    <value>No Files Updated</value>
+  </data>
+  <data name="OneDayRemainingText" xml:space="preserve">
+    <value>1 day Remaining</value>
+  </data>
+  <data name="OneUpdateAvailableText" xml:space="preserve">
+    <value>1 Update Available</value>
+  </data>
+  <data name="OpenButton.Content" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="PracticeAreaLabel.Text" xml:space="preserve">
+    <value>Practice Area</value>
+  </data>
+  <data name="SignOutAlertMsg" xml:space="preserve">
+    <value>Thank you for using LexisNexis Red application. Are you sure you want to exit?</value>
+  </data>
+  <data name="SignOutAlertTitle" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="SizeLabel.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SubcategoryLabel.Text" xml:space="preserve">
+    <value>Subcategory</value>
+  </data>
+  <data name="SubscriptionExpiredTitle.Text" xml:space="preserve">
+    <value>● Subscription Expired</value>
+  </data>
+  <data name="TryAgainTB.Text" xml:space="preserve">
+    <value>Try again</value>
+  </data>
+  <data name="UpdateButton.Content" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateFailedMsg" xml:space="preserve">
+    <value>Update failed</value>
+  </data>
+  <data name="UpdateFailedTB.Text" xml:space="preserve">
+    <value>Update failed</value>
+  </data>
+  <data name="UpdatesAvailableText" xml:space="preserve">
+    <value> Updates Available</value>
+  </data>
+  <data name="UpToDateText" xml:space="preserve">
+    <value>Up to date</value>
+  </data>
+  <data name="VersionLabel.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="WhatsNewTitle.Text" xml:space="preserve">
+    <value>What's new in this version</value>
+  </data>
+  <data name="AnnotationsPageTitle.Text" xml:space="preserve">
+    <value>Annotations</value>
+  </data>
+  <data name="ApplicationAuthor.Text" xml:space="preserve">
+    <value>LexisNexis</value>
+  </data>
+  <data name="ApplicationName.Text" xml:space="preserve">
+    <value>LexisNexis Red</value>
+  </data>
+  <data name="ApplicationVersion.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="DateTimeFormat" xml:space="preserve">
+    <value>hh:mmtt, dd MMM yyyy</value>
+  </data>
+  <data name="DeleteButton.Content" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="FontSizeSettingTip.Text" xml:space="preserve">
+    <value>This will change the font size in the publication content view.</value>
+  </data>
+  <data name="FontSizeSettingTitle.Text" xml:space="preserve">
+    <value>Font Size</value>
+  </data>
+  <data name="PublicationInfoPageTitle.Text" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="PublicationRe-OrderTip.Text" xml:space="preserve">
+    <value>Drag titles to re-order how they appear in your list.</value>
+  </data>
+  <data name="PublicationRe-OrderTitle.Text" xml:space="preserve">
+    <value>Publication Order</value>
+  </data>
+  <data name="SettingsLabel-About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="SettingsLabel-Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="SettingsLabel-Publication" xml:space="preserve">
+    <value>Publication</value>
+  </data>
+  <data name="SettingsPageTitle.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="LastestServerSyncLabel.Text" xml:space="preserve">
+    <value>Lastest Server Sync</value>
+  </data>
+  <data name="MenuLabel-Annotations" xml:space="preserve">
+    <value>Annotations</value>
+  </data>
+  <data name="MenuLabel-Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="MenuLabel-TOC" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="NoIndexs.Text" xml:space="preserve">
+    <value>No Index Files Available.</value>
+  </data>
+  <data name="NoIndexsTip.Text" xml:space="preserve">
+    <value>There are no index files available for this publication.</value>
+  </data>
+  <data name="UpdatePublicationMsg" xml:space="preserve">
+    <value> update(s) are available. Do you want to download and install them now?</value>
+  </data>
+  <data name="UpdateText" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="FullCasesMsg.Text" xml:space="preserve">
+    <value>What can you expect from your subscription to the new + Cases titles: 
+- The same great content you know and trust, automatically updated. 
+- Inclusion of new additional content from our unreported judgment database: 
+   - High value text cases chosen based on their high degree of relevance to this title; 
+   - Offline accessibility to this content within your Red title; 
+   - Ability to link between the analytical and case content within this title, and between your other Red titles; 
+   - Use of Red’s award winning annotation, highlighting and legal define features on the text cases within this title. 
+
+Please don’t hesitate to contact your Relationship Manager should you have any questions or feedback regarding your subscription.</value>
+  </data>
+  <data name="Goto.Content" xml:space="preserve">
+    <value>Go to</value>
+  </data>
+  <data name="AnnotationFilterAll.Content" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AnnotationFilterHighlights.Content" xml:space="preserve">
+    <value>Highlights</value>
+  </data>
+  <data name="AnnotationFilterNotes.Content" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="AnnotationFilterOrphans.Content" xml:space="preserve">
+    <value>Orphans</value>
+  </data>
+  <data name="NoAnnotation.Text" xml:space="preserve">
+    <value>You have no annotations, Highlight text in your publications to add one.</value>
+  </data>
+  <data name="InstallationErrorHeader" xml:space="preserve">
+    <value>Installation Error</value>
+  </data>
+  <data name="InstallationErrorMsg" xml:space="preserve">
+    <value>Installation of the book has been interrupted. Please re-install the book.</value>
+  </data>
+  <data name="MissingConnectionHeader" xml:space="preserve">
+    <value>Missing Connection</value>
+  </data>
+  <data name="OKMsg" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AnnotationFilterAllText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AnnotationFilterHighlightsText" xml:space="preserve">
+    <value>Highlights</value>
+  </data>
+  <data name="AnnotationFilterNotesText" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="NewTagTitle" xml:space="preserve">
+    <value>New Tag</value>
+  </data>
+  <data name="TagColourTitle.Text" xml:space="preserve">
+    <value>Tag Colour</value>
+  </data>
+  <data name="TagNamePlaceholder.PlaceholderText" xml:space="preserve">
+    <value>Tag name</value>
+  </data>
+  <data name="TagTitle.Text" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="DoneButton.Content" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="TagFilter.Content" xml:space="preserve">
+    <value>Tag Filter</value>
+  </data>
+  <data name="SignInTitle.Text" xml:space="preserve">
+    <value>Sign in with your LexisNexis account.</value>
+  </data>
+  <data name="ForgotPassword.Content" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="BackButton.Content" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="SubmitButton.Content" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="ExipredTitlePart1.Text" xml:space="preserve">
+    <value>Your subscription to this title has expired.
+We want to thank you for choosing LexisNexis to support the great work you do on a daily basis, and we hope to continue being your legal content provider of choice.
+To re-subscribe to this content and continue receiving updates, please contact your Relationship Manager, or Customer Service on </value>
+  </data>
+  <data name="ExipredTitlePart2.Text" xml:space="preserve">
+    <value>Should you choose not to resubscribe to this title, there are a few things we want to make sure you're aware of.
+         ● This content will no longer receive updates from LexisNexis, and will be out of date as of the next update
+         ● Annotations made after the expiry of this title will no longer sync. And could be lost upon subscribing.
+         ● If you delete this book from, or lose your device, LexisNexis is unable to retrieve the content for you.
+Should you choose to resubscribe to this content, full functionality will be restored, and content automatically updated to the most recent version.
+Please don't hesitate to contact your Relationship Manager should you have any questions or concerns regarding this, or any of your other Red titles.</value>
+  </data>
+  <data name="ForgotPasswordTitle.Text" xml:space="preserve">
+    <value>Forgot password</value>
+  </data>
+  <data name="EmailTitle.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FaxTitle.Text" xml:space="preserve">
+    <value>Fax us</value>
+  </data>
+  <data name="InternationalCallers.Text" xml:space="preserve">
+    <value>International Callers</value>
+  </data>
+  <data name="PostUsTitle.Text" xml:space="preserve">
+    <value>Post to us</value>
+  </data>
+  <data name="SendDxTitle.Text" xml:space="preserve">
+    <value>Send by DX</value>
+  </data>
+  <data name="PrintTitle.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="SaveAsPDFTitile.Text" xml:space="preserve">
+    <value>Save as PDF - Document</value>
+  </data>
+  <data name="SearchHeader.Text" xml:space="preserve">
+    <value>Filter by</value>
+  </data>
+  <data name="SearchResultLoading.Text" xml:space="preserve">
+    <value>Search results loading, please wait.</value>
+  </data>
+  <data name="NoSearchResult.Text" xml:space="preserve">
+    <value>No search results found.</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="Publication" xml:space="preserve">
+    <value>Publication</value>
+  </data>
+  <data name="NoLegalDefine.Text" xml:space="preserve">
+    <value>No legal definition found</value>
+  </data>
+  <data name="PageNotFound.Text" xml:space="preserve">
+    <value>The page you're looking for doesn't exist in this publication. Please try again.</value>
+  </data>
+  <data name="HighlightAssign.Text" xml:space="preserve">
+    <value>Assign to:</value>
+  </data>
+  <data name="HighlightTitle.Text" xml:space="preserve">
+    <value>Highlight</value>
+  </data>
+  <data name="NoteTitle.Text" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="AnnotationTitle" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="Highlight" xml:space="preserve">
+    <value>Highlight</value>
+  </data>
+  <data name="EditTagTitle" xml:space="preserve">
+    <value>Edit Tag</value>
+  </data>
+  <data name="NoAnnotationMessage.Text" xml:space="preserve">
+    <value>No annotations match your search criteria.</value>
+  </data>
+  <data name="EditTagsTitle" xml:space="preserve">
+    <value>Edit tags</value>
+  </data>
+</root>

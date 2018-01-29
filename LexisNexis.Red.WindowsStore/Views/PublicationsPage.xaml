@@ -1,0 +1,97 @@
+﻿<storeApps:VisualStateAwarePage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:storeApps="using:Microsoft.Practices.Prism.StoreApps"
+    xmlns:prism="using:Microsoft.Practices.Prism.Mvvm"
+    
+    x:Name="pageRoot"
+    x:Class="LexisNexis.Red.WindowsStore.Views.PublicationsPage"
+    
+    mc:Ignorable="d"
+   
+    prism:ViewModelLocator.AutoWireViewModel="True">
+
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" HorizontalScrollMode="Disabled" VerticalScrollBarVisibility="Auto" ScrollViewer.ZoomMode="Disabled">
+            <Grid>
+                <Grid.ChildrenTransitions>
+                    <TransitionCollection>
+                        <EntranceThemeTransition/>
+                    </TransitionCollection>
+                </Grid.ChildrenTransitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="48"/>
+                    <RowDefinition Height="48"/>
+                    <RowDefinition Height="382"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0"  Background="{StaticResource PageHeaderBackgroundColorBrush}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--<Button Grid.Column="0" Style="{StaticResource BackButtonStyle}" 
+                AutomationProperties.Name="Back"
+				AutomationProperties.AutomationId="BackButton"
+				AutomationProperties.ItemType="Navigation Button"
+				Command="{Binding GoBackCommand, ElementName=pageRoot}"/>-->
+                    <TextBlock AutomationProperties.AutomationId="PublicationsPageTitle" Grid.Column="1" x:Uid="PublicationsPageTitle" Style="{StaticResource PageHeaderStyle}" />
+                </Grid>
+                <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="20,10,0,0">
+                    <RadioButton x:Uid="PublicationFilterAll" GroupName="PubliationFilter" Style="{StaticResource FilterItemButonStyle}" IsChecked="{Binding SelectedFilter, Converter={StaticResource EqualityToTrueConverter}, ConverterParameter=All, Mode=TwoWay}"/>
+                    <RadioButton x:Uid="PublicationFilterLoan" GroupName="PubliationFilter" Style="{StaticResource FilterItemButonStyle}" IsChecked="{Binding SelectedFilter, Converter={StaticResource EqualityToTrueConverter}, ConverterParameter=Loan, Mode=TwoWay}"/>
+                    <RadioButton x:Uid="PublicationFilterSubscription" GroupName="PubliationFilter" Style="{StaticResource FilterItemButonStyle}" IsChecked="{Binding SelectedFilter, Converter={StaticResource EqualityToTrueConverter}, ConverterParameter=Subscription, Mode=TwoWay}" />
+                </StackPanel>
+                <GridView AutomationProperties.AutomationId="PublicationItems" Grid.Row="2"  Padding="18,18,0,0" ItemsSource="{Binding FiltedPublications, Mode=OneWay}"   
+                  ItemTemplate="{StaticResource PublicationTemplate200X340}"
+                  ItemContainerStyle="{StaticResource PublicationGridViewItemStyle}"
+                  SelectionMode="None"
+                  Visibility="{Binding HasPublications, Converter={StaticResource BoolToVisibleConverter}}"
+                  IsItemClickEnabled="True"
+                  ItemClick="PublicationItemClick"
+                  CanDragItems="True"
+                  CanReorderItems="True"
+                  AllowDrop="True"
+                 >
+                    <GridView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <ItemsWrapGrid MaximumRowsOrColumns="1"  Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </GridView.ItemsPanel>
+                </GridView>
+                <TextBlock Grid.Row="2" Margin="18,18,0,0" x:Uid="NoPublicationsMsg"
+                   Style="{StaticResource EmptyMessageTextBlockStyle}"
+                   Visibility="{Binding HasPublications, Converter={StaticResource FalseToVisibleConverter}}"/>
+
+                <TextBlock Grid.Row="3"  x:Uid="HistroyTitle" Margin="18,0,0,18"  Style="{StaticResource PageSectionTitleTextBlockStyle}"/>
+                <TextBlock Grid.Row="4"  x:Uid="NoHistoryMsg" Margin="18,0,0,0" Style="{StaticResource EmptyMessageTextBlockStyle}"
+                  Visibility="{Binding HasHistory, Converter={StaticResource FalseToVisibleConverter}}" />
+                <ListView
+                 AutomationProperties.AutomationId="RecentHistoryItems"
+                 HorizontalAlignment="Stretch"
+                 Grid.Row="4" 
+                 Margin="18,18,18,0"
+                 ItemsSource="{Binding HistoryPublications}"
+                 ItemContainerStyle="{StaticResource PublicationsHistoryContainerStyle}"
+                 ItemTemplate="{StaticResource PublicationsHistoryTemplate}"
+                 IsItemClickEnabled="True"
+                 ItemClick="RecentHistoryItemClick" 
+                 SelectionMode="None"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollMode="Disabled"
+                >
+                </ListView>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</storeApps:VisualStateAwarePage>

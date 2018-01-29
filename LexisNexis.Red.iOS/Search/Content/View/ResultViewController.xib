@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController">
+            <connections>
+                <outlet property="ContentFilterButton" destination="MMC-gX-llP" id="97b-SK-sfm"/>
+                <outlet property="ResultFilterContainerView" destination="RXk-FI-0qw" id="X09-JP-xkP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kCW-yf-GMq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXk-FI-0qw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAG-h5-Ca3">
+                            <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="T87-nL-VDf"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter results by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFi-Fo-UuK">
+                            <rect key="frame" x="20" y="12" width="110" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="8d1-7x-JKk"/>
+                                <constraint firstAttribute="width" constant="110" id="vpV-YA-Lsh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMC-gX-llP">
+                            <rect key="frame" x="130" y="12" width="180" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Ygw-ly-Ll9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="All">
+                                <color key="titleColor" red="1" green="0.0" blue="0.060231345870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="ShowDocTypeFilter:" destination="-1" eventType="touchUpInside" id="4G4-NO-vph"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZAG-h5-Ca3" secondAttribute="bottom" id="EP6-J4-cvd"/>
+                        <constraint firstItem="MMC-gX-llP" firstAttribute="leading" secondItem="VFi-Fo-UuK" secondAttribute="trailing" id="Hnm-b1-bd1"/>
+                        <constraint firstAttribute="height" constant="44" id="O4e-Yf-x8a"/>
+                        <constraint firstItem="ZAG-h5-Ca3" firstAttribute="leading" secondItem="RXk-FI-0qw" secondAttribute="leading" id="OqJ-KL-Z7f"/>
+                        <constraint firstItem="VFi-Fo-UuK" firstAttribute="top" secondItem="RXk-FI-0qw" secondAttribute="top" constant="12" id="Pqd-Bo-OmM"/>
+                        <constraint firstAttribute="trailing" secondItem="MMC-gX-llP" secondAttribute="trailing" constant="10" id="QP2-k5-FhY"/>
+                        <constraint firstItem="VFi-Fo-UuK" firstAttribute="leading" secondItem="RXk-FI-0qw" secondAttribute="leading" constant="20" id="R7H-Uq-Zxs"/>
+                        <constraint firstAttribute="trailing" secondItem="ZAG-h5-Ca3" secondAttribute="trailing" id="cc5-wt-4bP"/>
+                        <constraint firstItem="MMC-gX-llP" firstAttribute="top" secondItem="RXk-FI-0qw" secondAttribute="top" constant="12" id="y8x-rU-X9G"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No search results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTz-D1-xR2">
+                    <rect key="frame" x="0.0" y="44" width="320" height="980"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yTz-D1-xR2" secondAttribute="bottom" id="1OX-IL-ZMV"/>
+                <constraint firstItem="yTz-D1-xR2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7oe-ud-9AB"/>
+                <constraint firstItem="yTz-D1-xR2" firstAttribute="top" secondItem="RXk-FI-0qw" secondAttribute="bottom" id="RZn-dV-7Cr"/>
+                <constraint firstItem="RXk-FI-0qw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W1C-0J-3bP"/>
+                <constraint firstItem="RXk-FI-0qw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bEs-JH-cpy"/>
+                <constraint firstAttribute="trailing" secondItem="yTz-D1-xR2" secondAttribute="trailing" id="c14-S4-Zp5"/>
+                <constraint firstAttribute="trailing" secondItem="RXk-FI-0qw" secondAttribute="trailing" id="gbi-fg-I9R"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

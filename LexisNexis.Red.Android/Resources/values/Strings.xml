@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello" redid="common.Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">智慧巡更</string>
+
+  <string name="OK">OK</string>
+  <string name="Confirm">确认</string>
+  <string name="Done">完成</string>
+  <string name="Delete">删除</string>
+  <string name="Del">Del</string>
+  <string name="Cancel">取消</string>
+  <string name="Send">发送</string>
+  <string name="Submit">提交</string>
+  <string name="Save">保存</string>
+
+  <!-- Login Layout -->
+  <string name="Email">账号</string>
+  <string name="Password">密码</string>
+  <string name="Country">国家</string>
+  <string name="ResetPassword">重置密码</string>
+  <string name="ForgotYourPassword">忘记密码?</string>
+  <string name="Login">登录</string>
+  <string name="NewPassword">新密码</string>
+  <string name="RetypeNewPassword">重新输入新密码</string>
+  <string name="PleaseWaitTitle">请等待</string>
+  <string name="PleaseWaitMessage">请等待</string>
+  <string name="PleaseSelectCountry">选择</string>
+
+  <string name="EnterPwdReminderTitle">Please enter your email address and select the country below so we can send you a password reminder.</string>
+  <string name="Min4Chars">(minimum of 4 characters)</string>
+  <string name="Welcome2LNRed">Welcome to 智慧消防</string>
+
+  <string name="ChangePasswordTitle">Change Password</string>
+  <string name="ChangePasswordSucceed">Your password has been successfully changed.</string>
+  <string name="ChangePasswordError_LengthInvalid">Your new password is too short. Please select a password with at least 4 characters.</string>
+  <string name="ChangePasswordError_NotMatch">Error : Passwords do not match. Please re-enter.</string>
+  <string name="ChangePasswordError_ChangeFail">Error : Change password failed.</string>
+
+  <string name="ReminderPasswordTitle">Reminder Password</string>
+  <string name="ReminderPasswordSucceed">Your password reset request has been sent.</string>
+  <string name="ReminderPasswordErrorTitle">Error !!</string>
+  <string name="ReminderPassword_ErrorTitleErrorMessage">Error Message</string>
+  <string name="ReminderPasswordError">Email address does not exist.</string>
+  <string name="ReminderPassword_InvalidEmail">Enter valid email address.</string>
+  <string name="ReminderPassword_DeviceIdNotMatched">Device id is not mapped to the email address provided.</string>
+  <string name="ReminderPassword_ResetFailure">Reset password failed.</string>
+
+  <string name="ServiceCountry_Name_AU">Australia</string>
+  <string name="ServiceCountry_Name_HK">Hong Kong</string>
+  <string name="ServiceCountry_Name_SG">Singapore</string>
+  <string name="ServiceCountry_Name_NZ">New Zealand</string>
+  <string name="ServiceCountry_Name_MY">Malaysia</string>
+  <string name="ReminderPassword_SupportPromote">If you don\'t have an internet connection, please call Customer Support on:</string>
+  <string name="ReminderPassword_SupportPromote_Australia">Australia</string>
+  <string name="ReminderPassword_SupportPromote_AustraliaTel">1800 999 906</string>
+  <string name="ReminderPassword_SupportPromote_HongKong">Hong Kong</string>
+  <string name="ReminderPassword_SupportPromote_HongKongTel">+852 2179 7888</string>
+  <string name="ReminderPassword_SupportPromote_Malaysia">Malaysia</string>
+  <string name="ReminderPassword_SupportPromote_MalaysiaTel">1800-88-8856</string>
+  <string name="ReminderPassword_SupportPromote_NewZealand">New Zealand</string>
+  <string name="ReminderPassword_SupportPromote_NewZealandTel">0800 800 986</string>
+  <string name="ReminderPassword_SupportPromote_Singapore">Singapore</string>
+  <string name="ReminderPassword_SupportPromote_SingaporeTel">+65-6349-0110</string>
+
+  <!-- 2 -->
+  <string name="LoginErrorMessage_NetDisconnected_Title">Server Error</string>
+  <string name="LoginErrorMessage_NetDisconnected">Unable to communicate with 智慧消防 services. Please ensure you have an internet connection, or try again later as the servers may be busy.</string>
+
+  <!-- 7 -->
+  <string name="LoginErrorMessage_InvalidemailAndValidPwd">Either the email address or password you entered is incorrect.</string>
+  <!-- 8 -->
+  <string name="LoginErrorMessage_ValidemailAndInvalidPwd">Either the email address or password you entered is incorrect.</string>
+  <!-- 9 -->
+  <string name="LoginErrorMessage_InvalidemailAndInvalidPwd">The email address you entered is not correct.</string>
+  <!-- 10 -->
+  <string name="LoginErrorMessage_ValidemailAndEmptyPwd">Please enter both your email and password to log in.</string>
+  <!-- 11 -->
+  <string name="LoginErrorMessage_EmptyemailAndValidPwd">The email address you entered is not correct.</string>
+  <!-- 12 -->
+  <string name="LoginErrorMessage_InvalidemailAndEmptyPwd">The email address you entered in not correct.\nPlease enter both your email address and password to log in.</string>
+  <!-- 13 -->
+  <string name="LoginErrorMessage_SelectCountry">Select country\nPlease select a country from the drop down list.</string>
+  <!-- may be 7 -->
+  <string name="LoginErrorMessage_EmailOrPwdError">Either the email address or password you entered is incorrect.</string>
+  <!-- 19 -->
+  <string name="LoginErrorMessage_AccountNotExistTitle">Error</string>
+  <string name="LoginErrorMessage_AccountNotExist">Email address does not exist. Pelase try again.</string>
+
+  <string name="LoginErrorMessage_EmptyEmailAndEmptyPwd">Please enter both your email address and password to log in.</string>
+
+  <string name="LoginErrorMessage_DeviceLimit">You have reached the maximum number of registered devices available for your account. For more information please contact Customer Support on 1800 772 772.</string>
+
+  <string name="LoginErrorMessage_LoginFailure">Login failure due to unknown reason.</string>
+
+  <!-- Settings Page -->
+  <string name="SettingsDialog_Title">Settings</string>
+  <string name="SettingsDialog_Signout">Sign Out</string>
+
+  <string name="LogoutConfirm_Title">退出</string>
+  <string name="LogoutConfirm_Message">感谢您使用智慧消防APP.确定要退出吗?</string>
+  
+  <string name="StartTask_Title">任务管理</string>
+  <string name="StartTaskConfirm_Message">确定要启动任务吗?</string>
+  <string name="EndTaskConfirm_Message">确定要结束任务吗?</string>
+  <!-- My Publications Page -->
+  <string name="PublicationsFilter_All">All</string>
+  <string name="PublicationsFilter_Loan">Loan</string>
+  <string name="PublicationsFilter_Subscription">Subscription</string>
+  <string name="PublicationsFilter_Publications">巡查任务</string>
+  <string name="PublicationsFilter_History">Recent History</string>
+  <string name="PublicationsFilter_NoTitleMessage">还没有任何巡查任务</string>
+  <string name="PublicationsFilter_NoHistoryMessage">Recent history items will be generated as you navigate through the content.</string>
+
+  <string name="NetworkFlow_Warning_Title">Download Over 20MB</string>
+  <string name="NetworkFlow_Warning_Message">This Digital Looseleaf title is over 20MB. We recommend you connect to a Wi-Fi network to download it.</string>
+  <string name="NetworkFlow_Warning_Download">Download</string>
+
+  <string name="DownloadFailded_NetDisconnected_Title">Missing connection</string>
+  <string name="DownloadFailded_NetDisconnected_Message">Sorry, there appears to be no Internet connection.  A connection is required to complete this task.</string>
+  <string name="CancelDownload_Confirm_Title">取消</string>
+  <string name="CancelDownload_Confirm_Message">确定想要取消吗?</string>
+
+  <string name="CancelUpdate_Confirm_Title">Cancel Updates</string>
+  <string name="CancelUpdate_Confirm_Message">Are you sure you want to cancel the updates?</string>
+
+  <string name="InstallPublication_PleaseWait">Installing... This may take up to 1 min.</string>
+
+  <string name="MyPub_TitleBarTab_Annotations">ANNOTATIONS</string>
+  <string name="MyPub_TitleBarTab_Publications">PUBLICATIONS</string>
+
+  <!-- My Publications Page Publication Module -->
+  <string name="PubCover_Loan">LOAN</string>
+  <string name="PubCover_DaysRemaining">{0} days Remaining</string>
+  <string name="PubCover_1DayRemaining">1 day Remaining</string>
+  <string name="PubCover_DueToExpire">Due To Expire</string>
+
+  <string name="PubCover_Download">Download</string>
+  <string name="PubCover_Downloading">Downloading</string>
+  <string name="PubCover_UpdatesAvailable">{0} Updates Available</string>
+  <string name="PubCover_UpdateAvailable">{0} Update Available</string>
+  <string name="PubCover_UpToDate">Up to date</string>
+  <string name="PubCover_Expired">Expired</string>
+  <string name="PubCover_CurrencyDate">Currency Date {0}</string>
+
+  <string name="PubCover_Download_Failed">Download Failed</string>
+  <string name="PubCover_Upload_Failed">Update Failed</string>
+  <string name="PubCover_PlusCase_Extension"> + CASES</string>
+
+  <!-- My Publications Page Detail Info -->
+  <string name="DetailInfo_LoanLable">Loan</string>
+  <string name="DetailInfo_PluseCaseLable">+ Cases</string>
+  <string name="DetailInfo_Information">Information</string>
+  <string name="DetailInfo_Version">Version</string>
+  <string name="DetailInfo_Installed">Installed</string>
+  <string name="DetailInfo_CurrencyDate">Currency Date</string>
+  <string name="DetailInfo_Size">Size</string>
+  <string name="DetailInfo_PracticeArea">Practice Area</string>
+  <string name="DetailInfo_Subcategory">Subcategory</string>
+  <string name="DetailInfo_ExpiredWarning">Expired</string>
+  <string name="DetailInfo_Update">UPDATE</string>
+  <string name="DetailInfo_Cancel">CANCEL</string>
+  <string name="DetailInfo_Open">OPEN</string>
+  <string name="DetailInfo_SubscriptionExpired">● Subscription Expired</string>
+  <string name="DetailInfo_ExpiredTitleContact">
+    <![CDATA[
+Contact ###SUPPORTTEL### or ###SUPPORTEMAIL###
+]]>
+  </string>
+  <string name="DetailInfo_ExpiredInfo">
+    <![CDATA[
+Your subscription to this title has expired.
+\nWe want to thank you for choosing LexisNexis to support the great work you do on a daily basis, and we hope to continue being your legal content provider of choice.
+\nTo re-subscribe to this content and continue receiving updates, please contact your Relationship Manager, or Customer Service on ###SUPPORTTEL### or ###SUPPORTEMAIL###
+\nShould you choose not to resubscribe to this title, there are a few things we want to make sure you’re aware of.
+\n\t\t• This content will no longer receive updates from LexisNexis, and will be out of date as of the next update
+\n\t\t• Annotations made after the expiry of this title will no longer sync. And could be lost upon subscribing
+\n\t\t• If you delete this book from, or lose your device, LexisNexis is unable to retrieve the content for you.
+\nShould you choose to resubscribe to this content, full functionality will be restored, and content automatically updated to the most recent version.
+\nPlease don’t hesitate to contact your Relationship Manager should you have any questions or concerns regarding this, or any of your other Red titles.
+]]>
+  </string>
+  <string name="DetailInfo_Description">Description</string>
+  <string name="DetailInfo_PluseCase">+ Cases</string>
+  <string name="DetailInfo_PluseCase_DetailInfo">
+    <![CDATA[
+What can you expect from your subscription to the new + Cases titles:
+\n- The same great content you know and trust, automatically updated.
+\n- Inclusion of new additional content from our unreported judgment database:
+\n\t- High value text cases chosen based on their high degree of relevance to this title;
+\n\t- Offline accessibility to this content within your Red title;
+\n\t- Ability to link between the analytical and case content within this title, and between your other Red titles;
+\n\t- Use of Red’s award winning annotation, highlighting and legal define features on the text cases within this title.
+\n\nPlease don’t hesitate to contact your Relationship Manager should you have any questions or feedback regarding your subscription.
+]]>
+  </string>
+  <string name="DetailInfo_WhatsNew">What\'s New</string>
+
+  <string name="DetailInfo_ViewMore">READ MORE</string>
+  <string name="DetailInfo_ViewLess">READ LESS</string>
+
+  <string name="WhatsUp_Add_Title">GuideCards Added :</string>
+  <string name="WhatsUp_NoAdd">No Files Added</string>
+  <string name="WhatsUp_Deleted_Title">GuideCards Deleted :</string>
+  <string name="WhatsUp_NoDeleted">No Files Deleted</string>
+  <string name="WhatsUp_Updated_Title">GuideCards Updated :</string>
+  <string name="WhatsUp_NoUpdated">No Files Updated</string>
+
+  <!-- Main Menu Popup -->
+  <string name="MainMenuPopup_AboutLNRed">About 智慧消防</string>
+  <string name="MainMenuPopup_AboutLNLegalProfessional">About LexisNexis Legal &amp; Professional</string>
+  <string name="MainMenuPopup_TermsConditions">Terms &amp; Conditions</string>
+  <string name="MainMenuPopup_PublicationText">Publication Text</string>
+  <string name="MainMenuPopup_OrganisePublications">Organise Publications</string>
+  <string name="MainMenuPopup_ViewTour">View Tour</string>
+  <string name="MainMenuPopup_FAQ">FAQ\'s</string>
+  <string name="MainMenuPopup_ContactUs">Contact Us</string>
+  <string name="MainMenuPopup_Logout">退出</string>
+  <string name="MainMenuPopup_LastSync">Latest server sync {0}</string>
+
+  <!-- Settings Board Activity -->
+  <string name="SettingsBoard_Activity_Title_OrganisePublications">Organise Publications</string>
+  <string name="SettingsBoard_Activity_Title_TermsAndConditions">Terms &amp; Conditions</string>
+  <string name="SettingsBoard_Activity_Title_LNLegalAndProfessional">About LexisNexis Legal &amp; Professional</string>
+  <string name="SettingsBoard_Activity_Title_LNRed">About 智慧消防</string>
+  <string name="SettingsBoard_Activity_Title_FAQs">FAQ\'s</string>
+  <string name="SettingsBoard_Activity_Title_Contact">Contact</string>
+
+  <!-- Organise Publication Fragment -->
+  <string name="OrganisePub_DeletePubWarning_Title">Delete Publication?</string>
+  <string name="OrganisePub_DeletePubWarning_Message">You will have to call our Customer Support if you want to re-install it.</string>
+
+  <!-- Settings Contact Us Fragment -->
+  <string name="ContactUs_ContactUsTitle">Contact us</string>
+  <string name="ContactUs_InternationalCallers">International Callers</string>
+  <string name="ContactUs_Fax">Fax</string>
+  <string name="ContactUs_LNCustomerRelations">LexisNexis Customer Relations</string>
+  <string name="ContactUs_PostToUs">Post to us</string>
+  <string name="ContactUs_SendByDX">Send by DX</string>
+
+  <!-- Content Page -->
+  <string name="PublicationPboPage_GoTo">Go to</string>
+  <string name="PublicationPboPage_Page">Page</string>
+
+  <string name="PublicationTextPopup_Title">Publication Text</string>
+  <string name="PublicationTextPopup_Small">Small</string>
+  <string name="PublicationTextPopup_Normal">Normal</string>
+  <string name="PublicationTextPopup_Large">Large</string>
+
+  <string name="DetailInfo_InstallCompleted_Title">Install Completed</string>
+  <string name="DetailInfo_InstallCompleted_Message">Install Completed! Content page is reloaded.</string>
+
+  <string name="DetailInfo_InstallError_Title">Installation Error</string>
+  <string name="DetailInfo_InstallError_Message">Installation of the book has been interrupted. Please re-install the book.</string>
+
+  <string name="LegalDefine_NotFound_Message">No legal definition found</string>
+  <string name="LegalDefine_SearchWeb">SEARCH WEB</string>
+  <string name="LegalDefine_See">See:</string>
+  <string name="LegalDefine_SeeAlso">See also:</string>
+
+  <string name="InstallOfficeDialog_Title">Unable to open attachment</string>
+  <string name="InstallOfficeDialog_Message">Please install office app to open attachment. OfficeSuite is recommended. If you agree to install OfficeSuite, please click \"OK\". If you want to install other app, please click \"Cancel\"</string>
+
+  <!-- Content Page TOC Panel -->
+  <string name="TOCPanel_TableOfContents">Table of Contents</string>
+
+  <!-- Content Page Index Panel -->
+  <string name="IndexPanel_NoIndexFilesForPublication">There are no index files for this publication</string>
+  <string name="IndexPanel_PublicationIndex">Publication index</string>
+  <string name="IndexPanel_NoIndexAvailable">No index files available.</string>
+
+  <!-- Content Page Recent History Panel -->
+  <string name="RecentHistoryPanel_RecentHistory">Recent History</string>
+
+  <!-- Content Page Web View -->
+  <string name="WebView_ContextMenu_Annotate">ANNOTATE</string>
+  <string name="WebView_ContextMenu_LegalDefine">LEGAL DEFINE</string>
+  <string name="WebView_ContextMenu_Copy">COPY</string>
+
+  <!-- Annotation -->
+  <string name="Annotation_TagName_AllTags">All Tags</string>
+  <string name="Annotation_TagName_NoTag">No Tag</string>
+  <string name="Annotation_TypeFilter_All">All</string>
+  <string name="Annotation_TypeFilter_Highlights">Highlights</string>
+  <string name="Annotation_TypeFilter_Notes">Notes</string>
+  <string name="Annotation_TypeFilter_Orphans">Orphans</string>
+
+  <!-- Annotation New Tag Page -->
+  <string name="AnnotationNewTagPage_NewTag">New Tag</string>
+  <string name="AnnotationNewTagPage_EditTag">Edit Tag</string>
+  <string name="AnnotationNewTagPage_SelectATagColour">Select a tag colour</string>
+  <string name="AnnotationNewTagPage_EnterATagName">Enter a tag name</string>
+  <string name="AnnotationNewTagPage_Done">DONE</string>
+  <string name="AnnotationNewTagPage_Cancel">CANCEL</string>
+  <string name="AnnotationNewTagPage_PleaseInputTagName">Please input tag name.</string>
+
+  <!-- Annotation Edit Tags Page -->
+  <string name="AnnotationEditTagsPage_EditTags">Edit Tags</string>
+
+  <!-- Content Page Search -->
+  <string name="ContentSearch_EditText_Hint">Search {0}</string>
+  <string name="ContentSearch_ResultType_Document">Document</string>
+  <string name="ContentSearch_ResultType_Publication">Publication</string>
+  <string name="ContentSearch_NoSearchResult">No search results found</string>
+
+  <!-- Content Page Search Filter Popup -->
+  <string name="ContentSearch_Filter_All">All</string>
+  <string name="ContentSearch_Filter_Legislation">Legislation</string>
+  <string name="ContentSearch_Filter_Commentary">Commentary</string>
+  <string name="ContentSearch_Filter_FormsPrecedents">Forms &amp; Precedents</string>
+
+  <!-- Content Page Share Popup -->
+  <string name="ContentShare_AsPdf">Share as PDF</string>
+  <string name="ContentShare_Print">Print</string>
+
+  <!-- Content Page PBO GoTo Popup -->
+  <string name="ContentPboGoTo_PageResults">Page Results</string>
+  <string name="ContentPboGoTo_EmptyInputMessage">Use the number pad to go to the page you\'re looking for.</string>
+  <string name="ContentPboGoTo_NotFoundMessage">Page not Found\nThe page you\'re looking for doesn\'t exist in this publication. Please try again.</string>
+</resources>

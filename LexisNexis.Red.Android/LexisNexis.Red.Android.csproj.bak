@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE0DE08D-110D-4319-A5E8-B58EE96CC8C8}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LexisNexis.Red.Droid</RootNamespace>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AssemblyName>LexisNexis.Red.Droid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Testing|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Testing\</OutputPath>
+    <DefineConstants>TRACE;TESTING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>TempKeyStore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>fred123</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>Fred</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>fred123</AndroidSigningKeyPass>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;arm64-v8a</AndroidSupportedAbis>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AssemblyName>LexisNexis.Red.Droid</AssemblyName>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;PREVIEW</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>TempKeyStore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>fred123</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>Fred</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>fred123</AndroidSigningKeyPass>
+    <AssemblyName>LexisNexis.Red.Droid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>LexisNexis.Red.Android</AssemblyName>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <DefineConstants>RELEASE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\packages\Xamarin.Insights.1.11.1\lib\MonoAndroid10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack-PCL">
+      <HintPath>..\packages\HtmlAgilityPack-PCL.1.4.6\lib\HtmlAgilityPack-PCL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AlertDialogUtility\SimpleDialogFragment.cs" />
+    <Compile Include="Implementation\FileDirectory.cs" />
+    <Compile Include="Implementation\AndroidDevice.cs" />
+    <Compile Include="App\MainApp.cs" />
+    <Compile Include="LoginPage\LoginActivity.cs" />
+    <Compile Include="LoginPage\LoginFragment.cs" />
+    <Compile Include="LoginPage\ILoginActivity.cs" />
+    <Compile Include="LoginPage\ReminderPasswordFragment.cs" />
+    <Compile Include="LoginPage\ResetPasswordDialogFragment.cs" />
+    <Compile Include="AlertDialogUtility\DialogGenerator.cs" />
+    <Compile Include="MyPublicationsPage\MyPublicationsActivity.cs" />
+    <Compile Include="LoginPage\CountrySpinnerAdapter.cs" />
+    <Compile Include="SettingsPage\ISettingsDialogHostActivity.cs" />
+    <Compile Include="MyPublicationsPage\PublicationListFragment.cs" />
+    <Compile Include="Widget\SlidingTab\SlidingTabScrollView.cs" />
+    <Compile Include="Widget\SlidingTab\SlidingTabStrip.cs" />
+    <Compile Include="Widget\SlidingTab\IPagerWithTitleAdapter.cs" />
+    <Compile Include="MyPublicationsPage\PublicationsAdaptor.cs" />
+    <Compile Include="MyPublicationsPage\PublicationsAdaptorViewHolder.cs" />
+    <Compile Include="Async\AsyncTaskManager.cs" />
+    <Compile Include="Async\AsyncUIOperationRepeater.cs" />
+    <Compile Include="Async\IAsyncTaskActivity.cs" />
+    <Compile Include="Business\DataCache.cs" />
+    <Compile Include="Widget\Layout\FixedAspectRatioFrameLayout.cs" />
+    <Compile Include="Business\PublicationExtInfo.cs" />
+    <Compile Include="Implementation\AndroidNetwork.cs" />
+    <Compile Include="Utility\Conversion.cs" />
+    <Compile Include="Widget\ExpandableTextView\ExpandableTextViewUtilty.cs" />
+    <Compile Include="Widget\ExpandableTextView\ExpandableTextViewTag.cs" />
+    <Compile Include="MyPublicationsPage\PublicationCoverViewHolder.cs" />
+    <Compile Include="SettingsPage\MainMenuPopup.cs" />
+    <Compile Include="Utility\ObjHolder.cs" />
+    <Compile Include="Widget\DraggableList\DraggableRecyclerView.cs" />
+    <Compile Include="Widget\StatusBar\StatusBarTintHelper.cs" />
+    <Compile Include="Implementation\PackageFile.cs" />
+    <Compile Include="ContentPage\ContentActivity.cs" />
+    <Compile Include="Widget\ExpandableTextView\SimpleExpandableTextViewUtilty.cs" />
+    <Compile Include="Widget\ExpandableTextView\ISimpleExpandableTextViewListerner.cs" />
+    <Compile Include="TextStyle\ViewMoreLessSpan.cs" />
+    <Compile Include="Widget\SpinnerUtility\SpinnerHelper.cs" />
+    <Compile Include="TextStyle\FixedTextUtils.cs" />
+    <Compile Include="TextStyle\NoUnderlineURLSpan.cs" />
+    <Compile Include="Widget\ExpandableTextView\AutoLinkOptions.cs" />
+    <Compile Include="Widget\ExpandableTextView\ViewMoreLessOptions.cs" />
+    <Compile Include="SettingsBoardPage\OrganisePublicationsFragment.cs" />
+    <Compile Include="SettingsBoardPage\DraggablePublicationListAdapter.cs" />
+    <Compile Include="SettingsBoardPage\DraggablePublicationListViewHolder.cs" />
+    <Compile Include="SettingsBoardPage\TermsAndConditionsFragment.cs" />
+    <Compile Include="SettingsBoardPage\ISettingsBoardFragment.cs" />
+    <Compile Include="SettingsBoardPage\SettingsBoardActivity.cs" />
+    <Compile Include="SettingsBoardPage\LNLegalAndProfessionalFragment.cs" />
+    <Compile Include="SettingsBoardPage\LNRedFragment.cs" />
+    <Compile Include="Utility\PreventMultipleUIOperation.cs" />
+    <Compile Include="SettingsBoardPage\FaqsFragment.cs" />
+    <Compile Include="ContentPage\ContentMainFragment.cs" />
+    <Compile Include="Widget\ViewUtility\LimitMaxDimensHelper.cs" />
+    <Compile Include="ContentPage\ContentMainFragmentState.cs" />
+    <Compile Include="Implementation\AndroidCryptogram.cs" />
+    <Compile Include="ContentPage\TOCPanelFragment.cs" />
+    <Compile Include="ContentPage\TOCListAdaptor.cs" />
+    <Compile Include="ContentPage\TOCListAdaptorViewHolder.cs" />
+    <Compile Include="ContentPage\IndexListAdaptor.cs" />
+    <Compile Include="ContentPage\IndexPanelFragment.cs" />
+    <Compile Include="ContentPage\ContentFragment.cs" />
+    <Compile Include="ContentPage\IExpandableRightPanel.cs" />
+    <Compile Include="ContentPage\IndexContentFragment.cs" />
+    <Compile Include="Widget\ListView\ListViewFastScrollHelper.cs" />
+    <Compile Include="Widget\Fragment\FragmentManagerExt.cs" />
+    <Compile Include="RecentHistory\HistoryListAdaptor.cs" />
+    <Compile Include="RecentHistory\HistoryListAdaptorViewHolder.cs" />
+    <Compile Include="AlertDialogUtility\SimpleDialogProvider.cs" />
+    <Compile Include="AlertDialogUtility\ISimpleDialogListener.cs" />
+    <Compile Include="Utility\DateTimeHelper.cs" />
+    <Compile Include="DetailInfoModal\PublicationDetailInfoFragment.cs" />
+    <Compile Include="Business\IDownloadPublicationTaskListener.cs" />
+    <Compile Include="Business\TOCBreadcrumbs.cs" />
+    <Compile Include="Business\PublicationManager.cs" />
+    <Compile Include="ContentPage\AnnotationListFragment.cs" />
+    <Compile Include="Utility\JavaObjWrapper.cs" />
+    <Compile Include="ContentPage\IRefreshableFragment.cs" />
+    <Compile Include="Async\AsyncHelpers.cs" />
+    <Compile Include="Widget\Layout\BoundedFrameLayout.cs" />
+    <Compile Include="WebViewUtility\WebViewTag.cs" />
+    <Compile Include="WebViewUtility\WebViewManager.cs" />
+    <Compile Include="WebViewUtility\WebViewKeeper.cs" />
+    <Compile Include="WebViewUtility\WebViewClientExt.cs" />
+    <Compile Include="WebViewUtility\WebViewExt.cs" />
+    <Compile Include="Implementation\AndroidLogger.cs" />
+    <Compile Include="Business\LastSyncedTimeHelper.cs" />
+    <Compile Include="Utility\LogHelper.cs" />
+    <Compile Include="WebViewUtility\WebContentFontSizeHelper.cs" />
+    <Compile Include="WebViewUtility\WebContentFontSize.cs" />
+    <Compile Include="ContentPage\PublicationTextDialogFragment.cs" />
+    <Compile Include="ContentPage\ContentFragmentStatus.cs" />
+    <Compile Include="WebViewUtility\RedController.cs" />
+    <Compile Include="Widget\EnhancedTextView\CustomFontTextView.cs" />
+    <Compile Include="Utility\CustomFontsCache.cs" />
+    <Compile Include="SettingsBoardPage\ContactUsFragment.cs" />
+    <Compile Include="MyPublicationsPage\PublicationsMainFragment.cs" />
+    <Compile Include="Utility\SwipeableItemDataWrap.cs" />
+    <Compile Include="ContentPage\IActionModeTarget.cs" />
+    <Compile Include="ContentPage\NavigationManagerHelper.cs" />
+    <Compile Include="Utility\FileCacheHelper.cs" />
+    <Compile Include="ContentPage\ContentSearchActivity.cs" />
+    <Compile Include="Widget\ToolbarHelper.cs" />
+    <Compile Include="ContentPage\SearchResultListAdaptor.cs" />
+    <Compile Include="ContentPage\SearchResultListViewHolder.cs" />
+    <Compile Include="ContentPage\ContentSearchFilterPopup.cs" />
+    <Compile Include="ContentPage\ContentSearchStatus.cs" />
+    <Compile Include="Business\SearchResultKeeper.cs" />
+    <Compile Include="Widget\EnhancedTextView\EditTextHelper.cs" />
+    <Compile Include="Widget\Layout\InterceptTouchLinearLayout.cs" />
+    <Compile Include="ContentNavigation\ContentNavigationManager.cs" />
+    <Compile Include="Business\PublicationIndexStatus.cs" />
+    <Compile Include="Business\AnnotationsStatusKeeper.cs" />
+    <Compile Include="ContentPage\LegalDefinePopup.cs" />
+    <Compile Include="ContentPage\ContentActivityStatus.cs" />
+    <Compile Include="TextStyle\SpannableStringBuilderHelper.cs" />
+    <Compile Include="AnnotationOrganiserPage\AnnotationListFragment.cs" />
+    <Compile Include="AnnotationOrganiserPage\EditTagsActivity.cs" />
+    <Compile Include="AnnotationOrganiserPage\NewTagActivity.cs" />
+    <Compile Include="AnnotationOrganiserPage\EditTagsListViewHolder.cs" />
+    <Compile Include="AnnotationOrganiserPage\EditTagsListAdaptor.cs" />
+    <Compile Include="AnnotationUtility\AnnotationListAdaptor.cs" />
+    <Compile Include="AnnotationUtility\AnnotationListAdaptorViewHolder.cs" />
+    <Compile Include="AnnotationUtility\TagFilterAdaptor.cs" />
+    <Compile Include="AnnotationUtility\TagFilterAdaptorViewHolder.cs" />
+    <Compile Include="AnnotationUtility\SelectableAnnotationTag.cs" />
+    <Compile Include="AnnotationUtility\ITagFilterListener.cs" />
+    <Compile Include="ContentPage\AnnotationsPanelFragment.cs" />
+    <Compile Include="ContentPage\TagFilterDialogFragment.cs" />
+    <Compile Include="RecentHistory\IRecentHistoryChangedListener.cs" />
+    <Compile Include="ContentPage\GoToPageDialogFragment.cs" />
+    <Compile Include="ContentPage\PboGoToResultListAdaptor.cs" />
+    <Compile Include="ContentPage\PboGoToResultListViewHolder.cs" />
+    <Compile Include="AnnotationUtility\EditTagsDialogFragment.cs" />
+    <Compile Include="AnnotationUtility\EditTagsListAdaptor.cs" />
+    <Compile Include="AnnotationUtility\EditTagsListViewHolder.cs" />
+    <Compile Include="WebViewUtility\ScrollOp.cs" />
+    <Compile Include="AnnotationUtility\NewEditTagDialogFragment.cs" />
+    <Compile Include="AnnotationUtility\ITagListUpdateListener.cs" />
+    <Compile Include="SettingsBoardPage\OrganisePublicationsListAdaptor.cs" />
+    <Compile Include="SettingsBoardPage\OrganisePublicationsListViewHolder.cs" />
+    <Compile Include="ContentPage\AnnotationsPanelFragmentStatus.cs" />
+    <Compile Include="PrintUtility\PrintLayoutCallback.cs" />
+    <Compile Include="PrintUtility\PrintWriteCallback.cs" />
+    <Compile Include="PrintUtility\PdfPrintCacheHelper.cs" />
+    <Compile Include="WebViewUtility\PrintingWebViewTag.cs" />
+    <Compile Include="PrintUtility\PrintType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\login_fragment.axml" />
+    <AndroidResource Include="Resources\layout\login_activity.axml" />
+    <AndroidResource Include="Resources\layout\reset_password_fragment.axml" />
+    <AndroidResource Include="Resources\drawable\blue_button.png" />
+    <AndroidResource Include="Resources\drawable\red_button.png" />
+    <AndroidResource Include="Resources\layout\remainder_password_fragment.axml" />
+    <AndroidResource Include="Resources\drawable\login_bkgd.xml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\layout\single_text_spinner_item.axml" />
+    <AndroidResource Include="Resources\drawable\loginpage_editview_background.xml" />
+    <AndroidResource Include="Resources\layout\loginpage_country_spinneritem.axml" />
+    <AndroidResource Include="Resources\drawable\loginpage_spinner_background.9.png" />
+    <AndroidResource Include="Resources\layout\toolbar.axml" />
+    <AndroidResource Include="Resources\values\arrays.xml" />
+    <AndroidResource Include="Resources\menu\mypublications_actionbar.xml" />
+    <AndroidResource Include="Resources\drawable\settings_icon.png" />
+    <AndroidResource Include="Resources\layout\dialog_template.axml" />
+    <AndroidResource Include="Resources\layout\settings_fragment.axml" />
+    <AndroidResource Include="Resources\layout\test_spinner_item.axml" />
+    <AndroidResource Include="Resources\layout\publicationlist_fragment.axml" />
+    <AndroidResource Include="Resources\layout\mypublications_activity.axml" />
+    <AndroidResource Include="Resources\drawable\mypub_info.png" />
+    <AndroidResource Include="Resources\drawable\mypub_toc.png" />
+    <AndroidResource Include="Resources\drawable\mypub_annotations.png" />
+    <AndroidResource Include="Resources\drawable\mypub_index.png" />
+    <AndroidResource Include="Resources\layout\annotationlist_fragment.axml" />
+    <AndroidResource Include="Resources\values\fixedaspectframelayout_attrs.xml" />
+    <AndroidResource Include="Resources\layout\publication_item.axml" />
+    <AndroidResource Include="Resources\drawable\mypub_download.png" />
+    <AndroidResource Include="Resources\drawable\mypub_stopdownload.png" />
+    <AndroidResource Include="Resources\drawable\mypub_righttop_blue.png" />
+    <AndroidResource Include="Resources\drawable\ring_progressbar.xml" />
+    <AndroidResource Include="Resources\layout\publication_detail_info.axml" />
+    <AndroidResource Include="Resources\values\fonts.xml" />
+    <AndroidResource Include="Resources\values-v21\fonts.xml" />
+    <AndroidResource Include="Resources\drawable\loan_cases_background.xml" />
+    <AndroidResource Include="Resources\layout\publication_cover.axml" />
+    <AndroidResource Include="Resources\drawable\mypub_expired.png" />
+    <AndroidResource Include="Resources\drawable\mypub_download_progress.xml" />
+    <AndroidResource Include="Resources\drawable\mypub_download_progress_background.png" />
+    <AndroidResource Include="Resources\drawable\mypub_download_progress_foreground.png" />
+    <AndroidResource Include="Resources\drawable\mypub_download_success.png" />
+    <AndroidResource Include="Resources\drawable\mypub_update_available.png" />
+    <AndroidResource Include="Resources\drawable\mypub_decorate_frame.xml" />
+    <AndroidResource Include="Resources\drawable\abc_ic_menu_moreoverflow_mtrl_alpha.png" />
+    <AndroidResource Include="Resources\layout\main_menu_popup.axml" />
+    <AndroidResource Include="Resources\layout\organise_publications_fragment.axml" />
+    <AndroidResource Include="Resources\drawable\mypub_info_disable.png" />
+    <AndroidResource Include="Resources\drawable\mainmenu_popup_background.xml" />
+    <AndroidResource Include="Resources\drawable\shadow_frame_background.xml" />
+    <AndroidResource Include="Resources\drawable\miscinfo_frame_background.xml" />
+    <AndroidResource Include="Resources\layout\organise_pub_list_item.axml" />
+    <AndroidResource Include="Resources\drawable\trash_can.png" />
+    <AndroidResource Include="Resources\drawable\move_handler.png" />
+    <AndroidResource Include="Resources\layout\publication_detail_info_whatsup_item.axml" />
+    <AndroidResource Include="Resources\values-v21\Styles.xml" />
+    <AndroidResource Include="Resources\layout\settings_menu_item.axml" />
+    <AndroidResource Include="Resources\drawable\mypub_downloadupdate_failed.png" />
+    <AndroidResource Include="Resources\menu\content_actionbar.xml" />
+    <AndroidResource Include="Resources\layout\content_actionmenu_info.axml" />
+    <AndroidResource Include="Resources\drawable\content_actionmenu_info_num_background.xml" />
+    <AndroidResource Include="Resources\drawable\fixed_tab_active_background.xml" />
+    <AndroidResource Include="Resources\drawable\fixed_tab_deactive_background.xml" />
+    <AndroidResource Include="Resources\drawable\fixed_tab_background.xml" />
+    <AndroidResource Include="Resources\drawable\fixed_tab_text_color.xml" />
+    <AndroidResource Include="Resources\drawable\detailinfo_expired_warning.png" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values-land\dimens.xml" />
+    <AndroidResource Include="Resources\layout\settings_board_activity.axml" />
+    <AndroidResource Include="Resources\layout\settings_board_webview_fragment.axml" />
+    <AndroidResource Include="Resources\values\settings_about_ln_red.xml" />
+    <AndroidResource Include="Resources\values\settings_terms_and_conditions.xml" />
+    <AndroidResource Include="Resources\values\settings_about_ln_legal_and_professional.xml" />
+    <AndroidResource Include="Resources\values\settings_faqs.xml" />
+    <AndroidResource Include="Resources\drawable\font_size.png" />
+    <AndroidResource Include="Resources\layout\content_actionmenu_fontsize.axml" />
+    <AndroidResource Include="Resources\drawable\expand_content_view.png" />
+    <AndroidResource Include="Resources\drawable\contentpage_expired_warning.png" />
+    <AndroidResource Include="Resources\layout\content_main_fragment.axml" />
+    <AndroidResource Include="Resources\layout\content_activity.axml" />
+    <AndroidResource Include="Resources\drawable\collapse_content_view.png" />
+    <AndroidResource Include="Resources\drawable\apptheme_btn_radio_holo_light.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_off_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_off_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_off_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_off_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_off_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_on_disabled_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_on_disabled_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_on_focused_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_on_holo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\apptheme_btn_radio_on_pressed_holo_light.png" />
+    <AndroidResource Include="Resources\layout-v21\dialog_template.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_tocpanel_fragment.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_tocpanel_item.axml" />
+    <AndroidResource Include="Resources\drawable\toc_collaped.png" />
+    <AndroidResource Include="Resources\drawable\toc_expanded.png" />
+    <AndroidResource Include="Resources\drawable\next_page_activy.png" />
+    <AndroidResource Include="Resources\drawable\next_page_disable.png" />
+    <AndroidResource Include="Resources\drawable\previous_page_activy.png" />
+    <AndroidResource Include="Resources\drawable\previous_page_disable.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\layout\contentpage_indexpanel_fragment.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_indexpanel_item.axml" />
+    <AndroidResource Include="Resources\drawable\fastscroll_thumb_holo.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\bg_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bg_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bg_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bg_default_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\fastscroll_thumb_default_holo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\fastscroll_thumb_pressed_holo.png" />
+    <AndroidResource Include="Resources\drawable\fastscroll_thumb_indicator.xml" />
+    <AndroidResource Include="Resources\layout\contentpage_content_fragment.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_indexcontent_fragment.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\layout\publications_historylist_item.axml" />
+    <AndroidResource Include="Resources\layout\content_historylist_fragment.axml" />
+    <AndroidResource Include="Resources\layout\content_historylist_item.axml" />
+    <AndroidResource Include="Resources\drawable\publication_pluscases.png" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\drawable\detaiinfo_button_cancel_background.xml" />
+    <AndroidResource Include="Resources\drawable\detaiinfo_button_open_background.xml" />
+    <AndroidResource Include="Resources\drawable\detaiinfo_button_update_background.xml" />
+    <AndroidResource Include="Resources\drawable\content_actionmene_info_cycle_background.xml" />
+    <AndroidResource Include="Resources\layout\contentpage_annotationlist_fragment.axml" />
+    <AndroidResource Include="Resources\values\boundedframelayout_attrs.xml" />
+    <AndroidResource Include="Resources\drawable\webview_textselection_left.xml" />
+    <AndroidResource Include="Resources\drawable\webview_textselection_right.xml" />
+    <AndroidResource Include="Resources\menu\webcontent_menu.xml" />
+    <AndroidResource Include="Resources\layout\contentpage_publicationtext_popup.axml" />
+    <AndroidResource Include="Resources\drawable\toc_page_grey.png" />
+    <AndroidResource Include="Resources\drawable\toc_page_white.png" />
+    <AndroidResource Include="Resources\values\customfonttextview_attrs.xml" />
+    <AndroidResource Include="Resources\drawable\content_actionmenu_search.png" />
+    <AndroidResource Include="Resources\drawable\content_actionmenu_share.png" />
+    <AndroidResource Include="Resources\layout\content_actionmenu_search.axml" />
+    <AndroidResource Include="Resources\layout\content_actionmenu_share.axml" />
+    <AndroidResource Include="Resources\drawable\content_actionmenu_recenthistory.png" />
+    <AndroidResource Include="Resources\layout\content_actionmenu_recenthistory.axml" />
+    <AndroidResource Include="Resources\drawable\annotationtype_background.xml" />
+    <AndroidResource Include="Resources\drawable\annotation_typefilter_textcolor.xml" />
+    <AndroidResource Include="Resources\layout\annotationlist_tagitem.axml" />
+    <AndroidResource Include="Resources\drawable\checkbox_checked.png" />
+    <AndroidResource Include="Resources\drawable\checkbox_unchecked.png" />
+    <AndroidResource Include="Resources\drawable\tag_round_small_icon.xml" />
+    <AndroidResource Include="Resources\drawable\alltags_small_icon.png" />
+    <AndroidResource Include="Resources\drawable\notag_round_small_icon.xml" />
+    <AndroidResource Include="Resources\layout\settings_contactus_fragment.axml" />
+    <AndroidResource Include="Resources\drawable\email_icon.png" />
+    <AndroidResource Include="Resources\drawable\location_icon.png" />
+    <AndroidResource Include="Resources\drawable\phone_icon.png" />
+    <AndroidResource Include="Resources\drawable\login_background.png" />
+    <AndroidResource Include="Resources\drawable\ln_logo.png" />
+    <AndroidResource Include="Resources\layout-land\login_activity_old.axml" />
+    <AndroidResource Include="Resources\drawable-land\login_background_old.png" />
+    <AndroidResource Include="Resources\layout-land\login_fragment_old.axml" />
+    <AndroidResource Include="Resources\layout-land\remainder_password_fragment_old.axml" />
+    <AndroidResource Include="Resources\drawable\login_edit_text.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\login_textfield_activated.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\login_textfield_focused.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\login_textfield_default.9.png" />
+    <AndroidResource Include="Resources\drawable\login_textview_cursor.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_bg.9.png" />
+    <AndroidResource Include="Resources\layout\loginpage_spinner_item.axml" />
+    <AndroidResource Include="Resources\menu\annotations_actionbar.xml" />
+    <AndroidResource Include="Resources\layout\annotations_actionmenu_edittags.axml" />
+    <AndroidResource Include="Resources\drawable\annotations_edittags.png" />
+    <AndroidResource Include="Resources\layout\publications_main_fragment.axml" />
+    <AndroidResource Include="Resources\layout\annotations_edittags_activity.axml" />
+    <AndroidResource Include="Resources\drawable\add_icon.png" />
+    <AndroidResource Include="Resources\drawable\cancel_icon.png" />
+    <AndroidResource Include="Resources\layout\annotations_newtag_activity.axml" />
+    <AndroidResource Include="Resources\menu\newtag_actionbar.xml" />
+    <AndroidResource Include="Resources\layout\newtag_actionmenu_save.axml" />
+    <AndroidResource Include="Resources\drawable\tag_selectcolor_round_icon.xml" />
+    <AndroidResource Include="Resources\layout\newtag_selectcolor_item.axml" />
+    <AndroidResource Include="Resources\layout\annotations_edittags_listitem.axml" />
+    <AndroidResource Include="Resources\drawable\bg_item_dragging_active_state.xml" />
+    <AndroidResource Include="Resources\drawable\bg_item_dragging_state.xml" />
+    <AndroidResource Include="Resources\drawable\bg_item_normal_state.xml" />
+    <AndroidResource Include="Resources\layout\contentpage_search_activity.axml" />
+    <AndroidResource Include="Resources\drawable\black_back_arrow.png" />
+    <AndroidResource Include="Resources\drawable\black_overflowmenu.png" />
+    <AndroidResource Include="Resources\drawable\black_removetext.png" />
+    <AndroidResource Include="Resources\layout\contentpage_searchresult_item.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_searchfilter_popup.axml" />
+    <AndroidResource Include="Resources\drawable\contentpage_searchfilter_popupbackground.xml" />
+    <AndroidResource Include="Resources\layout\contentpage_legaldefine_popup.axml" />
+    <AndroidResource Include="Resources\drawable\contentpage_legaldefine_popupbackground.xml" />
+    <AndroidResource Include="Resources\menu\content_share_popup.xml" />
+    <AndroidResource Include="Resources\layout\annotationlist_annotationitem.axml" />
+    <AndroidResource Include="Resources\drawable\note_icon.png" />
+    <AndroidResource Include="Resources\layout\contentpage_annotationlist_annotationitem.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_annotationspanel_fragment.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_annotationlist_tagfilter_popup.axml" />
+    <AndroidResource Include="Resources\layout\blank_layout.axml" />
+    <AndroidResource Include="Resources\layout\contentpage_pbogotopage_popup.axml" />
+    <AndroidResource Include="Resources\drawable\btn_numberpad_number.xml" />
+    <AndroidResource Include="Resources\drawable\btn_numberpad_action.xml" />
+    <AndroidResource Include="Resources\drawable\input_delete.png" />
+    <AndroidResource Include="Resources\layout\contentpage_pbogotopage_resultitem.axml" />
+    <AndroidResource Include="Resources\layout\annotation_tagitem.axml" />
+    <AndroidResource Include="Resources\menu\content_annotations_actionbar.xml" />
+    <AndroidResource Include="Resources\layout\annotation_edittags_popup.axml" />
+    <AndroidResource Include="Resources\drawable\edit_icon.png" />
+    <AndroidResource Include="Resources\layout\annotation_newtag_popup.axml" />
+    <AndroidResource Include="Resources\drawable-mdpi\newtag_textfield.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Folder Include="Resources\drawable-land\" />
+    <Folder Include="AlertDialogUtility\" />
+    <Folder Include="Implementation\" />
+    <Folder Include="App\" />
+    <Folder Include="LoginPage\" />
+    <Folder Include="Resources\layout-land\" />
+    <Folder Include="MyPublicationsPage\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="SettingsPage\" />
+    <Folder Include="Widget\" />
+    <Folder Include="Widget\SlidingTab\" />
+    <Folder Include="Async\" />
+    <Folder Include="Business\" />
+    <Folder Include="Widget\Layout\" />
+    <Folder Include="Utility\" />
+    <Folder Include="Resources\values-v21\" />
+    <Folder Include="Widget\ExpandableTextView\" />
+    <Folder Include="Widget\DraggableList\" />
+    <Folder Include="Widget\StatusBar\" />
+    <Folder Include="ContentPage\" />
+    <Folder Include="TextStyle\" />
+    <Folder Include="Widget\SpinnerUtility\" />
+    <Folder Include="Resources\values-land\" />
+    <Folder Include="SettingsBoardPage\" />
+    <Folder Include="Widget\ViewUtility\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\layout-v21\" />
+    <Folder Include="Widget\ListView\" />
+    <Folder Include="Widget\Fragment\" />
+    <Folder Include="RecentHistory\" />
+    <Folder Include="DetailInfoModal\" />
+    <Folder Include="WebViewUtility\" />
+    <Folder Include="Assets\html\" />
+    <Folder Include="Assets\fonts\" />
+    <Folder Include="Widget\EnhancedTextView\" />
+    <Folder Include="ContentNavigation\" />
+    <Folder Include="AnnotationOrganiserPage\" />
+    <Folder Include="AnnotationUtility\" />
+    <Folder Include="PrintUtility\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LexisNexis.Red.Common\LexisNexis.Red.Common.csproj">
+      <Project>{DB646126-0816-4769-9FFC-CD0D63524613}</Project>
+      <Name>LexisNexis.Red.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemBarTint\SystemBarTint.csproj">
+      <Project>{C79592E2-F825-478C-9E06-3162CEEBE98D}</Project>
+      <Name>SystemBarTint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdvRecyclerView\AdvRecyclerView.csproj">
+      <Project>{7F58D855-3990-47F8-BF06-1F65D01E2811}</Project>
+      <Name>AdvRecyclerView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AndroidPrintPdf\AndroidPrintPdf.csproj">
+      <Project>{89510EE2-E1A5-40D9-91E6-F6B8A9BAA5BB}</Project>
+      <Name>AndroidPrintPdf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\html\jquery.min.js" />
+    <AndroidAsset Include="Assets\html\waypoints.min.js" />
+    <AndroidAsset Include="Assets\html\android.red.js" />
+    <AndroidAsset Include="Assets\fonts\GARA.TTF" />
+    <AndroidAsset Include="Assets\fonts\GARABD.TTF" />
+    <AndroidAsset Include="Assets\fonts\GARAIT.TTF" />
+    <AndroidAsset Include="Assets\fonts\Roboto-Medium.ttf" />
+    <AndroidAsset Include="Assets\fonts\Roboto-Regular.ttf" />
+    <AndroidAsset Include="Assets\html\style.css" />
+    <AndroidAsset Include="Assets\html\custom.css" />
+    <AndroidAsset Include="Assets\html\LN.css" />
+    <AndroidAsset Include="Assets\fonts\Roboto-Bold.ttf" />
+    <AndroidAsset Include="Assets\fonts\Roboto-Italic.ttf" />
+    <AndroidAsset Include="Assets\html\CommonStyle.css" />
+    <AndroidAsset Include="Assets\html\AndroidStyle.css" />
+    <AndroidAsset Include="Assets\html\cb.png" />
+    <AndroidAsset Include="Assets\html\cbcc.gif" />
+    <AndroidAsset Include="Assets\html\nzcitator.gif" />
+    <AndroidAsset Include="Assets\html\index_template.html" />
+    <AndroidAsset Include="Assets\html\content_template.html" />
+    <AndroidAsset Include="Assets\html\hilitor.js" />
+    <AndroidAsset Include="Assets\html\jquery.scrollTo.min.js" />
+    <AndroidAsset Include="Assets\html\rangy-core.js" />
+    <AndroidAsset Include="Assets\html\rangy-serializer.js" />
+    <AndroidAsset Include="Assets\html\content.css" />
+    <AndroidAsset Include="Assets\html\jquery-1.11.3.min.js" />
+    <AndroidAsset Include="Assets\html\printing_template.html" />
+  </ItemGroup>
+</Project>

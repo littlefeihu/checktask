@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/newtag_selectcolor_item_width"
+    android:layout_height="@dimen/newtag_selectcolor_item_height"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/flRoot">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iv"
+        android:layout_gravity="center" />
+</FrameLayout>

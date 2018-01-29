@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="64dp"
+    android:paddingLeft="24dp">
+    <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+        android:text="@string/ContactUs_ContactUsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="20sp"
+        android:textColor="#dd000000"
+        app:fontName="Roboto-Medium.ttf"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="20dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginRight="24dp">
+        <ImageView
+            android:src="@drawable/phone_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView1"
+            android:layout_gravity="center_vertical" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_marginLeft="36dp">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="1800 999 906"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPhone"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="16sp"
+                android:textColor="#dd000000" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="(8am to 6pm AEST), Monday - Friday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTelSupportTime"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="14sp"
+                android:textColor="#89000000" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="24dp">
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="+61 2 9422 2174"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvInternationalCall"
+            app:fontName="Roboto-Regular.ttf"
+            android:textSize="16sp"
+            android:textColor="#dd000000" />
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="@string/ContactUs_InternationalCallers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            app:fontName="Roboto-Regular.ttf"
+            android:textSize="14sp"
+            android:textColor="#89000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="24dp">
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="02 9422 2405"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontName="Roboto-Regular.ttf"
+            android:id="@+id/tvFax"
+            android:textSize="16sp"
+            android:textColor="#dd000000" />
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="@string/ContactUs_Fax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontName="Roboto-Regular.ttf"
+            android:id="@+id/textView3"
+            android:textSize="14sp"
+            android:textColor="#89000000" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/frameLayout1"
+        android:background="#1e000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="56dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="24dp">
+        <ImageView
+            android:src="@drawable/email_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView1"
+            android:layout_gravity="center_vertical" />
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="techsupport@lexisnexis.com.au"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="36dp"
+            android:textSize="16sp"
+            app:fontName="Roboto-Regular.ttf"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tvEmail"
+            android:textColorLink="#2196fc"
+            android:linksClickable="true"
+            android:textColor="#2196fc" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/frameLayout1"
+        android:background="#1e000000"
+        android:layout_marginLeft="56dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp">
+        <ImageView
+            android:src="@drawable/location_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView2" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:layout_marginLeft="36dp">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="@string/ContactUs_LNCustomerRelations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLNCustomerRelations"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="16sp"
+                android:textColor="#DD000000" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPost"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="16sp"
+                android:textColor="#DD000000"
+                android:singleLine="false"
+                android:layout_marginTop="5dp" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="@string/ContactUs_PostToUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPostToUsTitle"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="14sp"
+                android:textColor="#89000000" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPostDx"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="16sp"
+                android:textColor="#DD000000"
+                android:singleLine="false"
+                android:layout_marginTop="20dp" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="@string/ContactUs_SendByDX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSendByDXTitle"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="14sp"
+                android:textColor="#89000000" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

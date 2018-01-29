@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB646126-0816-4769-9FFC-CD0D63524613}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LexisNexis.Red.Common</RootNamespace>
+    <AssemblyName>LexisNexis.Red.Common</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
+    <NuGetPackageImportStamp>3b476072</NuGetPackageImportStamp>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|AnyCPU' ">
+    <OutputPath>bin\PreViewRelease\</OutputPath>
+    <DefineConstants>TRACE;PREVIEW</DefineConstants>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <OutputPath>bin\Testing\</OutputPath>
+    <DefineConstants>TRACE;TESTING</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|iPhone' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Preview</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>PREVIEW;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preview|iPhoneSimulator' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Preview</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>PREVIEW;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BusinessModel\Annotation\Annotation.cs" />
+    <Compile Include="BusinessModel\Annotation\AnnotationType.cs" />
+    <Compile Include="BusinessModel\Annotation\ColorName.cs" />
+    <Compile Include="BusinessModel\Annotation\TagColor.cs" />
+    <Compile Include="BusinessModel\CheckContentGroup.cs" />
+    <Compile Include="BusinessModel\FileModeEnum.cs" />
+    <Compile Include="BusinessModel\Login\Country.cs" />
+    <Compile Include="BusinessModel\Login\LoginUserDetails.cs" />
+    <Compile Include="BusinessModel\MyPublication\DlStatusEnum.cs" />
+    <Compile Include="BusinessModel\MyPublication\DownLoadEnum.cs" />
+    <Compile Include="BusinessModel\MyPublication\DownloadResult.cs" />
+    <Compile Include="BusinessModel\MyPublication\GuideCard.cs" />
+    <Compile Include="BusinessModel\MyPublication\Index.cs" />
+    <Compile Include="BusinessModel\MyPublication\InstallResultEnum.cs" />
+    <Compile Include="BusinessModel\MyPublication\OnlinePublicationResult.cs" />
+    <Compile Include="BusinessModel\MyPublication\Publication.cs" />
+    <Compile Include="BusinessModel\MyPublication\PublicationStatusEnum.cs" />
+    <Compile Include="BusinessModel\MyPublication\ThreeG.cs" />
+    <Compile Include="BusinessModel\PublicationContent\AnchorHyperlink.cs" />
+    <Compile Include="BusinessModel\PublicationContent\AnnotationNavigatorRecord.cs" />
+    <Compile Include="BusinessModel\PublicationContent\AnnotationOrganiserRecord.cs" />
+    <Compile Include="BusinessModel\PublicationContent\AnnotationTag.cs" />
+    <Compile Include="BusinessModel\PublicationContent\AttachmentHyperlink.cs" />
+    <Compile Include="BusinessModel\PublicationContent\BrowserRecord.cs" />
+    <Compile Include="BusinessModel\PublicationContent\ContentBrowserRecord.cs" />
+    <Compile Include="BusinessModel\PublicationContent\DocumentBrowserRecord.cs" />
+    <Compile Include="BusinessModel\PublicationContent\Hiddenlink.cs" />
+    <Compile Include="BusinessModel\PublicationContent\ExternalHyperlink.cs" />
+    <Compile Include="BusinessModel\PublicationContent\FileType.cs" />
+    <Compile Include="BusinessModel\PublicationContent\Hyperlink.cs" />
+    <Compile Include="BusinessModel\PublicationContent\HyperLinkType.cs" />
+    <Compile Include="BusinessModel\PublicationContent\InternalHyperlink.cs" />
+    <Compile Include="BusinessModel\PublicationContent\IntraHyperlink.cs" />
+    <Compile Include="BusinessModel\PublicationContent\PageSearchItem.cs" />
+    <Compile Include="BusinessModel\PublicationContent\RecordType.cs" />
+    <Compile Include="BusinessModel\PublicationContent\SearchBrowserRecord.cs" />
+    <Compile Include="BusinessModel\RecentHistoryItem.cs" />
+    <Compile Include="BusinessModel\RequestStatusEnum.cs" />
+    <Compile Include="BusinessModel\NetworkTypeEnum.cs" />
+    <Compile Include="BusinessModel\CountryEnum.cs" />
+    <Compile Include="BusinessModel\SearchDisplayResult.cs" />
+    <Compile Include="BusinessModel\IndexData.cs" />
+    <Compile Include="BusinessModel\SearchResult.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="BusinessModel\SettingsEnum.cs" />
+    <Compile Include="Business\AnnCategoryTagUtil.cs" />
+    <Compile Include="DomainService\AnnotationFactory.cs" />
+    <Compile Include="DomainService\AnnotationSync\AnnotationSyncService.cs" />
+    <Compile Include="Business\AnnotationUtil.cs" />
+    <Compile Include="Business\AppServiceBase.cs" />
+    <Compile Include="Business\NavigationManager.cs" />
+    <Compile Include="Business\PageSearchUtil.cs" />
+    <Compile Include="Business\PublicationUtil.cs" />
+    <Compile Include="Business\DictionaryUtil.cs" />
+    <Compile Include="Business\SearchUtil.cs" />
+    <Compile Include="Business\SettingsUtil.cs" />
+    <Compile Include="Common\DLMapping.cs" />
+    <Compile Include="Database\AnnCategoryTagsAccess.cs" />
+    <Compile Include="Database\DictionaryAccess.cs" />
+    <Compile Include="Database\AnnotationAccess.cs" />
+    <Compile Include="Database\IDictionaryAccess.cs" />
+    <Compile Include="Database\IAnnotationAccess.cs" />
+    <Compile Include="Database\IAnnCategoryTagsAccess.cs" />
+    <Compile Include="Database\IDbHelper.cs" />
+    <Compile Include="Database\IPackageAccess.cs" />
+    <Compile Include="Database\IPublicationAccess.cs" />
+    <Compile Include="Database\IRecentHistoryAccess.cs" />
+    <Compile Include="Database\ISettingsAccess.cs" />
+    <Compile Include="Database\IUserAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\PackageAccess.cs" />
+    <Compile Include="Database\PublicationAccess.cs" />
+    <Compile Include="Database\RecentHistoryAccess.cs" />
+    <Compile Include="Database\SettingsAccess.cs" />
+    <Compile Include="Database\UserAccess.cs" />
+    <Compile Include="DomainService\EventHandles\TagDeletedHandle.cs" />
+    <Compile Include="DomainService\Events\TagDeletedEvent.cs" />
+    <Compile Include="DomainService\TagColorFactory.cs" />
+    <Compile Include="DomainService\TagDomainService.cs" />
+    <Compile Include="DomainService\AnnotationSync\IAnnotationSyncService.cs" />
+    <Compile Include="DomainService\EventHandles\DownloadCompetedHandle.cs" />
+    <Compile Include="DomainService\EventHandles\LastSyncedTimeChangedHandle.cs" />
+    <Compile Include="DomainService\EventHandles\LoginSuccessHandle.cs" />
+    <Compile Include="DomainService\EventHandles\PublicationOpeningEventHandle.cs" />
+    <Compile Include="DomainService\EventHandles\GetPublicationOnlineEventHandle.cs" />
+    <Compile Include="DomainService\EventHandles\SyncTagsHandle.cs" />
+    <Compile Include="DomainService\Events\PublicationOpeningEvent.cs" />
+    <Compile Include="DomainService\Events\DownloadCompletedEvent.cs" />
+    <Compile Include="DomainService\Events\LastSyncedTimeChangedEvent.cs" />
+    <Compile Include="DomainService\Events\LoginSuccessEvent.cs" />
+    <Compile Include="DomainService\Events\GetPublicationOnlineEvent.cs" />
+    <Compile Include="DomainService\Events\SyncTagsEvent.cs" />
+    <Compile Include="DomainService\ITagDomainService.cs" />
+    <Compile Include="DomainService\ILoginDomainService.cs" />
+    <Compile Include="DomainService\IOrphanItemsService.cs" />
+    <Compile Include="DomainService\IPublicationContentDomainService.cs" />
+    <Compile Include="DomainService\IDictionaryDomainService.cs" />
+    <Compile Include="DomainService\IPublicationDomainService.cs" />
+    <Compile Include="DomainService\OrphanItemsService.cs" />
+    <Compile Include="DomainService\AnnotationSync\AnnCategoryTagSyncAction.cs" />
+    <Compile Include="DomainService\AnnotationSync\AnnotationDownloadAction.cs" />
+    <Compile Include="DomainService\AnnotationSync\AnnotationSyncTask.cs" />
+    <Compile Include="DomainService\AnnotationSync\AnnotationTaskContext.cs" />
+    <Compile Include="DomainService\AnnotationSync\AnnotationUploadAction.cs" />
+    <Compile Include="DomainService\AnnotationSync\IAnnotationSyncTask.cs" />
+    <Compile Include="DomainService\AnnotationSync\ISyncAction.cs" />
+    <Compile Include="DomainService\LoginDomainService.cs" />
+    <Compile Include="DomainService\PublicationContentDomainService.cs" />
+    <Compile Include="DomainService\PublicationDomainService.cs" />
+    <Compile Include="DomainService\DictionaryDomainService.cs" />
+    <Compile Include="Entity\EndTaskRequest.cs" />
+    <Compile Include="Entity\Message\AnnCategoryTagsSyncData.cs" />
+    <Compile Include="Entity\AnnCategoryTags.cs" />
+    <Compile Include="Entity\Annotations.cs" />
+    <Compile Include="BusinessModel\Annotation\AnnotationStatus.cs" />
+    <Compile Include="Entity\DlBookBehavior.cs" />
+    <Compile Include="Entity\Message\DictionaryVersionResponse.cs" />
+    <Compile Include="BusinessModel\LegalContextualDefinitionItem.cs" />
+    <Compile Include="BusinessModel\LegalRelatedKeywordItem.cs" />
+    <Compile Include="BusinessModel\LegalDefineItem.cs" />
+    <Compile Include="Entity\PageItem.cs" />
+    <Compile Include="Entity\RecentHistory.cs" />
+    <Compile Include="Entity\BookMetadata.cs" />
+    <Compile Include="Entity\Message\DlFileCurrentVersionRequest.cs" />
+    <Compile Include="Entity\Message\DlFileCurrentVersionResponse.cs" />
+    <Compile Include="Entity\Message\DlFileDownloadRequest.cs" />
+    <Compile Include="Entity\Message\DlFileList.cs" />
+    <Compile Include="Entity\DlBook.cs" />
+    <Compile Include="Entity\Message\DlMetadataDetails.cs" />
+    <Compile Include="Entity\Message\DlUpdateStatus.cs" />
+    <Compile Include="Entity\Message\DlVersionChangeHistoryRequest.cs" />
+    <Compile Include="Entity\Message\DlVersionChangeHistoryResponse.cs" />
+    <Compile Include="Entity\Message\DlVersionDifferenceResponse.cs" />
+    <Compile Include="Entity\Message\GuidCards.cs" />
+    <Compile Include="Entity\Message\PasswordChangeResponse.cs" />
+    <Compile Include="Entity\Message\PasswordResetResponse.cs" />
+    <Compile Include="Entity\PublicationContent.cs" />
+    <Compile Include="Entity\Message\RegisterDeviceResponse.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Entity\Message\DlFileStatusupdate.cs" />
+    <Compile Include="Entity\Message\DlMetadata.cs" />
+    <Compile Include="Entity\Message\DlVersionDifference.cs" />
+    <Compile Include="Entity\Message\DownwardSyncRequest.cs" />
+    <Compile Include="Entity\Message\DownwardSyncRequests.cs" />
+    <Compile Include="Entity\Message\HttpResponse.cs" />
+    <Compile Include="Entity\Message\LoginUser.cs" />
+    <Compile Include="Entity\Message\PasswordChange.cs" />
+    <Compile Include="Entity\Message\PasswordReset.cs" />
+    <Compile Include="Entity\Message\PingStatus.cs" />
+    <Compile Include="Entity\Message\RegisterDevice.cs" />
+    <Compile Include="Entity\RemoteLink.cs" />
+    <Compile Include="Common\ServiceConfig.cs" />
+    <Compile Include="Entity\Settings.cs" />
+    <Compile Include="Entity\StartTaskRequest.cs" />
+    <Compile Include="Entity\SyncActionName.cs" />
+    <Compile Include="Entity\TOCNode.cs" />
+    <Compile Include="Entity\ContentLinkDetail.cs" />
+    <Compile Include="Entity\TOCNodeDetail.cs" />
+    <Compile Include="Entity\Message\UpwardRequests.cs" />
+    <Compile Include="Entity\Message\UpwardSyncResponse.cs" />
+    <Compile Include="Entity\User.cs" />
+    <Compile Include="Entity\Message\UserCredential.cs" />
+    <Compile Include="Entity\Message\UserDetails.cs" />
+    <Compile Include="BusinessModel\Login\DeviceTypeEnum.cs" />
+    <Compile Include="BusinessModel\Login\LoginStatusEnum.cs" />
+    <Compile Include="BusinessModel\Login\PasswordChangeEnum.cs" />
+    <Compile Include="BusinessModel\Login\PasswordResetEnum.cs" />
+    <Compile Include="BusinessModel\Login\RegisterDeviceEnum.cs" />
+    <Compile Include="Database\DbHelper.cs" />
+    <Compile Include="Entity\Message\XpathItem.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="EventHandlesMapping.cs" />
+    <Compile Include="HelpClass\Comparer\TagEqualityComparer.cs" />
+    <Compile Include="HelpClass\ConnectionMonitor.cs" />
+    <Compile Include="HelpClass\DomainEvent\DomainEvents.cs" />
+    <Compile Include="HelpClass\DomainEvent\EventHandleFactory.cs" />
+    <Compile Include="HelpClass\DomainEvent\IEventhandleFactory.cs" />
+    <Compile Include="HelpClass\DomainEvent\IEvent.cs" />
+    <Compile Include="HelpClass\DomainEvent\IEventHandler.cs" />
+    <Compile Include="HelpClass\Exception\ExceedLimitationException.cs" />
+    <Compile Include="HelpClass\Exception\MaxDeviceExceededException.cs" />
+    <Compile Include="HelpClass\Exception\DlBookNoneExistsException.cs" />
+    <Compile Include="HelpClass\Exception\NullDirectoryException.cs" />
+    <Compile Include="HelpClass\Exception\NullUserException.cs" />
+    <Compile Include="HelpClass\Exception\CusNetDisConnectedException.cs" />
+    <Compile Include="HelpClass\Comparer\DlBookEqualityComparer.cs" />
+    <Compile Include="HelpClass\ExtensionMethods.cs" />
+    <Compile Include="HelpClass\GlobalAccess.cs" />
+    <Compile Include="HelpClass\HttpClientAdapter.cs" />
+    <Compile Include="HelpClass\RedLock.cs" />
+    <Compile Include="HelpClass\SegmentUtil.cs" />
+    <Compile Include="HelpClass\SqliteConnection.cs" />
+    <Compile Include="DomainService\AnnotationSync\SyncActionFactory.cs" />
+    <Compile Include="HelpClass\Tools\IDecryptManager.cs" />
+    <Compile Include="HelpClass\Tools\IFileManager.cs" />
+    <Compile Include="HelpClass\TypeNameSerializationBinder.cs" />
+    <Compile Include="HelpClass\ValidateHelper.cs" />
+    <Compile Include="HelpClass\IoCContainer.cs" />
+    <Compile Include="HelpClass\Logger.cs" />
+    <Compile Include="HelpClass\ResouceHelper.cs" />
+    <Compile Include="HelpClass\ServiceAgent.cs" />
+    <Compile Include="HelpClass\IConnectionMonitor.cs" />
+    <Compile Include="Business\PublicationContentUtil.cs" />
+    <Compile Include="HelpClass\Tools\DecryptManager.cs" />
+    <Compile Include="HelpClass\Tools\FileManager.cs" />
+    <Compile Include="HelpClass\AnnotationExtension.cs" />
+    <Compile Include="Interface\ICryptogram.cs" />
+    <Compile Include="Interface\IDevice.cs" />
+    <Compile Include="Interface\ILogger.cs" />
+    <Compile Include="Interface\INetwork.cs" />
+    <Compile Include="Interface\IPackageFile.cs" />
+    <Compile Include="Interface\IHtmlHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Segment\AnalyzerResource.Designer.cs" />
+    <Compile Include="Segment\AnalyzerResource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyzerResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Segment\CustomSegment.cs" />
+    <Compile Include="Segment\Dict\ChsName.cs" />
+    <Compile Include="Segment\Dict\DictionaryLoader.cs" />
+    <Compile Include="Segment\Dict\StopWord.cs" />
+    <Compile Include="Segment\Dict\Synonym.cs" />
+    <Compile Include="Segment\Dict\Wildcard.cs" />
+    <Compile Include="Segment\Dict\WordDictionary.cs" />
+    <Compile Include="Segment\Framework\AppendList.cs" />
+    <Compile Include="Segment\Framework\DFA.cs" />
+    <Compile Include="Segment\Framework\File.cs" />
+    <Compile Include="Segment\Framework\Instance.cs" />
+    <Compile Include="Segment\Framework\Lexical.cs" />
+    <Compile Include="Segment\Framework\Lock.cs" />
+    <Compile Include="Segment\Framework\Path.cs" />
+    <Compile Include="Segment\Framework\PorterStemmer.cs" />
+    <Compile Include="Segment\Framework\QuickSort.cs" />
+    <Compile Include="Segment\Framework\Regex.cs" />
+    <Compile Include="Segment\Framework\Stream.cs" />
+    <Compile Include="Segment\Framework\SuperLinkedList.cs" />
+    <Compile Include="Segment\Framework\XmlSerialization.cs" />
+    <Compile Include="Segment\ISegment.cs" />
+    <Compile Include="Segment\Match\ChsFullTextMatch.cs" />
+    <Compile Include="Segment\Match\IChsFullTextMatch.cs" />
+    <Compile Include="Segment\Match\MatchOptions.cs" />
+    <Compile Include="Segment\Match\MatchParameter.cs" />
+    <Compile Include="Segment\POS.cs" />
+    <Compile Include="Segment\ChineseSegment.cs" />
+    <Compile Include="Segment\Settings\PanGuSettings.cs" />
+    <Compile Include="Segment\Settings\SettingLoader.cs" />
+    <Compile Include="Segment\SimpleSegment.cs" />
+    <Compile Include="Segment\WordAttribute.cs" />
+    <Compile Include="Segment\WordInfo.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Services\ConfigurationService.cs" />
+    <Compile Include="Interface\IDirectory.cs" />
+    <Compile Include="Business\LoginUtil.cs" />
+    <Compile Include="Entity\Message\LoginUserValidationResponse.cs" />
+    <Compile Include="Services\DeliveryService.cs" />
+    <Compile Include="BusinessModel\MyPublication\DownloadProgressEventHandler.cs" />
+    <Compile Include="Services\IAuthenticationService.cs" />
+    <Compile Include="Services\IDeliveryService.cs" />
+    <Compile Include="Services\ISyncService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\SyncService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.6.13.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.6.13\lib\portable-net45+netcore45+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\portable-net45+wp80+win8+MonoAndroid10+MonoTouch10\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.8.0\lib\portable-net45+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segment\AnalyzerResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AnalyzerResource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Database\LexisNexisRed.sqlite" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Testing.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Development.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Preview.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Segment\Stopword.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Release.xml" />
+  </ItemGroup>
+</Project>

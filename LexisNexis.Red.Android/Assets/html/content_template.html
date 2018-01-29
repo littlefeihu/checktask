@@ -1,0 +1,48 @@
+<html>
+  <head>
+
+    <!-- <link rel="stylesheet" type="text/css" href="AndroidStyle.css" /> -->
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+    <link rel="stylesheet" type="text/css" href="LN.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="CommonStyle.css" /> -->
+    <link rel="stylesheet" type="text/css" href="content.css" />
+    <!-- <script src='jquery.min.js'></script> -->
+	<script src='jquery-1.11.3.min.js'></script>
+    <script src='jquery.scrollTo.min.js'></script>
+    <script src='waypoints.min.js'></script>
+    <script src='hilitor.js'></script>
+    <script src="rangy-core.js"></script>
+    <script src="rangy-serializer.js"></script>
+    <script src='android.red.js'></script>
+    <script>
+		$(function() {
+			rangy.init();
+
+			$(window).scroll(android.red.onscroll);
+			$(window).resize(android.red.onresize);
+			//document.onselectionchange = android.red.onselectionchange;
+
+			android.red.hilitor = new Hilitor();
+			android.red.applyHighLight();
+            android.red.scrollByNavigation();
+
+            alert("dd");
+		});
+    </script>
+  </head>
+   <body class="content_body">
+
+<div id="top_loading_stub" class="loading_stub">
+</div>
+
+<div id="pagecontainer">
+
+#BODY#
+
+</div>
+
+<div id="bottom_loading_stub" class="loading_stub">
+</div>
+	
+   </body>
+</html>

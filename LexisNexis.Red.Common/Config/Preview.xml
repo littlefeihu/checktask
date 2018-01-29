@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ArrayOfCountry>
+  <Country>
+    <CountryCode>AU</CountryCode>
+    <CountryName>Australia</CountryName>
+    <Language>en</Language>
+    <ServiceCode>AUNZ</ServiceCode>
+    <ContentLinkRedirectorUrl>
+      http://lnred-prod-test.cloudapp.net/content-link/?country={0}&amp;email={1}&amp;device={2}&amp;source_dlid={3}&amp;sg_source={4}
+    </ContentLinkRedirectorUrl>
+    <RemoteUrl>http://lnred-china.cloudapp.net/ln.red/service/ds.webservice</RemoteUrl>
+    <CustomerSupportTEL>1800 772 772</CustomerSupportTEL>
+    <CustomerSupportEmail>customersupport@lexisnexis.com.au</CustomerSupportEmail>
+    <ContactUs>
+      <Phone>1800 999 906</Phone>
+      <InternationalCallers>+61 2 9422 2174</InternationalCallers>
+      <Email>techsupport@lexisnexis.com.au</Email>
+      <Fax>02 9422 2405</Fax>
+      <PostToUs  Title="LexisNexis Customer Relations">
+        <Content>
+Level 9
+Locked Bag 2222 Chatswood Delivery Centre
+Chatswood NSW 2067
+        </Content>
+      </PostToUs>
+      <SendByDX>
+Street Address: LexisNexis
+DX 29590 Chatswood
+Tower 2, 475-495 Victoria Avenue
+Chatswood NSW 2067
+      </SendByDX>
+      <WorkingHours>(8am to 6pm AEST), Monday - Friday</WorkingHours>
+    </ContactUs>
+    <DictionaryUrl>http://lnred-china.cloudapp.net/FileServer/dictionaryAU.sqlite</DictionaryUrl>
+  </Country>
+  <Country>
+    <CountryCode>HK</CountryCode>
+    <CountryName>Hong Kong</CountryName>
+    <Language>en</Language>
+    <ServiceCode>HK</ServiceCode>
+    <ContentLinkRedirectorUrl>
+      http://lnred-prod-test.cloudapp.net/content-link/?country={0}&amp;email={1}&amp;device={2}&amp;source_dlid={3}&amp;sg_source={4}
+    </ContentLinkRedirectorUrl>
+    <RemoteUrl>http://lnred-china.cloudapp.net/ln.redHK/service/ds.webservice</RemoteUrl>
+    <CustomerSupportTEL>+852 2179 7888</CustomerSupportTEL>
+    <CustomerSupportEmail>help.hk@lexisnexis.com</CustomerSupportEmail>
+    <ContactUs>
+      <Phone>+852 2179 7888</Phone>
+      <InternationalCallers>+852 2179 7888</InternationalCallers>
+      <Email>help.hk@lexisnexis.com</Email>
+      <Fax>+852 2976 0840</Fax>
+      <PostToUs >
+        <Content>
+3901 39/F Hopewell Centre
+183 Queen's Road East, Hong Kong
+        </Content>
+      </PostToUs>
+      <SendByDX></SendByDX>
+      <WorkingHours>(9:00am - 5:30pm), Monday - Friday</WorkingHours>
+    </ContactUs>
+  </Country>
+  <Country>
+    <CountryCode>SG</CountryCode>
+    <CountryName>Singapore</CountryName>
+    <Language>en</Language>
+    <ServiceCode>SGMY</ServiceCode>
+    <ContentLinkRedirectorUrl>
+      http://lnred-prod-test.cloudapp.net/content-link/?country={0}&amp;email={1}&amp;device={2}&amp;source_dlid={3}&amp;sg_source={4}
+    </ContentLinkRedirectorUrl>
+    <RemoteUrl>http://lnred-china.cloudapp.net/ln.redSGMY/service/ds.webservice</RemoteUrl>
+    <CustomerSupportTEL>+65-6349-0110</CustomerSupportTEL>
+    <CustomerSupportEmail>help.sg@lexisnexis.com</CustomerSupportEmail>
+    <ContactUs>
+      <Phone>+65 6 349 0110</Phone>
+      <InternationalCallers>+65 6 349 0110</InternationalCallers>
+      <Email>help.sg@lexisnexis.com</Email>
+      <Fax>+65 6 733 1175</Fax>
+      <PostToUs>
+        <Content>
+3 Killiney Road,
+#08-08 Winsland House 1
+Singapore 239519
+        </Content>
+      </PostToUs>
+      <SendByDX></SendByDX>
+      <WorkingHours>(9am to 6pm), Monday - Friday</WorkingHours>
+    </ContactUs>
+  </Country>
+  <Country>
+    <CountryCode>NZ</CountryCode>
+    <CountryName>New Zealand</CountryName>
+    <Language>en</Language>
+    <ServiceCode>AUNZ</ServiceCode>
+    <ContentLinkRedirectorUrl>
+      http://lnred-prod-test.cloudapp.net/content-link/?country={0}&amp;email={1}&amp;device={2}&amp;source_dlid={3}&amp;sg_source={4}
+    </ContentLinkRedirectorUrl>
+    <RemoteUrl>http://lnred-china.cloudapp.net/ln.red/service/ds.webservice</RemoteUrl>
+    <CustomerSupportTEL>0800 800 986</CustomerSupportTEL>
+    <CustomerSupportEmail>customersupport@lexisnexis.co.nz</CustomerSupportEmail>
+    <ContactUs>
+      <Phone>0800 800 986</Phone>
+      <InternationalCallers>+61 2 9422 2174</InternationalCallers>
+      <Email>customersupport@lexisnexis.co.nz</Email>
+      <Fax>+61 2 9422 2405</Fax>
+      <PostToUs   Title="LexisNexis Customer Relations">
+        <Content>
+Level 9
+Locked Bag 2222 Chatswood Delivery Centre
+Chatswood NSW 2067
+        </Content>
+      </PostToUs>
+      <SendByDX>
+Street Address: LexisNexis
+DX 29590 Chatswood
+Tower 2, 475-495 Victoria Avenue
+Chatswood NSW 2067
+      </SendByDX>
+      <WorkingHours>(8am to 6pm AEST), Monday - Friday</WorkingHours>
+    </ContactUs>
+    <DictionaryUrl>http://lnred-china.cloudapp.net/FileServerSGMY/dictionaryNZ.sqlite</DictionaryUrl>
+  </Country>
+  <Country>
+    <CountryCode>MY</CountryCode>
+    <CountryName>Malaysia</CountryName>
+    <Language>en</Language>
+    <ServiceCode>SGMY</ServiceCode>
+    <ContentLinkRedirectorUrl>
+      http://lnred-prod-test.cloudapp.net/content-link/?country={0}&amp;email={1}&amp;device={2}&amp;source_dlid={3}&amp;sg_source={4}
+    </ContentLinkRedirectorUrl>
+    <RemoteUrl>http://lnred-china.cloudapp.net/ln.redSGMY/service/ds.webservice</RemoteUrl>
+    <CustomerSupportTEL>1800-88-8856</CustomerSupportTEL>
+    <CustomerSupportEmail>help.my@lexisnexis.com</CustomerSupportEmail>
+    <ContactUs>
+      <Phone>1800-88-8856 </Phone>
+      <InternationalCallers>+60 3 7882 3500</InternationalCallers>
+      <Email>help.my@lexisnexis.com</Email>
+      <Fax>+60 3 7882 3501</Fax>
+      <PostToUs>
+        <Content>
+T1-6, Jaya 33, 3 Jalan Semangat
+Seksyen 13, 46100 Petailing Jaya
+Selangor Darul Ehsan, Malaysia
+        </Content>
+      </PostToUs>
+      <SendByDX></SendByDX>
+      <WorkingHours>(9am to 6pm), Monday - Friday</WorkingHours>
+    </ContactUs>
+  </Country>
+</ArrayOfCountry>

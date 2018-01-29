@@ -1,0 +1,157 @@
+﻿<storeApps:VisualStateAwarePage 
+    x:Class="LexisNexis.Red.WindowsStore.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="using:Microsoft.Practices.Prism.Mvvm"
+    xmlns:storeApps="using:Microsoft.Practices.Prism.StoreApps"
+    mc:Ignorable="d"
+    prism:ViewModelLocator.AutoWireViewModel="True">
+
+    <storeApps:VisualStateAwarePage.Resources>
+
+        <Style x:Key="PasswordBoxStyle"  TargetType="PasswordBox" >
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+        <Style x:Key="FormTextBoxStyle" TargetType="TextBox" >
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+
+
+    </storeApps:VisualStateAwarePage.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid RenderTransformOrigin="0.5,0.5" >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Login-Background.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+       
+        <Grid Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="480" Height="500" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="24"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Background="#FFFFFFFF">
+                <Button AutomationProperties.AutomationId="Quit" Content="X" HorizontalAlignment="Right" Style="{StaticResource TextButtonStyle}" Margin="0,0,12,0" Foreground="LightGray" Click="ApplicationClose"/>
+            </Grid>
+            <Grid Grid.Row="1" Background="#FFF2F2F2">
+                <Grid  Margin="24">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="ms-appx:///Assets/LexisNexis-Logo.png" Margin="0,0,0,24" Stretch="None" HorizontalAlignment="Left"  Visibility="{Binding IsLogin, Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}"/>
+                        <TextBlock x:Uid="SignInTitle" Style="{StaticResource SignInTitle}" Visibility="{Binding IsLogin, Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}" />
+                        <TextBlock x:Uid="ForgotPasswordTitle" Style="{StaticResource ForgotPasswordTitle}"  Visibility="{Binding IsResetPassword,Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}" Margin="0,0,0,24"/>
+                        <TextBlock x:Uid="ResetPassowrdFormHeader" Style="{StaticResource ForgotPasswordBody}"  Visibility="{Binding IsResetPassword,Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}"/>
+                        <StackPanel Orientation="Vertical" Margin="0,18,0,0">
+                            <Border Width="300" HorizontalAlignment="Left" BorderBrush="{Binding NoCountry, Mode=OneWay, Converter={StaticResource BoolToBorderBrushConverter}}" BorderThickness="1,1,1,1">
+                                <ComboBox AutomationProperties.AutomationId="CountryBox"  x:Uid="CountryBox" VerticalAlignment="Center" HorizontalAlignment="Stretch"  ItemsSource="{Binding CountryList}"  DisplayMemberPath="CountryName"  SelectedValuePath="CountryCode"  SelectedValue ="{Binding SelectedCountry, Mode=TwoWay}" Height="32" FontSize="12"
+                            IsEnabled="{Binding LoadingData, Mode=OneWay, Converter={StaticResource FalseToEnabledConverter}}" TabIndex="1" >
+                                </ComboBox>
+                            </Border>
+                            <Border Margin="0,10,0,10" Width="300" HorizontalAlignment="Left" BorderBrush="{Binding InvalidEmail, Mode=OneWay, Converter={StaticResource BoolToBorderBrushConverter}}" BorderThickness="1,1,1,1" >
+                                <TextBox AutomationProperties.AutomationId="EmailTextBox" Foreground="#FF483839" VerticalAlignment="Center" HorizontalAlignment="Stretch"  x:Uid="EmailTextBox"
+                             Text="{Binding Email, Mode=TwoWay}" Style="{StaticResource FormTextBoxStyle}" 
+                             IsEnabled="{Binding LoadingData, Mode=OneWay, Converter={StaticResource FalseToEnabledConverter}}"
+                             x:Name="EmailBox" TabIndex="2"/>
+                            </Border>
+                            <Border Width="300" HorizontalAlignment="Left" BorderBrush="{Binding InvalidPassword, Mode=OneWay, Converter={StaticResource BoolToBorderBrushConverter}}" BorderThickness="1,1,1,1"
+                        Visibility="{Binding IsLogin, Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}">
+                                <PasswordBox AutomationProperties.AutomationId="PasswordBox" x:Name="PwdBox"  x:Uid="PasswordBox"  VerticalAlignment="Center" HorizontalAlignment="Stretch" 
+                                 Password="{Binding Password, Mode=TwoWay}"  Style="{StaticResource PasswordBoxStyle}" 
+                                  IsEnabled="{Binding LoadingData, Mode=OneWay, Converter={StaticResource FalseToEnabledConverter}}" TabIndex="3"></PasswordBox>
+                            </Border>
+                        </StackPanel>
+                        <Button x:Uid="ForgotPassword" AutomationProperties.AutomationId="ForgotPassword" Style="{StaticResource TextButtonStyle}" Foreground="#FF387E8D" Margin="0,18,0,18" FontSize="12"  FontWeight="Normal" Command="{Binding ResetPasswordCommand}" Visibility="{Binding IsLogin, Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}" IsEnabled="{Binding LoadingData, Mode=OneWay, Converter={StaticResource FalseToEnabledConverter}}"/>
+                        <TextBlock x:Uid="CustomerSupportMsgHeader" Style="{StaticResource ForgotPasswordBody}" TextWrapping="Wrap" Visibility="{Binding IsResetPassword, Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}" />
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <StackPanel Orientation="Horizontal" Visibility="{Binding IsLogin, Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}"  HorizontalAlignment="Right" >
+                            <Button AutomationProperties.AutomationId="LoginButton" x:Uid="LoginButton" Width="100" Command="{Binding SignInCommand}" Style="{StaticResource RedButtonStyle}" FontSize="12"
+                		x:Name="LoginBtn" IsEnabled="{Binding LoadingData, Converter={StaticResource FalseToEnabledConverter}, Mode=OneWay}" TabIndex="4"/>
+                            <Button AutomationProperties.AutomationId="CancelButton" x:Uid="CancelButton" Width="100" Margin="12,0,0,0" FontSize="12"
+                		IsEnabled="{Binding LoadingData, Converter={StaticResource FalseToEnabledConverter}, Mode=OneWay}" TabIndex="5" Click="ApplicationClose"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Visibility="{Binding IsResetPassword, Mode=OneWay, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Right" >
+                            <Button AutomationProperties.AutomationId="SubmitButton" x:Uid="SubmitButton" Style="{StaticResource RedButtonStyle}" Width="100"  Command="{Binding SendPassowrdReminderCommand}" FontSize="12"
+                            x:Name="ResetPwdBtn" IsEnabled="{Binding LoadingData, Mode=OneWay, Converter={StaticResource FalseToEnabledConverter}}"/>
+                            <Button AutomationProperties.AutomationId="BackButton"  x:Uid="BackButton" Width="100" Command="{Binding CancelResetPasswordCommand}" Margin="12,0,0,0" FontSize="12"
+                            IsEnabled="{Binding LoadingData, Mode=OneWay, Converter={StaticResource FalseToEnabledConverter}}"/>
+                        </StackPanel>
+                        <!--<ProgressRing Height="50"  Width="50" Foreground="White" IsActive="{Binding LoadingData, Mode=OneWay}" />-->
+                    </StackPanel>
+                </Grid>              
+            </Grid>
+                         
+        </Grid>
+        <Popup  Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3" IsOpen="{Binding ShowChangePasswordPopup}" >
+
+            <Grid x:Name="ChangePasswordGrid" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Border Background="Black" Opacity="0.8" Grid.Row="0"></Border>
+                <Grid Background="White"  Grid.Row="1"  Opacity="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="352"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Orientation="Vertical" Grid.Column="1">
+                        <TextBlock AutomationProperties.AutomationId="ChangePwdPopupHeader" x:Uid="ChangePwdPopupHeader" Style="{StaticResource SubheaderTextBlockStyle}" Margin="0,0,0,40" Foreground="Black"/>
+                        <TextBlock AutomationProperties.AutomationId="ChangePwdPopupTip" x:Uid="ChangePwdPopupTip" Margin="0,0,0,20" Foreground="#FF483839"/>
+                        <Border  BorderThickness="1,1,1,1" Margin="0,0,0,20">
+                            <PasswordBox x:Name="NewPwdBox"  AutomationProperties.AutomationId="NewPwdBox"  x:Uid="NewPasswordBox" VerticalAlignment="Center" 
+                                 Password="{Binding NewPassword, Mode=TwoWay}"  Style="{StaticResource PasswordBoxStyle}"/>
+                        </Border>
+                        <Border  BorderThickness="1,1,1,1" Margin="0,0,0,20">
+                            <PasswordBox x:Name="PwdConfirmBox" AutomationProperties.AutomationId="PwdConfirmBox"  x:Uid="PasswordConfirmBox" VerticalAlignment="Center" 
+                                 Password="{Binding PasswordConfirm, Mode=TwoWay}"  Style="{StaticResource PasswordBoxStyle}"/>
+                        </Border>
+                        <StackPanel Margin="0,0,0,20" Orientation="Horizontal"  HorizontalAlignment="Right" >
+
+                            <Button x:Uid="CancelButton" AutomationProperties.AutomationId="CancelButton" Style="{StaticResource GrayButtonStyle}" Margin="20,0,0,0"   Command="{Binding CancelChangePasswordCommand}" />
+                            <Button x:Uid="SendButton" AutomationProperties.AutomationId="SendButton" x:Name="ChangePwdBtn" Style="{StaticResource BlueButtonStyle}"  Margin="20,0,0,0"   Command="{Binding SendChangePasswordCommand}" />
+
+                        </StackPanel>
+                        <TextBlock  Margin="0,0,0,20"  Style="{StaticResource BodyTextBlockStyle}"  Foreground="Red" Text="{Binding ErrorMessageForChangePwd}"/>
+                    </StackPanel>
+                </Grid>
+                <Border Background="Black" Opacity="0.8" Grid.Row="2"></Border>
+            </Grid>
+        </Popup>
+    </Grid>
+
+
+</storeApps:VisualStateAwarePage>

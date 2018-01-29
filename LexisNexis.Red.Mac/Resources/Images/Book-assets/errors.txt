@@ -1,0 +1,6 @@
+[Fri Apr 24 2015 19:06:05 GMT+1000 (AEST)] Layer "+ CASES": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Fri Apr 24 2015 19:09:36 GMT+1000 (AEST)] Layer "+ CASES": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Fri Apr 24 2015 19:06:03 GMT+1000 (AEST)] Layer "+ CASES": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Fri Apr 24 2015 19:06:03 GMT+1000 (AEST)] Layer "+ CASES": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Fri Apr 24 2015 19:06:03 GMT+1000 (AEST)] Layer "+ CASES": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Fri Apr 24 2015 19:06:03 GMT+1000 (AEST)] Layer "+ CASES": Expected Either a default asset specification or a layer asset specification but "+" found.

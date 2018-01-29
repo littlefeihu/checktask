@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llTitleContainer">
+        <TextView
+            android:text="@string/Welcome2LNRed"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/tvDialogTitle"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#31B6E7"
+            android:gravity="center_vertical" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#31B6E7"
+            android:id="@+id/linearLayout4" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llDialogContentContainer" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDBDE"
+        android:id="@+id/linearLayout6"
+        android:layout_marginTop="10dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout5">
+        <Button
+            android:text="@string/Cancel"
+            android:textSize="6pt"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnNegtive"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DEDBDE"
+            android:id="@+id/llButtonSeperator" />
+        <Button
+            android:text="@string/OK"
+            android:textSize="6pt"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnPositive"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+    </LinearLayout>
+</LinearLayout>

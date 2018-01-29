@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlCoverBookBackground"
+        android:background="#003058">
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/frmCoverBookTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/mypub_decorate_frame">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="Larson's Workers' Compensation Law"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvCoverBookTitle"
+                app:fontName="GARABD.TTF"
+                android:textColor="#ECB532"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:maxLines="4" />
+        </FrameLayout>
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="7 days Remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCoverDaysRemaining"
+            app:fontName="GARABD.TTF"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="29dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#EBB139" android:visibility="gone" />
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="@string/PubCover_Loan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvCoverDaysRemaining"
+            android:id="@+id/tvCoverLoan"
+            app:fontName="GARABD.TTF"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textColor="#EBB139"  android:visibility="gone" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/llBottomLine2"
+            android:background="#ECB532"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp" android:visibility="gone"
+            android:layout_marginRight="15dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"  android:visibility="gone"
+            android:layout_height="2dp"
+            android:id="@+id/llBottomLine1"
+            android:background="#ECB532"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <ImageView
+            android:src="@drawable/publication_pluscases"
+            android:layout_width="33dp"  android:visibility="gone"
+            android:layout_height="55dp"
+            android:id="@+id/ivPlusCaseMark"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+</LinearLayout>

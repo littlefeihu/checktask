@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string name="settings_about_ln_legal_and_professional" formatted="false">
+<![CDATA[
+<h2>About LexisNexis Legal &amp; Professional</h2>
+<p>智慧消防 is a mobile referencing solution providing you with access to your digital library via your iPad or laptop. 智慧消防 was designed based on customer feedback with the needs of the Legal Practitioner in mind. 智慧消防 provides :<br />
+&bull; An efficient way to reference the LexisNexis trusted sources of content to ensure you have the best information to hand<br />
+&bull; The ability to carry your library with you by providing access to subscribed content in a digital format. The application is available 24/7 both online and offline.<br />
+&bull; The allowance for you to personalise your content with sticky notes and annotations so you can quickly find the information which is most relevant to you.</p>
+]]>
+	</string>
+</resources>

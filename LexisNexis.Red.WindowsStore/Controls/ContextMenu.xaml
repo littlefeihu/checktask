@@ -1,0 +1,155 @@
+﻿<UserControl
+    x:Class="LexisNexis.Red.WindowsStore.Controls.ContextMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LexisNexis.Red.WindowsStore.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:control="using:LexisNexis.Red.WindowsStore.Controls"
+    mc:Ignorable="d"
+    >
+    <UserControl.Resources>
+        <Style x:Key="ContextMenuButton" TargetType="Button">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Background" Value="#FF2B2B2B"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="-2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+
+        <DataTemplate x:Key="EditTagItemTemplate">
+            <Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox Margin="12,0,0,0" Style="{StaticResource TagCheckBoxStyle}" IsChecked="{Binding IsCheck,Mode=TwoWay}">
+                        <CheckBox.Content>
+                            <Grid Height="36">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="38"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse  Height="14" Width="14" Fill="{Binding Tag.Color,Mode=OneWay}" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding Tag.Title,Mode=OneWay}" Grid.Column="1" Style="{StaticResource TagItemStyle}"/>
+                            </Grid>
+                        </CheckBox.Content>
+                    </CheckBox>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                        <Button Style="{StaticResource EditorTagButtonStyle}" Tag="{Binding Tag.TagId,Mode=OneWay}" Click="EditTag"/>
+                        <Button Style="{StaticResource DeleteTagButtonStyle}" Tag="{Binding Tag.TagId,Mode=OneWay}" Click="DeleteTag"/>
+                        <Button Style="{StaticResource SortTagButtonStyle}" Tag="{Binding Tag.TagId,Mode=OneWay}"/>
+                    </StackPanel>
+                </Grid>
+                <Line Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+            </Grid>
+        </DataTemplate>
+
+    </UserControl.Resources>
+
+    <Grid Name="Root" Background="#01FFFFFF" Tapped="CloseDialog" PointerReleased="Root_PointerReleased">
+        <Grid Name="ContextMenuDialog" Background="Gray" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <StackPanel Name="FlyoutAttached" Orientation="Horizontal" >
+                <FlyoutBase.AttachedFlyout>
+                    <Flyout Placement="Top"  FlyoutPresenterStyle="{StaticResource FlyoutStyle}" Closed="CloseFlyout" >
+                        <Grid>
+                            <Grid Visibility="{Binding AnnotationBoardVisible}" MaxHeight="336">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="36"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0" >
+                                    <TextBlock Text="{Binding AnnotationTitle}" Style="{StaticResource EditTagStyle}" HorizontalAlignment="Left" Margin="12,0,0,0"/>
+                                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                                        <Button Visibility="{Binding NewNoteBtnVisible}" Style="{StaticResource NoteButtonStyle}" Command="{Binding NewNoteBoardOpenedCommand}"/>
+                                        <Button Style="{StaticResource DeleteTagButtonStyle}"/>
+                                    </StackPanel>
+                                    <Line Style="{StaticResource SplitLineStyle}" VerticalAlignment="Bottom"/>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Visibility="{Binding NotePanelVisibility}" Grid.Column="0" Height="300" Width="220">
+                                        <Line Style="{StaticResource SplitLineStyle2}" HorizontalAlignment="Right"/>
+                                        <Grid Margin="12,0,12,0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="36"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="48"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid>
+                                                <TextBlock x:Uid="NoteTitle" Style="{StaticResource EditTagStyle}" HorizontalAlignment="Left"/>
+                                                <TextBlock Name="NoteDate" Style="{StaticResource EditTagStyle}" HorizontalAlignment="Right"/>
+                                            </Grid>
+                                            <TextBox PlaceholderText="Note..." Grid.Row="1" Style="{StaticResource NoteContentStyle}" TextAlignment="Left" />
+                                            <Button Grid.Row="2" Content="Delete Note" HorizontalAlignment="Left" Style="{StaticResource GrayBackWhiteFontStyle}"/>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <Grid Visibility="{Binding HighlightPanelVisibility}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="36"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid Grid.Row="0" >
+                                                <TextBlock x:Uid="HighlightAssign" Style="{StaticResource EditTagStyle}" HorizontalAlignment="Left"   Margin="12,0,0,0"/>
+                                                <Button Style="{StaticResource EditorTagButtonStyle}" HorizontalAlignment="Right" Command="{Binding EditorBoardOpenedCommand}"/>
+                                                <Line Style="{StaticResource SplitLineStyle}" VerticalAlignment="Bottom"/>
+                                            </Grid>
+                                            <Grid Grid.Row="1">
+                                                <ListView x:Name="tabList" 
+                                                         HorizontalAlignment="Stretch"  
+                                                         SelectionMode="None"  
+                                                         ItemTemplate="{StaticResource TagAssignItemTemplate}" 
+                                                         ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                                                         ItemContainerStyle="{StaticResource TagItemContainerStyle}"    
+                                                         ItemsSource="{Binding TagCollections}"
+                                                         Width="220" />
+                                            </Grid>
+                                        </Grid>
+                                        <Grid Visibility="{Binding EditTagPanelVisibility}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="36"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid Grid.Row="0" >
+                                                <Button x:Uid="DoneButton" HorizontalAlignment="Left" Margin="12,0,0,0" Style="{StaticResource GrayBackWhiteFontStyle}" Command="{Binding EditorBoardClosedCommand}"/>
+                                                <Button Style="{StaticResource AddTagButtonStyle}" HorizontalAlignment="Right" Command="{Binding NewTagBoardOpenedCommand}"/>
+                                                <Line Style="{StaticResource SplitLineStyle}" VerticalAlignment="Bottom"/>
+                                            </Grid>
+                                            <Grid Grid.Row="1">
+                                                <ListView x:Name="tabEditList" 
+                                                         HorizontalAlignment="Stretch"  
+                                                         SelectionMode="None"  
+                                                         ItemTemplate="{StaticResource EditTagItemTemplate}" 
+                                                         ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                                                         ItemContainerStyle="{StaticResource TagItemContainerStyle}"
+                                                         ItemsSource="{Binding TagCollections}"
+                                                         Width="220" />
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                            <Grid Visibility="{Binding NewTagBoardVisible}">
+                                <control:NewTagDialog Margin="12,0,12,0" DataContext="{Binding}"/>
+                            </Grid>
+                        </Grid>
+                    </Flyout>
+                </FlyoutBase.AttachedFlyout>
+                <Button Name="DictionaryBtn" Content="Legal Define" Style="{StaticResource ContextMenuButton}" Click="LegalDefine"/>
+                <Button Content="Copy" Style="{StaticResource ContextMenuButton}" Click="Copy"/>
+                <StackPanel Orientation="Horizontal"  PointerReleased="KeepDialog" Tapped="KeepDialog">
+                    <Button Content="Add Highlight" Style="{StaticResource ContextMenuButton}" Click="AddHighlight"/>
+                    <Button Content="Add Note" Style="{StaticResource ContextMenuButton}" Click="AddNote"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

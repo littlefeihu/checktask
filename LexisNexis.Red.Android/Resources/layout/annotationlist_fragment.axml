@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTagFilter"
+        android:scrollbars="vertical"
+        android:layout_width="320dp"
+        android:layout_height="match_parent" />
+<!--
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout1"
+        android:background="#cccccc" />
+        -->
+    <FrameLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout1"
+        android:background="#cccccc" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/annotationtype_background">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/rgAnnotationTypeFilter">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Annotation_TypeFilter_All"
+                    android:button="@null"
+                    android:id="@+id/rbAll"
+                    android:checked="true"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:textColor="@drawable/annotation_typefilter_textcolor"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp" />
+                <FrameLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frameLayout4"
+                    android:background="#cccccc" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Annotation_TypeFilter_Highlights"
+                    android:button="@null"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:textColor="@drawable/annotation_typefilter_textcolor"
+                    android:gravity="center_vertical"
+                    android:id="@+id/rbHighLights"
+                    android:textSize="14sp" />
+                <FrameLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frameLayout5"
+                    android:background="#cccccc" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Annotation_TypeFilter_Notes"
+                    android:button="@null"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:textColor="@drawable/annotation_typefilter_textcolor"
+                    android:gravity="center_vertical"
+                    android:id="@+id/rbNotes"
+                    android:textSize="14sp" />
+                <FrameLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frameLayout6"
+                    android:background="#cccccc" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Annotation_TypeFilter_Orphans"
+                    android:button="@null"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:textColor="@drawable/annotation_typefilter_textcolor"
+                    android:gravity="center_vertical"
+                    android:id="@+id/rbOrphans"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/frameLayout2"
+            android:background="#cccccc" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout3"
+            android:paddingTop="8dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvAnnotationList"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        <!--
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frameLayout1"
+                android:background="#cccccc" />
+                -->
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

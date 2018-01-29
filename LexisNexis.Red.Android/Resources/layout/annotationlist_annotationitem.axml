@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="8dp"
+        android:gravity="right">
+        <TextView
+            android:text="11 May 2015"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDate"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#89000000" />
+        <ImageView
+            android:src="@drawable/next_page_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginRight="@dimen/publicationpage_anntationitem_tagcontainer_rightmargin">
+        <TextView
+            android:text="Publication Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPublicationTitle"
+            android:textSize="16sp"
+            android:textColor="#dd000000"
+            android:singleLine="true"
+            android:ellipsize="end" />
+        <TextView
+            android:text="Toc Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTocTitle"
+            android:textSize="14sp"
+            android:textColor="#dd000000"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="3dp" />
+        <TextView
+            android:text="Excerpt Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExcerptText"
+            android:textSize="14sp"
+            android:textColor="#dd000000"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:maxLines="3" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minHeight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:src="@drawable/note_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/imageView2"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:text="Add a note..."
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/tvAddANote"
+                android:textSize="14sp"
+                android:textColor="#89000000" />
+            <TextView
+                android:text="Note Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNote"
+                android:textSize="14sp"
+                android:textColor="#dd000000"
+                android:ellipsize="end"
+                android:maxLines="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llTagContainer">
+            <ImageView
+                android:src="@drawable/tag_round_small_icon"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ivTag1" />
+            <TextView
+                android:text="Green"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvTagName1"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="5dp" />
+            <ImageView
+                android:src="@drawable/tag_round_small_icon"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ivTag2" />
+            <TextView
+                android:text="Red"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvTagName2"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="5dp" />
+            <ImageView
+                android:src="@drawable/tag_round_small_icon"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ivTag3" />
+            <TextView
+                android:text="Custom name here..."
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvTagName3"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="5dp" />
+            <ImageView
+                android:src="@drawable/tag_round_small_icon"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ivTag4" />
+            <TextView
+                android:text="Indigo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvTagName4"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:id="@+id/frameLayout1" />
+</LinearLayout>

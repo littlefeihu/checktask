@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="LexisNexis.Red.WindowsStore.Views.AboutSettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LexisNexis.Red.WindowsStore.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="pageRoot">
+
+    <Grid >
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <StackPanel HorizontalAlignment="Left" Margin="18,18,0,0" x:Name="HeadPanel">
+            <TextBlock  x:Uid="ApplicationName" Style="{StaticResource SettingsPageTitleTextBlockStyle}"/>
+            <TextBlock  Style="{StaticResource SettingsPageVersionTextBlockStyle}" Margin="0,10,0,0">
+                <Run x:Uid="ApplicationAuthor"/>
+                <LineBreak/>
+                <Run x:Uid="ApplicationVersion"/>
+                <Run Text="{Binding ApplicationVersion, ElementName=pageRoot}"/>
+                <LineBreak/>
+                <Run x:Uid="LastestServerSyncLabel"/>
+                <Run Text="{Binding LastSyncTime, ElementName=pageRoot}"/>
+            </TextBlock>
+
+            <HyperlinkButton Content="About LexisNexis Red"  Margin="0,18,0,0" Style="{StaticResource SettingsHyperlinkButtonStyle}"
+                             Click="AboutLexisNexisRedClick" />
+            <HyperlinkButton Content="About LexisNexis Legal &amp; Professional "  Margin="0,15,0,0" Style="{StaticResource SettingsHyperlinkButtonStyle}"
+                             Click="AboutLexisNexisClick"/>
+            <HyperlinkButton Content="Terms &amp; Conditions" Margin="0,15,0,0" Style="{StaticResource SettingsHyperlinkButtonStyle}"
+                             Click="TermsConditionClick"/>
+        </StackPanel>
+
+        <WebView x:Name="ContentWebView"  Visibility="Collapsed"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                     ></WebView>
+
+    </Grid>
+</Page>

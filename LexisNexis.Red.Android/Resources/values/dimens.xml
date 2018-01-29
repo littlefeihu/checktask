@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<dimen name="pubdetailinfo_modal_width">642dp</dimen>
+	<dimen name="pubdetailinfo_modal_height">760dp</dimen>
+
+	<dimen name="settings_board_marginleftrigth">80dp</dimen>
+
+	<dimen name="content_page_contentview_maxwidth">850dp</dimen>
+	<dimen name="content_page_fontsize_dialogwidth">300dp</dimen>
+	<dimen name="login_page_resetpassword_dialogwidth">500dp</dimen>
+
+	<dimen name="fixedbar_height">33dp</dimen>
+
+	<dimen name="addtag_floatingbutton_marginright">16dp</dimen>
+
+	<dimen name="newtag_selectcolor_item_width">150dp</dimen>
+	<dimen name="newtag_selectcolor_item_height">70dp</dimen>
+
+	<dimen name="contentpage_leftpanel_width">320dp</dimen>
+	<dimen name="contentpage_annotationpanel_item_leftpadding">32dp</dimen>
+	<dimen name="contentpage_annotationpanel_item_rightpadding">32dp</dimen>
+	<dimen name="publicationpage_anntationitem_tagcontainer_rightmargin">40dp</dimen>
+
+	<dimen name="contentpage_legaldefine_popup_width">500dp</dimen>
+	<dimen name="contentpage_legaldefine_popup_height">400dp</dimen>
+
+	<dimen name="contentpage_pbogoto_popup_width">670dp</dimen>
+	<dimen name="contentpage_pbogoto_popup_height">290dp</dimen>
+
+	<dimen name="edittags_movehandler_width">54dp</dimen>
+</resources>

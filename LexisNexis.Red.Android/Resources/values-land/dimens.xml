@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<dimen name="pubdetailinfo_modal_width">642dp</dimen>
+	<dimen name="pubdetailinfo_modal_height">740dp</dimen>
+
+	<dimen name="settings_board_marginleftrigth">160dp</dimen>
+	<dimen name="addtag_floatingbutton_marginright">42dp</dimen>
+</resources>

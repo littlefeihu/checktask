@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/llExpiredInfoContainer"
+        android:background="#ED1C24">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout6"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginBottom="2dp">
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="@string/DetailInfo_ExpiredWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="16sp"
+                app:fontName="Roboto-Regular.ttf"
+                android:textColor="#DEFFFFFF" />
+            <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+                android:text="Currency Data 3 Feb 2015"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvExpiredCurrencyData"
+                app:fontName="Roboto-Regular.ttf"
+                android:textSize="14sp"
+                android:textColor="#8AFFFFFF" />
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/contentpage_expired_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcTOCList"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

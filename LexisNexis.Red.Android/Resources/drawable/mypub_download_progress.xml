@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/mypub_download_progress_background" />
+    <item>
+    	<clip
+    		android:id="@+id/progress"
+    		android:drawable="@drawable/mypub_download_progress_foreground"
+    		android:clipOrientation="vertical"
+    		android:gravity="top" />
+    </item>
+</layer-list>

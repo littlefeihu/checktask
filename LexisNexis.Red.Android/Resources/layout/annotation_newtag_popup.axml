@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="360dp"
+        android:layout_height="345dp"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="@string/AnnotationNewTagPage_NewTag"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/tvTitle"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:background="#ED1B24"
+            android:textColor="#ffffff" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTagName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:textColorHint="#89000000"
+            android:textColor="#dd000000"
+            android:hint="@string/AnnotationNewTagPage_EnterATagName"
+            android:background="@drawable/newtag_textfield"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:text="@string/AnnotationNewTagPage_SelectATagColour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#dd000000"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linearLayout2">
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor0"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor1"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor2"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor3"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor4"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor5"
+                android:padding="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linearLayout3">
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor6"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor7"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor8"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor9"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor10"
+                android:padding="16dp" />
+            <ImageView
+                android:src="@drawable/tag_selectcolor_round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ivTagColor11"
+                android:padding="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4"
+            android:gravity="bottom|right">
+            <Button
+                android:text="@string/AnnotationNewTagPage_Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/btnCancel"
+                android:textSize="14sp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#EC1A23"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp" />
+            <Button
+                android:text="@string/AnnotationNewTagPage_Done"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/btnOk"
+                android:textSize="14sp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#EC1A23"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

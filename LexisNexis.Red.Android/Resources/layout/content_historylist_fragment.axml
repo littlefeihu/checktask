@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llHeader"
+        android:orientation="horizontal"
+        android:background="@color/MainAppThemeColorPrimary">
+        <FrameLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout1"
+            android:background="#D0181F" />
+        <LexisNexis.Red.Droid.EnhancedTextView.CustomFontTextView
+            android:text="@string/RecentHistoryPanel_RecentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:gravity="bottom"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp"
+            app:fontName="Roboto-Medium.ttf"
+            android:textColor="#daffffff" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout2">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="@string/PublicationsFilter_NoHistoryMessage"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/tvNoHistoryMessageInDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

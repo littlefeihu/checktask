@@ -1,0 +1,238 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="using:LexisNexis.Red.WindowsStore.Views"
+    xmlns:tool="using:LexisNexis.Red.WindowsStore.Tools">
+
+    <DataTemplate x:Key="PublicationTemplate200X340">
+        <Grid Width="200"   >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="270"/>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+            <Viewbox Width="200" Height="270" Grid.Row="0">
+                <uc:BookCoverUserControl DataContext="{Binding}"/>
+            </Viewbox>
+
+            <Button AutomationProperties.AutomationId="DownloadCommand" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="12,0,0,12" Style="{StaticResource DownloadIconButtonStyle}"
+                    Visibility="{Binding ShowDownloadBtn,Converter={StaticResource BoolToVisibleConverter}}" 
+                    Command="{Binding DownloadCommand}"/>
+            <Button AutomationProperties.AutomationId="ShowInfoCommand" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="12,0,0,12" Style="{StaticResource ExpiredIconButtonStyle}"
+                    Visibility="{Binding Expired, Converter={StaticResource BoolToVisibleConverter}}"
+                    Command="{Binding ShowInfoCommand}"/>
+
+            <Grid Grid.Row="1" Background="White" Visibility="{Binding ShowBookStatus, Converter={StaticResource BoolToVisibleConverter}}"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Orientation="Vertical" Margin="12,15,0,15" HorizontalAlignment="Stretch"  VerticalAlignment="Center">
+                    <TextBlock Text="{Binding BookStatusLabel1}"  Style="{StaticResource PublicationStatusTextBlockStyle}"/>
+                    <TextBlock Text="{Binding BookStatusLabel2}" Style="{StaticResource PublicationDateOrSizeTextBlockStyle}" Margin="0,5,0,0"/>
+                </StackPanel>
+                <Border Grid.Column="1" Margin="0,12,0,12" Width="1"  BorderThickness="1" BorderBrush="{StaticResource LightGreyColorBrush}"/>
+                <Button AutomationProperties.AutomationId="ShowInfoCommand" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PublicationInfoButtonStyle}" IsEnabled="{Binding CanShowInfo, Mode=OneWay}"   Margin="12"  Command="{Binding ShowInfoCommand}" />
+            </Grid>
+
+            <Grid Grid.Row="1" Background="White"  Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibleConverter}}" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Orientation="Vertical" Margin="12" HorizontalAlignment="Stretch"  VerticalAlignment="Center">
+                    <ProgressBar Value="{Binding DownloadProgress}" Height="2" Foreground="#FF0078D7"/>
+                    <TextBlock  Text="{Binding DownloadingLabel}" Style="{StaticResource PublicationDateOrSizeTextBlockStyle}">
+                    </TextBlock>
+                </StackPanel>
+                <Button AutomationProperties.AutomationId="CancelDownloadCommand" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12"  Style="{StaticResource NormalIconButtonStyle}" Content="&#xE8BB;"
+                        Command="{Binding CancelDownloadCommand}"/>
+            </Grid>
+            <Grid Grid.Row="1"  Background="White" Visibility="{Binding DownloadFailed, Converter={StaticResource BoolToVisibleConverter}}"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Orientation="Vertical" Margin="12" HorizontalAlignment="Stretch"  VerticalAlignment="Center">
+                    <TextBlock Text="{Binding DownloadFailedLabel}"  Style="{StaticResource PublicationStatusTextBlockStyle}"/>
+                    <TextBlock x:Uid="TryAgain" Style="{StaticResource PublicationDateOrSizeTextBlockStyle}"/>
+                </StackPanel>
+                <Button AutomationProperties.AutomationId="DownloadCommand" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"   Margin="12"  Style="{StaticResource NormalIconButtonStyle}"  Content="&#xE8EE;" 
+                        Command="{Binding DownloadCommand}"/>
+                <Button AutomationProperties.AutomationId="ClearDownloadErrorCommand" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"   Margin="12"  Style="{StaticResource NormalIconButtonStyle}"  Content="&#xE8BB;" 
+                        Command="{Binding ClearDownloadErrorCommand}"/>
+            </Grid>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="PublicationListItemTemplate">
+        <Grid Background="{Binding IsTitleSelected ,Converter={StaticResource BoolToBackgroundConverter}}">
+            <Grid Width="350" Margin="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal"  Grid.Row="0">
+                    <Rectangle Width="24" Height="32" Fill="{Binding PrimaryColor}"  VerticalAlignment="Bottom"/>
+                    <StackPanel  HorizontalAlignment="Stretch"  Margin="10,0,0,0" VerticalAlignment="Top">
+                        <TextBlock Text="{Binding FullTitle}" Width="300" TextWrapping="NoWrap" Style="{StaticResource PublicationSettingTitleTextBlockStyle}" TextTrimming="CharacterEllipsis"/>
+                        <TextBlock  Visibility="{Binding CurrencyDate, Converter={StaticResource NotNullToVisibleConverter} }" Style="{StaticResource PublicationSettingBodyTextBlockStyle}">
+                        <Run x:Uid="CurrencyDateLabel"/>
+                        <Run Text=" "/>
+                        <Run Text="{Binding CurrencyDate}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <Button Grid.Row="1" x:Name="DeleteButton" x:Uid="DeleteButton" Style="{StaticResource PublicationDeleteCommandButtonStyle}" 
+                    HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="0,30,0,0" Visibility="{Binding IsTitleSelected, Converter={StaticResource BoolToVisibleConverter}}"
+                    Command="{Binding DeleteCommand}">
+                </Button>
+            </Grid>
+        </Grid>
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="NavMenuItemTemplate" >
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="48" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"  Text="{Binding Symbol}"  Style="{StaticResource NavMenuIconStyle}" />
+
+            <TextBlock x:Name="Text" Grid.Column="1" Text="{Binding LabelId, Converter={StaticResource UidToStringConverter}}" Style="{StaticResource NavMenuLabelStyle}"/>
+        </Grid>
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="TabItemTemplate" >
+        <Grid HorizontalAlignment="Stretch" Height="48"  Margin="0">
+            <TextBlock  Margin="10,0,10,0" VerticalAlignment="Center" Text="{Binding LabelId, Converter={StaticResource UidToStringConverter}}"  Style="{StaticResource AnnotationMenuItemTextBlockStyle}"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="FilterItemTemplate" >
+        <TextBlock   Text="{Binding }"   Height="38"/>
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="TOCMenuItemTemplate">
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Visibility="{Binding IsHighLight,Mode=OneWay,Converter={StaticResource BoolToVisibleConverter}}"  Background="{Binding NodeLevel,Mode=OneWay,Converter={StaticResource NodeLevelToBackgroundConverter}}"/>
+            <Grid Width="5" MinHeight="48" Grid.Column="0" Background="{Binding NodeLevel,Mode=OneWay,Converter={StaticResource NodeLevelToBackgroundConverter}}"/>
+            <Grid Grid.Column="1" Margin="12,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="48"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding Title}" Margin="0,10,0,10" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{Binding IsHighLight,Mode=OneWay,Converter={StaticResource HighLightToForegroundConverter}}" Style="{StaticResource BreadcrumbItemTextBlockStyle}"/>
+                <TextBlock Grid.Column="1" Text="{Binding Icon,Mode=OneWay}" Style="{StaticResource BreadcrumbIconStyle}" VerticalAlignment="Center" Foreground="{Binding IsHighLight,Mode=OneWay,Converter={StaticResource HighLightToForegroundConverter}}"/>
+            </Grid>
+            <Line  Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="IndexMenuItemTemplate">
+        <Grid  Height="48" Margin="0" IsHitTestVisible="{Binding IsHeader,Converter={StaticResource FalseToEnabledConverter}}"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Text="{Binding Title}" Margin="12,10,0,10" TextWrapping="Wrap" VerticalAlignment="Center" Style="{Binding IsHeader,Mode=OneWay,Converter={StaticResource BoolToIndexStyleConverter}}" />
+            <Line  Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="PublicationsHistoryTemplate">
+        <Grid Height="60" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Width="5" MinHeight="60" Grid.Column="0" Background="{Binding ColorPrimary}"/>
+            <Grid Grid.Column="1" Margin="12,0,12,0">
+                <Grid VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*" />
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding PublicationTitle,Mode=OneWay}" TextWrapping="NoWrap" HorizontalAlignment="Left" Style="{StaticResource HistoryHeadStyle}"/>
+                    <TextBlock Grid.Column="1" Text="{Binding LastReadDate,Mode=OneWay,Converter={StaticResource DatetimeToStringConverter},ConverterParameter=DateTimeFormat}" Style="{StaticResource HistorySubheadStyle}" HorizontalAlignment="Right"/>
+                    <TextBlock Grid.Row="1" Text="{Binding TOCTitle,Mode=OneWay}" Style="{StaticResource HistorySubheadStyle}" HorizontalAlignment="Left"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="PublicationsHistoryTemplate2">
+        <Grid  Background="White"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Width="5" Grid.Column="0" Background="{Binding ColorPrimary}"/>
+            <Grid Grid.Column="1" Margin="12,14,12,14">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding LastReadDate,Mode=OneWay,Converter={StaticResource DatetimeToStringConverter},ConverterParameter=DateTimeFormat}" Style="{StaticResource HistorySubheadStyle}"/>
+                    <TextBlock Text="{Binding PublicationTitle,Mode=OneWay}" TextWrapping="Wrap" Style="{StaticResource HistoryHeadStyle}" />
+                    <TextBlock Text="{Binding TOCTitle,Mode=OneWay}" TextWrapping="Wrap" Style="{StaticResource HistorySubheadStyle}" MaxLines="3"/>
+                </StackPanel>                 
+            </Grid>           
+        </Grid>
+    </DataTemplate>   
+
+    <DataTemplate x:Key="TagAssignItemTemplate">
+        <Grid>
+            <CheckBox Margin="12,0,0,0" Style="{StaticResource TagCheckBoxStyle}" IsChecked="{Binding IsCheck,Mode=TwoWay}">
+                <CheckBox.Content>
+                    <Grid Height="36">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="38"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse  Height="14" Width="14" Fill="{Binding Tag.Color,Mode=OneWay}" VerticalAlignment="Center" />
+                        <TextBlock Text="{Binding Tag.Title,Mode=OneWay}" Grid.Column="1" Style="{StaticResource TagItemStyle}"/>
+                    </Grid>
+                </CheckBox.Content>
+            </CheckBox>
+            <Line Style="{StaticResource SplitLineStyle}" Grid.Column="1" VerticalAlignment="Bottom"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="SearchItemTemplete">
+        <Grid  Margin="0,0,10,0" Background="White">
+            <StackPanel Orientation="Vertical" Margin="0,8,10,8">
+                <TextBlock tool:SearchDepancyProperty.Search="{Binding FirstLine}" Style="{StaticResource SearchHeaderStyle}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock tool:SearchDepancyProperty.Search="{Binding SecondLine}" Style="{StaticResource SearchTitleStyle}"/>
+                    <TextBlock Text="{Binding Type}" Grid.Column="1"  Style="{StaticResource SearchSubtitleStyle}" Margin="5,0,5,0"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="SearchPageItemTemplete">
+        <Grid  Margin="0" Background="White">
+            <StackPanel Orientation="Vertical" Margin="10,8,10,8">
+                <TextBlock Text="{Binding FileTitle}" Style="{StaticResource SearchHeaderStyle}"/>
+                <TextBlock Text="{Binding GuideCardTitle}" Style="{StaticResource SearchTitleStyle}"/>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+
+</ResourceDictionary>

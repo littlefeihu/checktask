@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp">
+    <TextView
+        android:text="@string/PublicationTextPopup_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgFontSize">
+        <RadioButton
+            android:text="@string/PublicationTextPopup_Small"
+            android:id="@+id/rbFontSizeSmall"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:button="@drawable/apptheme_btn_radio_holo_light"
+            android:layout_marginBottom="6dp" />
+        <RadioButton
+            android:text="@string/PublicationTextPopup_Normal"
+            android:id="@+id/rbFontSizeNormal"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:checked="true"
+            android:button="@drawable/apptheme_btn_radio_holo_light"
+            android:layout_marginBottom="6dp" />
+        <RadioButton
+            android:text="@string/PublicationTextPopup_Large"
+            android:id="@+id/rbFontSizeLarge"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:button="@drawable/apptheme_btn_radio_holo_light"
+            android:layout_marginBottom="9dp" />
+    </RadioGroup>
+</LinearLayout>
