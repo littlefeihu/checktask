@@ -44,6 +44,7 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
         private LinearLayout llRootView;
         private WebView wvContent;
         private NfcAdapter _nfcAdapter;
+        int taskId = 0;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -74,7 +75,7 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
             }
 
             var taskName = this.Intent.GetStringExtra(SettingsBoardActivity.FunctionKey);
-
+            taskId = this.Intent.GetIntExtra("taskid", 0);
 
             HtmlTemplate = HtmlTemplate.Replace("##任务名称##", taskName);
 
@@ -191,14 +192,33 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
         [JavascriptInterface]
         public void startFunction(string str)
         {
-            Toast.MakeText(this, "startFunction()", ToastLength.Short).Show();
+            Toast.MakeText(this, str + ",taskId:" + taskId, ToastLength.Short).Show();
         }
+        [Export("submitCheck")]
+        [JavascriptInterface]
+        public void submitCheck()
+        {
 
+
+        }
+        /// <summary>
+        /// 当用户调用了这个方法会传递过来一个参数，我们可以获取出来然后用Android的toast显示
+        /// </summary>
+        /// <param name="str"></param>
+        [Export("submitCheck")]
+        [JavascriptInterface]
+        public void submitCheck(string str)
+        {
+            Toast.MakeText(this, str + ",taskId:" + taskId, ToastLength.Short).Show();
+        }
         [Export]
         [JavascriptInterface]
         public void ShowToast()
         {
             Toast.MakeText(this, "Hello from C#", ToastLength.Short).Show();
         }
+
+
+
     }
 }

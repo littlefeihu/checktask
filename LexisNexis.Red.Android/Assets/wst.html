@@ -9,7 +9,27 @@
     <script type="text/javascript">
         $(function () {
             window.wst.startFunction();
+    
+            $("#submitbtn").click(function () {
 
+                try {
+                    var passArr = new Array()
+
+                    var index = 0;
+                    $(":radio:checked").each(function () {
+
+                        var checkcontentid = $(this).attr("checkcontentid");
+                        passArr[index] = { passed: $(this).val(), checkcontentid: checkcontentid, result: $("input.form-control[checkcontentid='" + checkcontentid + "']").val() };
+                        index += 1;
+                    });
+
+                    window.wst.startFunction(JSON.stringify(passArr));
+                } catch (err) {
+
+                    $("#taskname").html(err.message);
+                }
+
+            });
         });
         function javacalljs() {
             document.getElementById("content").innerHTML +=
@@ -23,11 +43,11 @@
                 $("#checkcontentcontainer").empty();
                 $.each(checkContentObj, function (index, val) {
 
-                    var groupname = "<div class=\"form-group\"><p class=\"help-block\" >" + val.CheckName + " </p ></div>";
-                    $("#checkcontentcontainer").append(groupname);
+                    var groupnameHTML = "<div class=\"form-group\"><p class=\"help-block\" >" + val.CheckName + " </p ></div>";
+                    $("#checkcontentcontainer").append(groupnameHTML);
                     $.each(val.Data, function (index1, val1) {
-                        
-                        var checkitemsHtml = "<div class=\"form-group\"><label for=\"exampleInputPassword1\">" + val1.CheckContent + "</label><div class=\"custom-radio\"> <label><input type=\"radio\" name=\"name1\"> 是 </label> <label><input type=\"radio\" name=\"name1\">否</label> <input type=\"text\" class=\"form-control\" name=\"remark\" placeholder=\"备注\"> </div>  </div>";
+
+                        var checkitemsHtml = "<div class=\"form-group\"><label for=\"example\">" + val1.CheckContent + "</label><div class=\"custom-radio\"> <label><input type=\"radio\" name='" + val1.CheckContentId + "'  checkcontentid='" + val1.CheckContentId + "' > 正常 </label> <label><input type=\"radio\" name='" + val1.CheckContentId + "' checkcontentid='" + val1.CheckContentId + "' >不正常</label> <input type=\"text\" class=\"form-control\" name=\"remark\" placeholder=\"备注\"  checkcontentid='" + val1.CheckContentId + "' > </div>  </div>";
                         $("#checkcontentcontainer").append(checkitemsHtml);
                     });
                 });
@@ -65,7 +85,7 @@
                             </div>
                         </div>-->
                     </div>
-                    <button type="button" class="btn btn-primary">提交</button>
+                    <button type="button" class="btn btn-primary" id="submitbtn">提交</button>
                 </form>
             </div>
         </div>
