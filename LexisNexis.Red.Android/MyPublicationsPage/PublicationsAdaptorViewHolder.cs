@@ -79,11 +79,18 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
 
             public void OnClick(View v)
             {
-
-                Intent intent = new Intent(vh.adaptor.Activity, typeof(Activity1));
-                intent.PutExtra(SettingsBoardActivity.FunctionKey, vh.publication.Value.Name);
-                vh.adaptor.Activity.StartActivity(intent);
-
+                if (vh.publication.Value.PublicationStatus == PublicationStatusEnum.Downloaded)
+                {
+                    //打开任务  进入任务巡查界面
+                    Intent intent = new Intent(vh.adaptor.Activity, typeof(Activity1));
+                    intent.PutExtra(SettingsBoardActivity.FunctionKey, vh.publication.Value.Name);
+                    intent.PutExtra("taskid", vh.publication.Value.DpsiCode);
+                    vh.adaptor.Activity.StartActivity(intent);
+                }
+                else
+                {
+                    Toast.MakeText(vh.adaptor.Activity, "请先启动任务", ToastLength.Short).Show();
+                }
             }
         }
 
@@ -98,7 +105,6 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
 
             public void OnClick(View v)
             {
-
                 PublicationDetailInfoFragment.NewInstance(vh.publication.Value.BookId)
                     .Show(vh.adaptor.Activity.SupportFragmentManager);
             }
@@ -123,11 +129,11 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
                     SimpleDialogFragment.Create(new SimpleDialogProvider
                     {
                         TitleResId = Resource.String.StartTask_Title,
-                        MessageResId = Resource.String.StartTaskConfirm_Message,
+                        MessageResId = Resource.String.EndTaskConfirm_Message,
                         PositiveButtonResId = Resource.String.Confirm,
                         NegativeButtonResId = Resource.String.Cancel,
-                        ExtTagKey = "StartTask",
-                        ExtTag = vh.publication.Value.BookId.ToString(),
+                        ExtTagKey = "EndTask",
+                        ExtTag = vh.publication.Value.DpsiCode.ToString(),
                         CanceledOnTouchOutside = false,
                     }).Show(vh.adaptor.Activity.SupportFragmentManager);
                 }
@@ -136,13 +142,14 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
                     SimpleDialogFragment.Create(new SimpleDialogProvider
                     {
                         TitleResId = Resource.String.StartTask_Title,
-                        MessageResId = Resource.String.EndTaskConfirm_Message,
+                        MessageResId = Resource.String.StartTaskConfirm_Message,
                         PositiveButtonResId = Resource.String.Confirm,
                         NegativeButtonResId = Resource.String.Cancel,
-                        ExtTagKey = "EndTask",
-                        ExtTag = vh.publication.Value.BookId.ToString(),
+                        ExtTagKey = "StartTask",
+                        ExtTag = vh.publication.Value.DpsiCode.ToString(),
                         CanceledOnTouchOutside = false,
                     }).Show(vh.adaptor.Activity.SupportFragmentManager);
+
                 }
 
 

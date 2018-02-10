@@ -28,6 +28,9 @@
     <AndroidLinkMode>None</AndroidLinkMode>
     <AssemblyName>LexisNexis.Red.Droid</AssemblyName>
     <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <EnableProguard>false</EnableProguard>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Testing|AnyCPU' ">
     <Optimize>true</Optimize>
@@ -515,6 +518,13 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\wst.html" />
     <AndroidAsset Include="Assets\html\bootstrap.min.css" />
+    <AndroidAsset Include="Assets\html\1.png" />
+    <AndroidAsset Include="Assets\html\bootstrap.min.js" />
+    <AndroidAsset Include="Assets\wst1.html" />
+    <AndroidAsset Include="Assets\html\bootstrap-dialog.css" />
+    <AndroidAsset Include="Assets\html\bootstrap-dialog.js" />
+    <AndroidAsset Include="Assets\html\font-awesome.min.css" />
+    <AndroidAsset Include="Assets\html\remove.jpeg" />
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

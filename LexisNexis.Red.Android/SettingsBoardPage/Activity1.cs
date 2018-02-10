@@ -25,6 +25,8 @@ using Android.Nfc;
 using LexisNexis.Red.Common.Entity;
 using LexisNexis.Red.Common.Services;
 using LexisNexis.Red.Common.HelpClass;
+using Newtonsoft.Json;
+using Android.Provider;
 
 namespace LexisNexis.Red.Droid.SettingsBoardPage
 {
@@ -44,7 +46,7 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
         private LinearLayout llRootView;
         private WebView wvContent;
         private NfcAdapter _nfcAdapter;
-        int taskId = 0;
+        Guid taskId = Guid.Empty;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -75,9 +77,10 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
             }
 
             var taskName = this.Intent.GetStringExtra(SettingsBoardActivity.FunctionKey);
-            taskId = this.Intent.GetIntExtra("taskid", 0);
+            taskId = Guid.Parse(this.Intent.GetStringExtra("taskid"));
 
             HtmlTemplate = HtmlTemplate.Replace("##任务名称##", taskName);
+
 
 
             wvContent.LoadDataWithBaseURL(
@@ -136,16 +139,24 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
                             if (record.Tnf == NdefRecord.TnfWellKnown)
                             {
                                 var data = Encoding.ASCII.GetString(record.GetPayload());
-                                Toast.MakeText(this, data, ToastLength.Short).Show();
 
                                 if (!string.IsNullOrEmpty(data))
                                     data = data.Substring(3);
 
-                                HttpResponse taskresponse = new HttpResponse();
+                                try
+                                {
 
-                                taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().GetCheckContentByTaskID(new GetCheckContentRequest { NFC = "1111", taskid = Guid.NewGuid() });
 
-                                wvContent.LoadUrl("javascript:RenderCheckContent('" + data + "','','" + taskresponse.Content + "')");
+                                    HttpResponse taskresponse = new HttpResponse();
+
+                                    taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().GetCheckContentByTaskID(new GetCheckContentRequest { NFC = data, taskid = taskId.ToString() });
+
+                                    wvContent.LoadUrl("javascript:RenderCheckContent('" + data + "','','" + taskresponse.Content + "')");
+                                }
+                                catch (System.Exception ex)
+                                {
+                                    Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+                                }
                             }
                         }
                     }
@@ -153,7 +164,17 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
             }
         }
 
-
+        protected override void OnActivityResult(int requestCode, Result ResultStatus, Intent data)
+        {
+            if (ResultStatus == Result.Ok)
+            {
+                if (requestCode == Camera_RequestCode)
+                {
+                    var fileUrl = Android.Net.Uri.FromFile(originalFile);
+                    wvContent.LoadUrl("javascript:SetImg('" + fileUrl + "')");
+                }
+            }
+        }
         public static string GetTitle(string id)
         {
             return MainApp.ThisApp.Resources.GetString(
@@ -192,20 +213,62 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
         [JavascriptInterface]
         public void startFunction(string str)
         {
-            Toast.MakeText(this, str + ",taskId:" + taskId, ToastLength.Short).Show();
+            string msg = "";
+            try
+            {
+                var requests = JsonConvert.DeserializeObject<List<CreateCheckRercordRequest>>(str);
+                HttpResponse taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().CreateCheckRercord(requests);
+                if (taskresponse.IsSuccess)
+                {
+                    msg = "操作成功";
+                }
+            }
+            catch (System.Exception)
+            {
+                msg = "操作出错";
+            }
+            Toast.MakeText(this, msg, ToastLength.Short).Show();
         }
-        [Export("submitCheck")]
+        private Java.IO.File originalFile;
+        private const int Camera_RequestCode = 0xa2;
+
+        [Export]
         [JavascriptInterface]
         public void submitCheck()
         {
 
-
         }
-        /// <summary>
-        /// 当用户调用了这个方法会传递过来一个参数，我们可以获取出来然后用Android的toast显示
-        /// </summary>
-        /// <param name="str"></param>
-        [Export("submitCheck")]
+
+
+        [Export]
+        [JavascriptInterface]
+        public void cutImageByCamera()
+        {
+            try
+            {
+                originalFile = new Java.IO.File(Android.OS.Environment.GetExternalStoragePublicDirectory(
+               Android.OS.Environment.DirectoryPictures
+               ), "zcb_pic_" + SystemClock.CurrentThreadTimeMillis() + ".png");
+
+                Intent getImageByCamera = new Intent("android.media.action.IMAGE_CAPTURE");
+                getImageByCamera.PutExtra(MediaStore.ExtraOutput, Android.Net.Uri.FromFile(originalFile));
+                getImageByCamera.PutExtra(MediaStore.ExtraVideoQuality, 1);
+                StartActivityForResult(getImageByCamera, Camera_RequestCode);
+            }
+            catch (System.Exception ex)
+            {
+                Toast.MakeText(this, "App Camera Error:" + ex.InnerException, ToastLength.Short).Show();
+            }
+        }
+
+        [Export]
+        [JavascriptInterface]
+        public void saveRepair(string deviceid, string faultDesc, string imgUrls)
+        {
+            Toast.MakeText(this, deviceid, ToastLength.Short).Show();
+        }
+
+        [Export]
         [JavascriptInterface]
         public void submitCheck(string str)
         {

@@ -302,11 +302,11 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
                     HttpResponse taskresponse = new HttpResponse();
                     if (extTagKey == "StartTask")
                     {//启动任务
-                        taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().StartTask(new Common.Entity.StartTaskRequest { keyValue = int.Parse(extTag), UserName = GlobalAccess.Instance.UserCredential.Email });
+                        taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().StartTask(new Common.Entity.StartTaskRequest { keyValue = extTag, UserName = GlobalAccess.Instance.UserCredential.Email });
                     }
                     if (extTagKey == "EndTask")
                     {//结束任务
-                        taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().EndTask(new Common.Entity.EndTaskRequest { result = "", keyValue = int.Parse(extTag) });
+                        taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().EndTask(new Common.Entity.EndTaskRequest { result = "", keyValue = extTag });
                     }
 
                     if (taskresponse.IsSuccess)
@@ -327,7 +327,7 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
                         }
                         else
                         {//操作失败提示给用户
-                            Toast.MakeText(Activity, "", ToastLength.Short).Show();
+                            Toast.MakeText(Activity, response.Message, ToastLength.Short).Show();
                         }
                     }
                     return true;

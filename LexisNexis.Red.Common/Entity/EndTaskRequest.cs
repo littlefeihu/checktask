@@ -13,7 +13,7 @@ namespace LexisNexis.Red.Common.Entity
         /// Login User Email Id
         /// </summary>
         [JsonProperty("keyValue")]
-        public int keyValue { get; set; }
+        public string keyValue { get; set; }
 
         /// <summary>
         /// Login User Password
@@ -25,10 +25,21 @@ namespace LexisNexis.Red.Common.Entity
     public class GetCheckContentRequest
     {
         [JsonProperty("taskid")]
-        public Guid taskid { get; set; }
+        public string taskid { get; set; }
         [JsonProperty("NFC")]
         public string NFC { get; set; }
     }
 
+
+    public class CreateCheckRercordRequest
+    {
+        public bool Passed { get; set; }
+        public string CheckContentId { get; set; }
+        public string CheckPointId { get; set; }
+        public string CheckTaskId { get; set; }
+        public string Result { get; set; }
+
+
+    }
 
 }

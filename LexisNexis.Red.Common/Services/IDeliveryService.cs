@@ -1,5 +1,6 @@
 ﻿using LexisNexis.Red.Common.BusinessModel;
 using LexisNexis.Red.Common.Entity;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 namespace LexisNexis.Red.Common.Services
@@ -15,6 +16,9 @@ namespace LexisNexis.Red.Common.Services
         HttpResponse EndTask(EndTaskRequest request);
 
         HttpResponse GetCheckContentByTaskID(GetCheckContentRequest request);
+
+        HttpResponse CreateCheckRercord(List<CreateCheckRercordRequest> requests);
+
         HttpResponse StartTask(StartTaskRequest request);
         /// <summary>
         /// get single dl book information

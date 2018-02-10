@@ -10,6 +10,10 @@
         internal const string DL_FILE_DETAILS = "/api/GetTaskByUserId";
         internal const string DL_StartTask = "/api/StartTask";
         internal const string DL_EndTask = "/api/EndTask";
+        internal const string CreateCheckRercord = "/api/CreateCheckRercord";
+
+
+        
         internal const string GetCheckContentByTaskID = "/api/GetCheckContentByTaskID";
         internal const string DL_FILE_DOWNLOAD = "/DLFileDownload";
         internal const string DL_FILE_CURRENT_VERSION = "/DLFileCurrentVersion";

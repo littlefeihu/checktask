@@ -13,7 +13,7 @@ namespace LexisNexis.Red.Common.Entity
         /// Login User Email Id
         /// </summary>
         [JsonProperty("keyValue")]
-        public int keyValue { get; set; }
+        public string keyValue { get; set; }
 
         /// <summary>
         /// Login User Password
