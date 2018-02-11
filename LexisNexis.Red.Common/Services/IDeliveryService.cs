@@ -15,6 +15,8 @@ namespace LexisNexis.Red.Common.Services
 
         HttpResponse EndTask(EndTaskRequest request);
 
+        HttpResponse UploadRepair(UploadRepairRequest request);
+
         HttpResponse GetCheckContentByTaskID(GetCheckContentRequest request);
 
         HttpResponse CreateCheckRercord(List<CreateCheckRercordRequest> requests);

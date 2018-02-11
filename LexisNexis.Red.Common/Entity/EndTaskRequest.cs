@@ -42,4 +42,21 @@ namespace LexisNexis.Red.Common.Entity
 
     }
 
+    public class UploadRepairRequest
+    {
+        [JsonProperty("deviceid")]
+        public string deviceid { get; set; }
+        [JsonProperty("faultDesc")]
+        public string faultDesc { get; set; }
+
+        [JsonProperty("imgs")]
+        public List<string> imgs { get; set; }
+
+        public string username { get; set; }
+
+        public string userid { get; set; }
+
+
+
+    }
 }

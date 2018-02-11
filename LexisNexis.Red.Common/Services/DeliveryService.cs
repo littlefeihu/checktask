@@ -47,7 +47,13 @@ namespace LexisNexis.Red.Common.Services
                 return await ServiceAgent.RestFullServiceJsonRequest(base.GetTargetUri(), ServiceConfig.CreateCheckRercord, requests);
             }).Result;
         }
-
+        public HttpResponse UploadRepair(UploadRepairRequest request)
+        {
+            return Task.Run(async () =>
+            {
+                return await ServiceAgent.RestFullServiceJsonRequest(base.GetTargetUri(), ServiceConfig.UploadRepair, request);
+            }).Result;
+        }
 
         public HttpResponse GetCheckContentByTaskID(GetCheckContentRequest request)
         {
@@ -55,39 +61,6 @@ namespace LexisNexis.Red.Common.Services
             {
                 return await ServiceAgent.RestFullServiceJsonRequest(base.GetTargetUri(), ServiceConfig.GetCheckContentByTaskID, request);
             }).Result;
-
-
-            //var id1 = Guid.Parse("9CD8A54E-8EBD-403E-AD14-7DFC200CA038");
-            //var id2 = Guid.Parse("9CD8A54E-8EBD-403E-AD14-7DFC200CA039");
-
-            //return new HttpResponse
-            //{
-
-            //    IsSuccess = true,
-            //    Content = JsonConvert.SerializeObject(new List<CheckContentGroup> {
-            //        new CheckContentGroup { Id = id1, CheckName = "消防栓", Data = new List<CheckContentItem> { new CheckContentItem {
-            //             ParentId=id1,
-            //             CheckContent="消防栓水压是否正常？",
-            //             CheckName="消防栓",
-            //             CheckPointId=Guid.NewGuid(),
-            //             NFCID="111",
-            //             CheckPointName="楼道",
-            //             CheckTaskId=Guid.NewGuid(),
-            //             CheckContentId=Guid.NewGuid()
-            //        } } },
-            //                  new CheckContentGroup { Id = id2, CheckName = "通道", Data = new List<CheckContentItem> { new CheckContentItem {
-            //             ParentId=id2,
-            //             CheckContent="消防通道是否畅通？",
-            //             CheckName="通道",
-            //             CheckPointId=Guid.NewGuid(),
-            //             NFCID="111",
-            //             CheckPointName="通道",
-            //             CheckTaskId=Guid.NewGuid(),
-            //             CheckContentId=Guid.NewGuid()
-            //        } } }
-
-            //    })
-            //};
         }
 
         public async Task<bool> DlFileDownload(DlBook dlBook, CancellationToken cancellationToken, DownloadProgressEventHandler downloadHandler)

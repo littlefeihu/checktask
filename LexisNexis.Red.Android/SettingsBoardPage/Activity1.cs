@@ -27,6 +27,7 @@ using LexisNexis.Red.Common.Services;
 using LexisNexis.Red.Common.HelpClass;
 using Newtonsoft.Json;
 using Android.Provider;
+using LexisNexis.Red.Common;
 
 namespace LexisNexis.Red.Droid.SettingsBoardPage
 {
@@ -265,7 +266,42 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
         [JavascriptInterface]
         public void saveRepair(string deviceid, string faultDesc, string imgUrls)
         {
-            Toast.MakeText(this, deviceid, ToastLength.Short).Show();
+            try
+            {
+
+                UploadRepairRequest request = new UploadRepairRequest();
+
+                var imgpaths = JsonConvert.DeserializeObject<List<string>>(imgUrls);
+                List<string> imgs = new List<string>();
+                foreach (var imgpath in imgpaths)
+                {
+                    using (var stream = IoCContainer.Instance.Resolve<IDirectory>().OpenFile(imgpath, Common.BusinessModel.FileModeEnum.Open).Result)
+                    {
+                        byte[] arr = new byte[stream.Length];
+                        stream.Read(arr, 0, arr.Length);
+                        imgs.Add(Convert.ToBase64String(arr));
+                    }
+                }
+
+                request.deviceid = deviceid;
+                request.faultDesc = faultDesc;
+                request.imgs = imgs;
+                request.username = GlobalAccess.Instance.CurrentUserInfo.Email;
+                request.userid = GlobalAccess.Instance.CurrentUserInfo.FullName;
+                var response = IoCContainer.Instance.Resolve<IDeliveryService>().UploadRepair(request);
+                if (response.IsSuccess)
+                {
+                    Toast.MakeText(this, "保存成功", ToastLength.Short).Show();
+                }
+                else
+                {
+                    Toast.MakeText(this, "保存出错", ToastLength.Short).Show();
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Toast.MakeText(this, "保存出错," + ex.Message, ToastLength.Short).Show();
+            }
         }
 
         [Export]
