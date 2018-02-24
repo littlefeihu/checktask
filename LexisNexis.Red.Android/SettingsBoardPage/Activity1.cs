@@ -28,6 +28,8 @@ using LexisNexis.Red.Common.HelpClass;
 using Newtonsoft.Json;
 using Android.Provider;
 using LexisNexis.Red.Common;
+using System.Xml.Linq;
+using System.Threading.Tasks;
 
 namespace LexisNexis.Red.Droid.SettingsBoardPage
 {
@@ -91,6 +93,7 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
                         "utf-8",
                         null);
             _nfcAdapter = NfcAdapter.GetDefaultAdapter(this);
+
         }
 
         public override View OnCreateView(string name, Context context, IAttributeSet attrs)
@@ -146,8 +149,6 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
 
                                 try
                                 {
-
-
                                     HttpResponse taskresponse = new HttpResponse();
 
                                     taskresponse = IoCContainer.Instance.Resolve<IDeliveryService>().GetCheckContentByTaskID(new GetCheckContentRequest { NFC = data, taskid = taskId.ToString() });
@@ -247,13 +248,11 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
         {
             try
             {
-                originalFile = new Java.IO.File(Android.OS.Environment.GetExternalStoragePublicDirectory(
-               Android.OS.Environment.DirectoryPictures
-               ), "zcb_pic_" + SystemClock.CurrentThreadTimeMillis() + ".png");
+                originalFile = new Java.IO.File(IoCContainer.Instance.Resolve<IDirectory>().GetAppRootPath(), "zcb_pic_" + Guid.NewGuid().ToString("N") + ".png");
 
                 Intent getImageByCamera = new Intent("android.media.action.IMAGE_CAPTURE");
                 getImageByCamera.PutExtra(MediaStore.ExtraOutput, Android.Net.Uri.FromFile(originalFile));
-                getImageByCamera.PutExtra(MediaStore.ExtraVideoQuality, 1);
+                getImageByCamera.PutExtra(MediaStore.ExtraVideoQuality, 0);
                 StartActivityForResult(getImageByCamera, Camera_RequestCode);
             }
             catch (System.Exception ex)
@@ -268,40 +267,63 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
         {
             try
             {
-
                 UploadRepairRequest request = new UploadRepairRequest();
-
+                XElement root = new XElement("Repair");
+                XElement Imgs = new XElement("Imgs");
                 var imgpaths = JsonConvert.DeserializeObject<List<string>>(imgUrls);
-                List<string> imgs = new List<string>();
+                request.imgs = new List<string>();
                 foreach (var imgpath in imgpaths)
                 {
-                    using (var stream = IoCContainer.Instance.Resolve<IDirectory>().OpenFile(imgpath, Common.BusinessModel.FileModeEnum.Open).Result)
+                    using (var stream = IoCContainer.Instance.Resolve<IDirectory>().OpenFile1(imgpath, Common.BusinessModel.FileModeEnum.Open).Result)
                     {
                         byte[] arr = new byte[stream.Length];
                         stream.Read(arr, 0, arr.Length);
-                        imgs.Add(Convert.ToBase64String(arr));
+                        var imgcontent = Convert.ToBase64String(arr);
+                        Imgs.Add(new XElement("Img", imgcontent));
+                        request.imgs.Add(imgcontent);
                     }
                 }
+                root.Add(new XElement("deviceid", deviceid));
+                root.Add(new XElement("faultDesc", faultDesc));
+                root.Add(new XElement("username", GlobalAccess.Instance.CurrentUserInfo.Email));
+                root.Add(new XElement("userid", GlobalAccess.Instance.CurrentUserInfo.FullName));
+                root.Add(Imgs);
 
-                request.deviceid = deviceid;
-                request.faultDesc = faultDesc;
-                request.imgs = imgs;
-                request.username = GlobalAccess.Instance.CurrentUserInfo.Email;
                 request.userid = GlobalAccess.Instance.CurrentUserInfo.FullName;
+                request.username = GlobalAccess.Instance.CurrentUserInfo.Email;
+                request.faultDesc = faultDesc;
+                request.deviceid = deviceid;
+                request.xmlName = Guid.NewGuid().ToString("N") + ".xml";
+                request.Content = System.Text.Encoding.UTF8.GetBytes(root.ToString());
+
+                SaveToLocal(request.xmlName, request.Content);
                 var response = IoCContainer.Instance.Resolve<IDeliveryService>().UploadRepair(request);
-                if (response.IsSuccess)
+                if (response.Content.Contains("操作成功"))
                 {
+                    wvContent.LoadUrl("javascript:SubmitRepairResult('0')");
                     Toast.MakeText(this, "保存成功", ToastLength.Short).Show();
                 }
                 else
                 {
-                    Toast.MakeText(this, "保存出错", ToastLength.Short).Show();
+                    Toast.MakeText(this, "保存出错,请重试", ToastLength.Short).Show();
                 }
             }
             catch (System.Exception ex)
             {
-                Toast.MakeText(this, "保存出错," + ex.Message, ToastLength.Short).Show();
+                Toast.MakeText(this, "保存出错,请重试" + ex.Message, ToastLength.Short).Show();
             }
+        }
+
+
+        private void SaveToLocal(string xmlname, byte[] content)
+        {
+
+            Task.Run(async () =>
+            {
+                await IoCContainer.Instance.Resolve<IDirectory>().SaveFileToInternal(xmlname, content);
+
+            }).GetAwaiter().GetResult();
+
         }
 
         [Export]

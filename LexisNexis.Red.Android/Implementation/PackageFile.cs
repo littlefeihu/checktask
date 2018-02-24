@@ -68,6 +68,7 @@ namespace LexisNexis.Red.Droid.Implementation
 
 			using(ZipInputStream s = new ZipInputStream(File.OpenRead(sourceFullPath)))
 			{
+              
 				ZipEntry theEntry;
 				while((theEntry = s.NextEntry) != null)
 				{

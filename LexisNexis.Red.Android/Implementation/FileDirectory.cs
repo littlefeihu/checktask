@@ -135,6 +135,26 @@ namespace LexisNexis.Red.Droid.Implementation
             });
         }
 
+        public Task<Stream> OpenFile1(string fileName, FileModeEnum fileMode = FileModeEnum.Create)
+        {
+            return Task.Run<Stream>(delegate
+            {
+                string fullPath = fileName.Replace("file://", "");
+
+                switch (fileMode)
+                {
+                    case FileModeEnum.Append:
+                        return new FileStream(fullPath, FileMode.Append);
+                    case FileModeEnum.Create:
+                        return new FileStream(fullPath, FileMode.Create);
+                    case FileModeEnum.Open:
+                        return new FileStream(fullPath, FileMode.Open);
+                    default:
+                        throw new InvalidProgramException("Unknown fileMode.");
+                }
+
+            });
+        }
         public Task<bool> DirectoryExists(string filePath)
         {
             return Task.Run<bool>(delegate
