@@ -63,8 +63,8 @@
   <string name="ReminderPassword_SupportPromote_SingaporeTel">+65-6349-0110</string>
 
   <!-- 2 -->
-  <string name="LoginErrorMessage_NetDisconnected_Title">Server Error</string>
-  <string name="LoginErrorMessage_NetDisconnected">Unable to communicate with 智慧消防 services. Please ensure you have an internet connection, or try again later as the servers may be busy.</string>
+  <string name="LoginErrorMessage_NetDisconnected_Title">网络服务出错</string>
+  <string name="LoginErrorMessage_NetDisconnected">请检查手机网络是否开启？</string>
 
   <!-- 7 -->
   <string name="LoginErrorMessage_InvalidemailAndValidPwd">Either the email address or password you entered is incorrect.</string>
@@ -98,7 +98,7 @@
 
   <string name="LogoutConfirm_Title">退出</string>
   <string name="LogoutConfirm_Message">感谢您使用智慧消防APP.确定要退出吗?</string>
-  
+
   <string name="StartTask_Title">任务管理</string>
   <string name="StartTaskConfirm_Message">确定要启动任务吗?</string>
   <string name="EndTaskConfirm_Message">确定要结束任务吗?</string>

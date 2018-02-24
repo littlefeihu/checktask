@@ -12,8 +12,7 @@
         android:layout_width="350dp"
         android:layout_height="38dp"
         android:layout_centerHorizontal="true"
-        android:translationX="14dp"
-        android:visibility="invisible" />
+        android:translationX="14dp" />
     <FrameLayout
         android:orientation="vertical"
         android:layout_below="@id/ivLogo"
