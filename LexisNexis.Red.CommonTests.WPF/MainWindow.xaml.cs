@@ -24,6 +24,8 @@ using System.Windows.Shapes;
 using System.Xml;
 using System.Linq;
 using System.Xml.Linq;
+using LexisNexis.Red.Common.Services;
+
 namespace LexisNexis.Red.CommonTests.WPF
 {
     /// <summary>
@@ -77,8 +79,17 @@ namespace LexisNexis.Red.CommonTests.WPF
             ServicePointManager.DefaultConnectionLimit = 3;
             Logger.Log("ds");
             //var idnexContent = await PublicationContentUtil.Instance.GetContentFromIndex(bookId, new Index { FileName = "AB1.xml", Title = "AB1" });
-            var loginResult = await LoginUtil.Instance.ValidateUserLogin("allen@lexisred.com", "1234", "HK");
-          
+            var loginResult = await LoginUtil.Instance.ValidateUserLogin("admin", "1111", "AUNZ");
+
+            IoCContainer.Instance.Resolve<IDeliveryService>().UploadRepair(new Common.Entity.UploadRepairRequest
+            {
+                username = "",
+                userid = "",
+                faultDesc = ""
+            });
+
+
+            return;
             //  var rows = AnnCategoryTagUtil.Instance.AddTag("tag", "#FAD788");
             Console.WriteLine(loginResult);
             var tags = AnnCategoryTagUtil.Instance.GetTags();

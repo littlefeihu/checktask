@@ -122,7 +122,10 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
                 _nfcAdapter.EnableForegroundDispatch(this, pendingIntent, filters, null);
             }
         }
-
+        private string bytesToHexString(byte[] src)
+        {
+            return BitConverter.ToString(src, 0).Replace("-", string.Empty);
+        }
         protected override void OnNewIntent(Intent intent)
         {
             if (intent.Action == NfcAdapter.ActionTagDiscovered)
@@ -142,11 +145,13 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
                         {
                             if (record.Tnf == NdefRecord.TnfWellKnown)
                             {
-                                var data = Encoding.ASCII.GetString(record.GetPayload());
 
-                                if (!string.IsNullOrEmpty(data))
-                                    data = data.Substring(3);
+                                //var data = Encoding.ASCII.GetString(record.GetPayload());
 
+                                //if (!string.IsNullOrEmpty(data))
+                                //    data = data.Substring(3);
+
+                                var data = bytesToHexString(tag.GetId());
                                 try
                                 {
                                     HttpResponse taskresponse = new HttpResponse();

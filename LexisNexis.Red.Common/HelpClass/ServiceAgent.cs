@@ -7,6 +7,7 @@ using LexisNexis.Red.Common.HelpClass.Tools;
 using LexisNexis.Red.Common.Interface;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
@@ -63,12 +64,39 @@ namespace LexisNexis.Red.Common.HelpClass
             }
             return httpresponse;
         }
+        public static async Task<HttpResponse> RestFullServiceJsonRequest1(Uri uri, string uriTemplate, Stream stream, CancellationToken token = default(CancellationToken))
+        {
+            HttpResponse httpresponse = new HttpResponse { IsSuccess = false };
+
+            MultipartFormDataContent form = new MultipartFormDataContent();
+            StreamContent fileContent = new StreamContent(stream);
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+            fileContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data");
+            fileContent.Headers.ContentDisposition.FileName = "ios_2.pcm";
+            form.Add(fileContent);
+
+            var response = await hclient.PostAsync(new Uri(uri + uriTemplate), form, token);
+            if (response != null)
+            {
+                httpresponse.IsSuccess = (response.StatusCode == HttpStatusCode.OK);
+                if (response.StatusCode != HttpStatusCode.OK)
+                {
+                    httpresponse.Content = response.ReasonPhrase;
+                }
+                else
+                {
+                    httpresponse.Content = await response.Content.ReadAsStringAsync();
+                }
+
+            }
+            return httpresponse;
+        }
 
         public static async Task<bool> RestFullPingServiceRequest(Uri uri, string uriTemplate, CancellationToken cancellationToken)
         {
             try
             {
-                 var response = await pingHclient.GetAsync(new Uri(uri + uriTemplate), cancellationToken);
+                var response = await pingHclient.GetAsync(new Uri(uri + uriTemplate), cancellationToken);
                 if (response != null)
                 {
                     if (response.StatusCode == HttpStatusCode.OK)

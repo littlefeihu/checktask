@@ -42,8 +42,8 @@ namespace LexisNexis.Red.Common.Business
                 var pingResult = await connectionMonitor.PingService(countryCode);
                 if (!pingResult)
                 {//offline
-                    user = this.loginDomainService.LoginOffline(email, password, countryCode);
-                    loginStatus = user == null ? LoginStatusEnum.NetDisconnected : loginStatus = LoginStatusEnum.LoginSuccess;
+                    //user = this.loginDomainService.LoginOffline(email, password, countryCode);
+                    loginStatus = user == null ? LoginStatusEnum.NetDisconnected : loginStatus = LoginStatusEnum.NetDisconnected;
                 }
                 else
                 {

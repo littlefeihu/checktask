@@ -56,6 +56,8 @@ namespace LexisNexis.Red.Common
         /// </summary>
         /// <param name="fileName"></param>
         Task<Stream> OpenFile(string fileName, FileModeEnum fileMode = FileModeEnum.Create);
+
+        Task<Stream> OpenFile1(string fileName, FileModeEnum fileMode = FileModeEnum.Create);
         /// <summary>
         ///  Returns the names of files (including their paths) in the specified directory.
         /// </summary>

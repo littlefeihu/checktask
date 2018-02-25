@@ -5,6 +5,7 @@ using LexisNexis.Red.Common.HelpClass;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -51,7 +52,10 @@ namespace LexisNexis.Red.Common.Services
         {
             return Task.Run(async () =>
             {
-                return await ServiceAgent.RestFullServiceJsonRequest(base.GetTargetUri(), ServiceConfig.UploadRepair, request);
+                request.ContentStream = await IoCContainer.Instance.Resolve<IDirectory>().OpenFile(request.xmlName, FileModeEnum.Open);
+
+                return await ServiceAgent.RestFullServiceJsonRequest1(base.GetTargetUri(), ServiceConfig.UploadRepair, request.ContentStream);
+
             }).Result;
         }
 

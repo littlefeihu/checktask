@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,22 +42,20 @@ namespace LexisNexis.Red.Common.Entity
 
 
     }
-
     public class UploadRepairRequest
     {
-        [JsonProperty("deviceid")]
-        public string deviceid { get; set; }
-        [JsonProperty("faultDesc")]
-        public string faultDesc { get; set; }
+        [JsonProperty("Content")]
+        public byte[] Content { get; set; }
 
-        [JsonProperty("imgs")]
-        public List<string> imgs { get; set; }
+        public Stream ContentStream { get; set; }
 
         public string username { get; set; }
-
+        public string deviceid { get; set; }
+        public string faultDesc { get; set; }
         public string userid { get; set; }
+        public List<string> imgs { get; set; }
 
-
+        public string xmlName { get; set; }
 
     }
 }
