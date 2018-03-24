@@ -228,6 +228,7 @@ namespace LexisNexis.Red.Droid.SettingsBoardPage
                 if (taskresponse.IsSuccess)
                 {
                     msg = "操作成功";
+                    wvContent.LoadUrl("javascript:SubmitCheckRecord('0')");
                 }
             }
             catch (System.Exception)

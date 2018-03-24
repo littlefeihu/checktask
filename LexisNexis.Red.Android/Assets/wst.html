@@ -71,6 +71,7 @@
             $("#imgs").empty();
             $("#repairdiv").show("fast");
         }
+
         function CloseRepair() {
             $("#repairdiv").hide("fast");
         }
@@ -101,6 +102,18 @@
             }
         }
 
+        function SubmitCheckRecord(str) {
+            if (str == "1") {
+
+            }
+            else if (str == "0") {
+                $("#nfctip").show();
+                $("#submitnfc").hide();
+                $("#panelheading").hide();
+            }
+        }
+
+     
 
 
         function RenderCheckContent(nfc, taskname, checkcontent) {
