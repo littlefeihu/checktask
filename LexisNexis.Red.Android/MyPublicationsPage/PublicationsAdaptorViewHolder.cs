@@ -28,7 +28,7 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
         private readonly TextView tvPubInfo_2ndLine;
         private readonly ImageView imgPubInfo_1stLine;
         private readonly ImageView imgPubInfo_2ndLine;
-
+        private readonly TextView tvTaskStatus;
         private readonly PublicationsAdaptor adaptor;
         private ObjHolder<Publication> publication;
 
@@ -57,6 +57,8 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
             tvPubInfo_1stLine = v.FindViewById<TextView>(Resource.Id.tvPubInfo_1stLine);
             tvPubInfo_2ndLine = v.FindViewById<TextView>(Resource.Id.tvPubInfo_2ndLine);
 
+
+            //tvTaskStatus = v.FindViewById<TextView>(Resource.Id.tvTaskStatus);
             imgPubInfo_1stLine = v.FindViewById<ImageView>(Resource.Id.imgPubInfo_1stLine);
             imgPubInfo_2ndLine = v.FindViewById<ImageView>(Resource.Id.imgPubInfo_2ndLine);
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="200dp"
-    android:layout_height="130dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp"
     android:id="@+id/llPublicationItemBackground">
     <FrameLayout
         android:layout_width="match_parent"
@@ -28,7 +29,7 @@
             android:id="@+id/linearLayout2">
             <TextView
                 android:text="Current"
-                android:layout_width="144dp"
+                android:layout_width="244dp"
                 android:layout_height="20dp"
                 android:id="@+id/tvPubInfo_1stLine"
                 android:textSize="16sp"
@@ -40,7 +41,7 @@
                 android:singleLine="true" />
             <TextView
                 android:text="15 Jan 2015"
-                android:layout_width="144dp"
+                android:layout_width="244dp"
                 android:layout_height="match_parent"
                 android:id="@+id/tvPubInfo_2ndLine"
                 android:textSize="12sp"
@@ -55,7 +56,7 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout3">
+            android:layout_marginLeft="42dp">
             <ImageView
                 android:src="@drawable/mypub_info"
                 android:layout_width="44dp"

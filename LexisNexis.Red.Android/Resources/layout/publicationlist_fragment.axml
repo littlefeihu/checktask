@@ -48,7 +48,7 @@
                 android:id="@+id/frameLayout2">
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rcPublicationList"
-                    android:layout_width="match_parent"
+                    android:layout_width="match_parent" 
                     android:layout_height="334dp" />
                 <TextView xmlns:tools="http://schemas.android.com/tools"
                     android:text="@string/PublicationsFilter_NoTitleMessage"

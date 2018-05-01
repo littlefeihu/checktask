@@ -78,7 +78,7 @@ namespace LexisNexis.Red.Droid.MyPublicationsPage
 
             rcPublicationList = v.FindViewById<RecyclerView>(Resource.Id.rcPublicationList);
             publistLayoutManager = new LinearLayoutManager(Activity);
-            publistLayoutManager.Orientation = LinearLayoutManager.Horizontal;
+            publistLayoutManager.Orientation = LinearLayoutManager.Vertical;
             rcPublicationList.SetLayoutManager(publistLayoutManager);
             prcAdaptor = new PublicationsAdaptor(Activity);
             prcAdaptor.HasStableIds = true;
